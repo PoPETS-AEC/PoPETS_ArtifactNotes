@@ -36,7 +36,7 @@ Artifact Finalized Deadline:  May  07th 2025
 
 We have ensured that none of the deadlines fall on the holidays. That being said, please actively respond to reviewers' comments at your earliest convenience, so that your artifact can be awarded badge(s) by the Artifact Finalized Deadline.
 
-Please let us know at <artifact25@petsymposium.org>  if you have any concerns with meeting these deadlines, or, have any questions regarding the process.
+Please let us know at <artifact25@petsymposium.org> if you have any concerns with meeting these deadlines and would like to submit to a later deadline, or, have any questions regarding the process.
 
 Miti and Max
 PoPETs Artifact Chairs
