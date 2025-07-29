@@ -40,7 +40,7 @@ Select which flavors should be available for each of the dist/base combinations 
 ## Windows
 
 #### Notes
-This is difficult licensing wise. Does somebody know someone over at MS who 
+This is difficult licensing wise. Does somebody know someone over at MS who
 might be able to help with that?
 
 ## Other
