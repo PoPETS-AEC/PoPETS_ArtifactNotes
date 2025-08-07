@@ -9,4 +9,5 @@ Recorded as of PETS (symposium/conference day that year)
   - Issue 3: 17 submissions
   - Issue 4: 39 submissions
 - 72 Committee members plus two chairs
-- 0-2 reviews per issue for each reviewer
+- with ≤4 reviews in total per committee member
+- 0-2 reviews per issue for each reviewer (~1 assigned review per round)

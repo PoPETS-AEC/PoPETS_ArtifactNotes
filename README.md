@@ -10,7 +10,7 @@ edition, so that it can be passed on more easily over the years.
 We try to keep everything as transparent as possible. If you have any questions
 feel free to contact us.
 
-Note that we also contribute resources and results to [this
+Note that we also contribute resources and results to [the secartifacts
 website](https://secartifacts.github.io/) as well.
 
 - [Process Description](processdescription.md)
@@ -20,6 +20,6 @@ website](https://secartifacts.github.io/) as well.
 	- [PETS23](PETS2023/stats.md),
 	- [PETS24](PETS2024/stats.md),
 	- [PETS25](PETS2025/stats.md)
-- [Webpage](PETS2025/webpage.md)
-- [Email Templates](EmailTemplates)
-- [File: ARTIFACT-EVALUATION.md](PETS2025/ARTIFACT-EVALUATION.md)
+- [Webpage](PETS2026/webpage.md)
+- [Communication Templates](PETS2026/communication-templates)
+- [File: ARTIFACT-EVALUATION.md](PETS2026/ARTIFACT-EVALUATION.md)

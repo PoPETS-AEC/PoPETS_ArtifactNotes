@@ -11,7 +11,7 @@ set things up.
 ### Inviting artifact committee members
 
 We need to make sure the artifact committee PC is ready to go by the first round
-deadline (cf. [deadlines.md](PETS2024/deadlines.md)). We usually send an
+deadline (cf. [deadlines.md](PETS2026/deadlines.md)). We usually send an
 invitation email with stats from the previous year and changes for the upcoming
 year. This email is sent in three variants:
 - [One version](EmailTemplates/) to the existing artifact committee.
