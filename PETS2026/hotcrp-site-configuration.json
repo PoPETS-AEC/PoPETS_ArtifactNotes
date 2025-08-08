@@ -1,0 +1,736 @@
+{
+  "accepted_author_visibility": true,
+  "author_visibility": "open",
+  "autoassign_review_max_load_tag": "",
+  "autoassign_review_preference_gadget": "default",
+  "automatic_tag": [],
+  "badge": [
+    {
+      "style": "red",
+      "tags": ""
+    },
+    {
+      "style": "orange",
+      "tags": ""
+    },
+    {
+      "style": "yellow",
+      "tags": ""
+    },
+    {
+      "style": "green",
+      "tags": ""
+    },
+    {
+      "style": "blue",
+      "tags": ""
+    },
+    {
+      "style": "purple",
+      "tags": ""
+    },
+    {
+      "style": "gray",
+      "tags": ""
+    },
+    {
+      "style": "white",
+      "tags": ""
+    },
+    {
+      "style": "black",
+      "tags": ""
+    },
+    {
+      "style": "pink",
+      "tags": ""
+    }
+  ],
+  "comment_allow_always": true,
+  "comment_author": true,
+  "comment_author_initiate": true,
+  "comment_visibility_reviewer": "yes",
+  "conference_abbreviation": "Artifact2026.1",
+  "conference_name": "Artifact2026.1",
+  "conference_url": "https:\/\/petsymposium.org",
+  "conflict_description": "This includes past advisors and students, people with the same affiliation, and any recent (~2 years) coauthors and collaborators.",
+  "conflict_visibility": "if_authors_visible",
+  "decision": [
+    {
+      "id": 2,
+      "name": "Available",
+      "category": "accept"
+    },
+    {
+      "id": 1,
+      "name": "Available, Functional",
+      "category": "accept"
+    },
+    {
+      "id": 3,
+      "name": "Available, Functional, Reproduced",
+      "category": "accept"
+    },
+    {
+      "id": 5,
+      "name": "[Unusual] Functional, Reproduced without Available",
+      "category": "accept"
+    },
+    {
+      "id": 4,
+      "name": "[Unusual] Functional without Available",
+      "category": "accept"
+    },
+    {
+      "id": -2,
+      "name": "Rejected",
+      "category": "reject"
+    }
+  ],
+  "decision_visibility_author": "yes",
+  "decision_visibility_author_condition": "",
+  "decision_visibility_reviewer": "unconflicted",
+  "draft_submission_early_visibility": false,
+  "email_default_cc": "",
+  "email_default_reply_to": "artifact26@petsymposium.org",
+  "final_done": "",
+  "final_edit_message": "Congratulations! The paper has been accepted. Update the paper’s final version here. {deadline} You may also edit paper contacts, allowing others to view reviews and make changes.",
+  "final_open": false,
+  "final_soft": "",
+  "format": [],
+  "home_message": "<b>[New in 2026]<\/b>\n<ul>\n<li>We have clarified the requirements for each of the \"Available\", \"Functional\", and \"Reproduced\" badges.<\/li>\n<li>We have also released tips, examples, and other resources for artifact packaging and containerization.<\/li>\n<li>To encourage interactive discussions and resolution of potential issues, we now have a preliminary review deadline for reviewers, followed by a preliminary updates deadline for authors, and a firm finalized deadline.<\/li>\n<\/ul>\nPlease take a look at the <a href=\"https:\/\/petsymposium.org\/artifacts.php\">artifact review guidelines<\/a> for more details.",
+  "mailbody_requestreview": "Dear %NAME%,\n\nOn behalf of the Artifact2026.1 program committee, %REQUESTERCONTACT% has asked you to review Artifact2026.1 submission #%NUMBER%.%IF(REASON)% They supplied this note: %REASON%%ENDIF%\n\n* Title: %TITLE%\n* Author(s): %OPT(AUTHORS)%\n* Site: https:\/\/artifact.petsymposium.org\/artifact2026.1\/review.php\/%NUMBER%?cap=%REVIEWACCEPTOR%\n\nOnce you have viewed the submission and decided whether you are willing to review it, please accept or decline this review request at the submission site.\n\n%IF(NEEDPASSWORD)%You haven't used the site as %EMAIL% before, so you may need to create a password to sign in. Use this link to set one up:\n\n%PASSWORDLINK%\n\nShould the link expire, obtain a new one using \"Forgot my password\".\n\n%ENDIF%Thank you for your help -- we appreciate that reviewing is hard work.\n\nContact PoPETs Artifact Chairs <artifact26@petsymposium.org> with any questions or concerns.\n\n- Artifact2026.1 Submissions",
+  "named_search": [],
+  "pc_warn_bulk_download": false,
+  "preference_instructions": "<p>IMPORTANT: Please set -5 for any submission you cannot review due to missing resources. Note that we provide VMs with GPUs. Contact the artifact chairs for access to these VMs.<\/p>\n\n<p>A review preference is a small integer that indicates how much you want to review a submission. Positive numbers mean you want to review, negative numbers mean you don’t, and −100 means you think you have a conflict. It’s useful for the chairs when bids have clear semantics. So please use the following:<\/p>\n<ul>\n   <li>3     I want to review this artifact<\/li>\n   <li>2     It's a good artifact for me<\/li>\n   <li>1     It's an ok artifact for me<\/li>\n   <li>0     Doesn't seem right for me (default)<\/li>\n   <li>-1    I really shouldn't be reviewing this<\/li>\n   <li>-5    I cannot review this  due to missing resources<\/li>\n   <li>-100  Conflict <\/li>\n<\/ul>\n<p>Multiple submissions can have the same preference. The automatic assignment algorithm attempts to assign reviews in descending preference order, using topic scores to break ties.<\/p>\n\n<p>Select a column heading to sort by that column. Enter preferences in the text boxes or on the paper pages. You may also upload preferences from a text file; see the “Download” and “Upload” links below the paper list.<\/p>",
+  "preference_max": 1000000,
+  "preference_min": -1000000,
+  "response": [
+    {
+      "id": 1,
+      "name": "",
+      "open": "",
+      "done": "",
+      "grace": 0,
+      "condition": "all",
+      "wordlimit": 500,
+      "hard_wordlimit": 0,
+      "instructions": "The authors’ response should address reviewer concerns and correct misunderstandings. Make it short and to the point; the conference deadline has passed. Try to stay within {wordlimit} words."
+    }
+  ],
+  "response_active": false,
+  "review": [
+    {
+      "id": 1,
+      "name": "",
+      "soft": "2025-10-02 07:59:59 -0400",
+      "done": "",
+      "external_soft": "",
+      "external_done": ""
+    }
+  ],
+  "review_blind": "blind",
+  "review_default_external_round": "",
+  "review_default_round": "unnamed",
+  "review_identity_visibility_external": "never",
+  "review_identity_visibility_pc": "always",
+  "review_open": true,
+  "review_proposal": "no",
+  "review_proposal_editable": "no",
+  "review_rating": "pc",
+  "review_self_assign": false,
+  "review_terms": "",
+  "review_visibility_author": "yes",
+  "review_visibility_author_condition": "",
+  "review_visibility_external": "never",
+  "review_visibility_lead": true,
+  "review_visibility_pc": "always",
+  "rf": [
+    {
+      "id": "t01",
+      "name": "Artifact summary",
+      "order": 1,
+      "type": "text",
+      "description": "Please briefly summarize the artifact in your own words.",
+      "required": false,
+      "visibility": "au",
+      "condition": "all"
+    },
+    {
+      "id": "t06",
+      "name": "What steps did you take to evaluate the artifact?",
+      "order": 2,
+      "type": "text",
+      "description": "Please briefly describe the steps you took and other relevant information to evaluate this artifact.",
+      "required": false,
+      "visibility": "au",
+      "condition": "all"
+    },
+    {
+      "id": "s03",
+      "name": "\"Artifact Available\" badge requirements",
+      "order": 3,
+      "type": "radio",
+      "description": "Should the artifact be awarded the available badge?",
+      "required": true,
+      "visibility": "au",
+      "condition": "all",
+      "values": [
+        {
+          "id": 1,
+          "symbol": 1,
+          "name": "Not applied for",
+          "order": 1
+        },
+        {
+          "id": 2,
+          "symbol": 2,
+          "name": "Currently fails badge requirements",
+          "order": 2
+        },
+        {
+          "id": 3,
+          "symbol": 3,
+          "name": "Meets badge requirements",
+          "order": 3
+        }
+      ],
+      "scheme": "sv"
+    },
+    {
+      "id": "t02",
+      "name": "Comments for authors (\"Artifact Available\")",
+      "order": 4,
+      "type": "text",
+      "description": "Leave empty if not applied for.",
+      "required": false,
+      "visibility": "au",
+      "condition": "all"
+    },
+    {
+      "id": "s01",
+      "name": "\"Artifact Functional\" badge requirements",
+      "order": 5,
+      "type": "radio",
+      "description": "Should the artifact be awarded the functional badge?",
+      "required": true,
+      "visibility": "au",
+      "condition": "all",
+      "values": [
+        {
+          "id": 1,
+          "symbol": 1,
+          "name": "Not applied for",
+          "order": 1
+        },
+        {
+          "id": 2,
+          "symbol": 2,
+          "name": "Currently fails badge requirements",
+          "order": 2
+        },
+        {
+          "id": 3,
+          "symbol": 3,
+          "name": "Meets badge requirements",
+          "order": 3
+        }
+      ],
+      "scheme": "sv"
+    },
+    {
+      "id": "t03",
+      "name": "Comments for authors (\"Artifact Functional\")",
+      "order": 6,
+      "type": "text",
+      "description": "Leave empty if not applied for.",
+      "required": false,
+      "visibility": "au",
+      "condition": "all"
+    },
+    {
+      "id": "s04",
+      "name": "\"Artifact Reproduced\" badge requirements",
+      "order": 7,
+      "type": "radio",
+      "description": "Should the artifact be awarded the reproduced badge?",
+      "required": true,
+      "visibility": "au",
+      "condition": "all",
+      "values": [
+        {
+          "id": 1,
+          "symbol": 1,
+          "name": "Not applied for",
+          "order": 1
+        },
+        {
+          "id": 2,
+          "symbol": 2,
+          "name": "Currently fails badge requirements",
+          "order": 2
+        },
+        {
+          "id": 3,
+          "symbol": 3,
+          "name": "Meets badge requirements",
+          "order": 3
+        }
+      ],
+      "scheme": "sv"
+    },
+    {
+      "id": "t04",
+      "name": "Comments for authors (\"Artifact Reproduced\")",
+      "order": 8,
+      "type": "text",
+      "description": "Leave empty if not applied for.",
+      "required": false,
+      "visibility": "au",
+      "condition": "all"
+    },
+    {
+      "id": "s05",
+      "name": "Artifact maturity",
+      "order": 9,
+      "type": "radio",
+      "description": "",
+      "required": true,
+      "visibility": "au",
+      "condition": "all",
+      "values": [
+        {
+          "id": 1,
+          "symbol": 1,
+          "name": "Prototype: demos work, rest not guaranteed, loose documentation",
+          "order": 1
+        },
+        {
+          "id": 2,
+          "symbol": 2,
+          "name": "Basic usage should work, terse but usable documentation, some software engineering",
+          "order": 2
+        },
+        {
+          "id": 3,
+          "symbol": 3,
+          "name": "Well-developed software, fairly extensive documentation, reasonable software engineering, attention to usability",
+          "order": 3
+        },
+        {
+          "id": 4,
+          "symbol": 4,
+          "name": "Major software project, strong attention to functionality and usability, extensive documentation, strong software engineering",
+          "order": 4
+        }
+      ],
+      "scheme": "sv"
+    },
+    {
+      "id": "s06",
+      "name": "Artifact potential audience",
+      "order": 10,
+      "type": "radio",
+      "description": "",
+      "required": true,
+      "visibility": "au",
+      "condition": "all",
+      "values": [
+        {
+          "id": 1,
+          "symbol": 1,
+          "name": "Restricted audience, aims to be used mostly by people inside the field",
+          "order": 1
+        },
+        {
+          "id": 2,
+          "symbol": 2,
+          "name": "Large audience, usable by people inside and outside the field",
+          "order": 2
+        },
+        {
+          "id": 3,
+          "symbol": 3,
+          "name": "Wide audience, aims to be usable by a wide public, to become the reference",
+          "order": 3
+        }
+      ],
+      "scheme": "sv"
+    },
+    {
+      "id": "t08",
+      "name": "Other comments for authors",
+      "order": 11,
+      "type": "text",
+      "description": "List here any other comments you may have for authors.",
+      "required": false,
+      "visibility": "au",
+      "condition": "all"
+    },
+    {
+      "id": "s02",
+      "name": "Artifact award worthiness",
+      "order": 12,
+      "type": "radio",
+      "description": "Should this artifact be considered as a candidate for the Artifact Award? (https:\/\/petsymposium.org\/artifact-award.php)",
+      "required": true,
+      "visibility": "re",
+      "condition": "all",
+      "values": [
+        {
+          "id": 1,
+          "symbol": 1,
+          "name": "Not suitable",
+          "order": 1
+        },
+        {
+          "id": 2,
+          "symbol": 2,
+          "name": "Perhaps suitable",
+          "order": 2
+        },
+        {
+          "id": 3,
+          "symbol": 3,
+          "name": "Definitely consider",
+          "order": 3
+        }
+      ],
+      "scheme": "sv"
+    },
+    {
+      "id": "t05",
+      "name": "Highlight reasons for artifact award (if recommended above)",
+      "order": 13,
+      "type": "text",
+      "description": "Feel free to be brief and use bullet points.",
+      "required": false,
+      "visibility": "re",
+      "condition": "all"
+    },
+    {
+      "id": "t07",
+      "name": "Comments for Artifact Chairs",
+      "order": 14,
+      "type": "text",
+      "description": "",
+      "required": false,
+      "visibility": "re",
+      "condition": "all"
+    }
+  ],
+  "sf": [
+    {
+      "id": "title",
+      "name": "Title",
+      "description": "Please just provide the <b>exact<\/b> title of your PETS paper.",
+      "edit_condition": true
+    },
+    {
+      "id": "submission",
+      "order": 2,
+      "description": "Please upload the latest version of your PETS paper (this does not need to be anonymized).",
+      "condition": true,
+      "edit_condition": true,
+      "required": "submit"
+    },
+    {
+      "id": "final",
+      "order": 3,
+      "name": "Final version",
+      "description": "",
+      "condition": "phase:final",
+      "edit_condition": true,
+      "required": "submit"
+    },
+    {
+      "id": "abstract",
+      "order": 4,
+      "name": "Abstract",
+      "description": "Please provide the abstract of your PETS paper.",
+      "condition": true,
+      "edit_condition": true,
+      "required": "register"
+    },
+    {
+      "id": "authors",
+      "order": 5,
+      "name": "Authors",
+      "description": "List the authors, including email addresses and affiliations.",
+      "edit_condition": true,
+      "max": 0
+    },
+    {
+      "id": 2,
+      "name": "Artifact badges",
+      "order": 6,
+      "type": "radio",
+      "description": "<p>Please chose the set of badges for which your artifact should be evaluated. The first three options would fit most submissions.<\/p>\n\n<p>Please see the <a href=\"https:\/\/petsymposium.org\/artifacts.php\">PoPETs Artifact Review page<\/a> for example use cases for the second option. The fourth and fifth options are <b>rarely<\/b> chosen. As an example for the fourth option: an artifact may demonstrate exploiting a vulnerability, and the authors may want to go for the Reproduced and Functional badges, without going for the Available badge, as making the artifact publicly accessible may endanger users.<\/p>",
+      "values": [
+        {
+          "id": 3,
+          "name": "Available",
+          "order": 1
+        },
+        {
+          "id": 1,
+          "name": "Available, Functional",
+          "order": 2
+        },
+        {
+          "id": 2,
+          "name": "Available, Functional, Reproduced",
+          "order": 3
+        },
+        {
+          "id": 5,
+          "name": "[Unusual] Functional without Available",
+          "order": 4
+        },
+        {
+          "id": 4,
+          "name": "[Unusual] Functional, Reproduced without Available",
+          "order": 5
+        }
+      ],
+      "required": "submit",
+      "display": "right",
+      "visibility": "all",
+      "condition": true,
+      "edit_condition": true
+    },
+    {
+      "id": 1,
+      "name": "Artifact links and brief description",
+      "order": 7,
+      "type": "mtext",
+      "description": "Please add a brief description of the artifacts and the link to access it here. Refrain from submitting a permanent or stable link at this stage (we will collect it later once a decision is finalized), as edits will likely happen based on reviewers' feedback.",
+      "required": "submit",
+      "display": "right",
+      "visibility": "all",
+      "condition": true,
+      "edit_condition": true
+    },
+    {
+      "id": 7,
+      "name": "Link to your ARTIFACT-EVALUATION.md content",
+      "order": 8,
+      "type": "text",
+      "description": "Please provide a link to your ARTIFACT-EVALUATION.md file or the file that contains it (e.g., README.md) in your artifact. Ensure that all sections of this template are filled out accordingly to the badges you are applying for.",
+      "required": "submit",
+      "display": "right",
+      "visibility": "all",
+      "condition": true,
+      "edit_condition": true
+    },
+    {
+      "id": "topics",
+      "order": 9,
+      "name": "Topics",
+      "description": "Please provide information on the hardware requirements of your artifacts on type of artifact, by selecting all topics that apply to your submission. This helps us to find fitting reviewers for your artifact.",
+      "condition": true,
+      "edit_condition": true,
+      "required": "submit",
+      "min": 1,
+      "max": 0
+    },
+    {
+      "id": 3,
+      "name": "Credentials or access for reviewers (if needed)",
+      "order": 10,
+      "type": "mtext",
+      "description": "If needed, please provide here any credential or access that reviewers may need to perform the evaluation of the artifact.\n\nExamples: VM access, SSH keys and config, VPN access, required password or API keys, etc.",
+      "required": "no",
+      "display": "rest",
+      "visibility": "all",
+      "condition": true,
+      "edit_condition": true
+    },
+    {
+      "id": 4,
+      "name": "Alpha test performed by authors",
+      "order": 11,
+      "type": "checkbox",
+      "description": "A lot of issues seen in the past, and that slow down artifact evaluation, tend to occur at install time (missing dependencies, incorrect or private links, unclear steps to follow, etc.).\n<br>\nTo avoid most of these, <b>we ask that authors follow their own artifact instructions on a fresh install<\/b> (or ask an acquaintance to do so) before submitting their artifact, and make modifications if any issue. \n<br>\n<b>Artifact reviewers should not be considered as alpha testers.<\/b>",
+      "required": "submit",
+      "display": "rest",
+      "visibility": "all",
+      "condition": true,
+      "edit_condition": true
+    },
+    {
+      "id": 5,
+      "name": "Authors are expected to be responsive",
+      "order": 12,
+      "type": "checkbox",
+      "description": "The artifact evaluation is meant to be interactive. Authors are expected to be responsive to reviewers' comments and suggestions: authors should not leave updates to the last minute and must work with reviewers to obtain the artifact badges.",
+      "required": "submit",
+      "display": "rest",
+      "visibility": "all",
+      "condition": true,
+      "edit_condition": true
+    },
+    {
+      "id": "pc_conflicts",
+      "order": 13,
+      "name": "PC conflicts"
+    },
+    {
+      "id": "collaborators",
+      "order": 14,
+      "name": "Other conflicts",
+      "description": "<p>List other people and institutions with which the authors have conflicts of interest. We use this information when assigning external reviews. Collaborators declared on the authors’ HotCRP profiles need not be repeated here.<\/p><p><strong>Enter one conflict per line.<\/strong> Use parentheses for affiliations and institutions. Examples: “Jelena Markovic (EPFL)”, “All (University of Southern California)”.<\/p>"
+    }
+  ],
+  "sf_collaborators": false,
+  "sf_pc_conflicts": true,
+  "sf_pc_conflict_types": false,
+  "shepherd_visibility": false,
+  "site_contact_email": "artifact26@petsymposium.org",
+  "site_contact_name": "PoPETs Artifact Chairs",
+  "submission": [],
+  "submission_done": "2025-09-11 07:59:59 -0400",
+  "submission_edit_message": "",
+  "submission_freeze": false,
+  "submission_grace": 960,
+  "submission_open": false,
+  "submission_registration": "2025-09-11 07:59:59 -0400",
+  "submission_terms": "",
+  "submitted_document_early_visibility": false,
+  "tag_hidden": "",
+  "tag_rank": "",
+  "tag_readonly": "accept pcpaper reject",
+  "tag_sitewide": "",
+  "tag_style": [
+    {
+      "style": "red",
+      "tags": ""
+    },
+    {
+      "style": "orange",
+      "tags": ""
+    },
+    {
+      "style": "yellow",
+      "tags": ""
+    },
+    {
+      "style": "green",
+      "tags": ""
+    },
+    {
+      "style": "blue",
+      "tags": ""
+    },
+    {
+      "style": "purple",
+      "tags": ""
+    },
+    {
+      "style": "gray",
+      "tags": ""
+    },
+    {
+      "style": "white",
+      "tags": ""
+    },
+    {
+      "style": "bold",
+      "tags": ""
+    },
+    {
+      "style": "italic",
+      "tags": ""
+    },
+    {
+      "style": "underline",
+      "tags": ""
+    },
+    {
+      "style": "strikethrough",
+      "tags": ""
+    },
+    {
+      "style": "big",
+      "tags": ""
+    },
+    {
+      "style": "small",
+      "tags": ""
+    },
+    {
+      "style": "dim",
+      "tags": ""
+    }
+  ],
+  "tag_visibility_conflict": false,
+  "tag_vote_allotment": "",
+  "tag_vote_approval": "",
+  "topic": [
+    {
+      "id": 4,
+      "name": "Requirement: Can run on a laptop (No special hardware requirements)"
+    },
+    {
+      "id": 8,
+      "name": "Requirement: High CPU compute power (would take >6h on a laptop)"
+    },
+    {
+      "id": 6,
+      "name": "Requirement: High RAM (>16GB)"
+    },
+    {
+      "id": 7,
+      "name": "Requirement: High Storage (>20GB)"
+    },
+    {
+      "id": 5,
+      "name": "Requirement: Proper GPU (CUDA,...)"
+    },
+    {
+      "id": 9,
+      "name": "Requirement: Special hardware - IoT devices"
+    },
+    {
+      "id": 13,
+      "name": "Requirement: Special hardware - Other"
+    },
+    {
+      "id": 11,
+      "name": "Requirement: Special hardware - Smartphone(s)"
+    },
+    {
+      "id": 12,
+      "name": "Requirement: Special hardware - Trusted Execution Environments"
+    },
+    {
+      "id": 2,
+      "name": "Type: Dataset"
+    },
+    {
+      "id": 1,
+      "name": "Type: Source code"
+    },
+    {
+      "id": 3,
+      "name": "Type: Other"
+    }
+  ],
+  "track": [
+    {
+      "tag": "any",
+      "perm": {
+        "view": "all",
+        "viewpdf": "all",
+        "viewrev": "all",
+        "viewrevid": "all",
+        "assrev": "all",
+        "unassrev": "all",
+        "viewtracker": "all",
+        "admin": "none",
+        "hiddentag": "none",
+        "viewallrev": "all"
+      }
+    }
+  ]
+}

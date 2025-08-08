@@ -36,3 +36,24 @@
 - Should we provide some common environment for the authors & reviewers to use?
   - What should be the spec?
   - Who should own and/or maintain this?
+
+
+## Process Change Recommendations/For Consideration
+- Clarification in call as to expectations (functionality and availability
+  required)
+- Add section to artifact review form for response to authors/updates. Several
+  reviewers have been updating their review and labeling it but others have not.
+  This will make things clearer for all involved
+- Instructions to reviewers doc: include information about courtesy, types of
+  good comments/evaluations, etc.
+- Add deadline for artifacts to reach acceptance stage to prevent too much
+  overlap with other rounds and to prevent limbo states for becoming too
+  prolonged
+
+Pre-2023 TODO List:
+- turn readme into a table of contents/guide to access other information in the
+  repository as it expands. e.g. there could be a for authors, for reviewers,
+  for chair breakdown
+- Make new reviewer doc. Include: typical timelines, reviewing advice, FAQ
+- create list of questions as they come up to eventually generate FAQ for
+  reviewers and authors of artifacts

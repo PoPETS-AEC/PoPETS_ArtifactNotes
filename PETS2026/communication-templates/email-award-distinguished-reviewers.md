@@ -9,8 +9,8 @@ notified. Thank you very much for all your hard work in serving as an artifact
 reviewer!
 
 PETS 2026 Distinguished Artifact Reviewers:
-- <Name>
-- <Name>
+- <Name - *Affiliation*>
+- <Name - *Affiliation*>
 
 Best regards,
 --

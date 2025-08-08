@@ -1,0 +1,101 @@
+## July 16, 2025
+
+# Feedback on proposed changes
+
+* Context: A lot of artifacts look “similar” e.g. privacy-preserving ML
+  artifacts are Python-based, so they include a requirements file, a Conda / Pip
+  / venv setup etc. There are fewer Golang artifacts but they tend to also
+  follow the same format, i.e. depending on the area of research (e.g.
+  Privacy-Preserving ML, Censorship Resistance), we can provide some few
+  template Dockerfiles.
+* For example, the Python Dockerfile would include a sample requirements.txt
+  file with the popular packages e.g. numpy, scipy etc. and run a “pip install
+  \-r requirements.txt” or a Conda install of this requirements file.
+* We also plan to provide the Github workflow files so that authors can use them
+  to automatically build the Docker image or NixOS VM using the compute
+  resources of Github / repository service.
+* There would thus maybe be one Github repo for each language, so that authors
+  can just clone that repo or fork it and start building off.
+  * A side note is that we can add renovate bot to update versions of Python
+    packages in the requirements file etc.
+* Someone volunteered to add a NixOS build script. The advantage of NixOS over
+  Docker is that Docker images built in the future may have different hashes
+  (since they often run sudo apt update).
+* We need to also include Git commands when providing the templates (e.g. Git
+  clone)
+* A separate issue raised by multiple people in different contexts was that
+  there was use of Docker images pre-built, but a building process not
+  documented properly in the repository (or image hashes not reproducible from
+  repo alone)
+
+* A main concern that was brought up many times is that some authors do not even
+  run their artifacts before submitting it for artifact review. To what extent
+  are artifact reviewers alpha-testers? Can we automate this?
+  * We should prompt authors for them alpha testing their artifact before
+    submission.
+
+* On further discussion, it would be possible to run a script that clones a
+  Github / Gitlab repo, checks that there is an Artifact\_Evaluation.md file and
+  it then runs a Docker / NixOS builder and produced a Docker image or NixOS VM
+  image. Importantly, it would then run this Docker image or NixOS VM image,
+  with a predefined script file, say “[run.py](http://run.py)” or “pets.sh”, on
+  one of the measurement.network machines. This script should be run
+  automatically the artifacts are submitted and the output of this script can
+  then be made available to the authors.
+* This captures low-hanging fruits:
+  * If a Python project does not build due to some missing Pip requirements,
+    then the image would not be built and authors would be able to see these
+    errors. (Note that if the authors cloned our template repo for their
+    language, then they can also use our GitHub workflow files and would have
+    seen these errors even before going through the AR process.)
+  * If running the script file throws up some errors, then the authors will know
+    these errors and the reviewers’ work will be made easier.
+  * But this also requires a lot of effort from authors to specify their
+    artifact into one format (that won't fit all use cases, etc.)
+
+* Artifact Demo session: we would like to have a session to show off our
+  artifacts. This can be run in conjunction with the poster session.
+  Alternatively, on evenings when there are no other sessions planned (e.g.
+  first day evening), we can have a separate demo session. These demos should be
+  related to a paper published at this conference for this issue. We may have a
+  limited number of artifacts for tools that are in scope of PETS but not
+  directly related to a paper.
+
+* Timelines: A few suggestions:
+  * Make sure we finalize all artifacts in each issue before the next
+    issue starts as otherwise, it’s a lot of load for the reviewers. Our
+    artifact finalization deadline for each issue has been treated as a soft
+    deadline so far; indicate to authors that this will be treated as a hard
+    deadline and that they are expected to respond back and fix the artifact.
+  * After the review deadline, add an “Artifact Updated” deadline so
+    that reviewers know till when the artifact is expected to be retested.
+  * At Usenix, the Available badge is a quick check with a turnaround for four
+    days, let’s do that here too? It almost seems like the check for the
+    Available badge can be automated.
+    * We discussed aligning timelines with the PETS paper timelines better with
+    the PC chairs to also include revised papers
+
+  * Can we add badges to the papers? To make it happen, we would need to
+    finalize artifact decisions before the camera-ready deadline which is
+    usually at about the same time as the **submission** deadline for the
+    corresponding artifact. We could also have script that slap in the badges on
+    the PDFs, but this means modifying the PDFs after they have already been
+    published, which means more work for publication team.
+      * We opted to not make it a priority and keep operating similarly for
+        badges (we will also add them to https://secartifacts.github.io/)
+
+
+* Some conferences make the artifact process mandatory; convince PC chairs that
+  we can at least mandate the Available badge?
+  * How many authors ticked “We will submit this paper for artifact review” and
+    did not? Why not?
+  * IP protections and commercialization prospects should not inhibit this; e.g.
+    authors can choose restrictive licenses that prohibit others from using
+    their code or design a smaller working prototype to demonstrate
+    reproducibility; the Functional \+ Reproduced badge combo can be used
+    towards this.
+* Documentation:
+  * Make it clear that reviewers are supposed to look at the standard deviation
+    figs and then even with fewer runs than the total number used in the paper,
+    they can still check whether the results have been reproduced.
+
