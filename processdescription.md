@@ -7,8 +7,8 @@ Artifact Evaluation of PETS
 
 - Send email to candidate that was picked
 - Video call for onboarding
-- Give access to GitHub organization, Slack with other Artifact PCs from other
-  conferences, create artifactYY@email alias
+- Give access to GitHub organization, Slack with other Artifact chairs from
+  other conferences, create artifactYY@email alias
 - Make admin on past year’s instances to navigate and poke around (familiarize with things)
 - Attend current PETS if possible
 - Help with potential backlog of artifact reviews

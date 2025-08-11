@@ -15,7 +15,7 @@ Scope: for accepted papers from 2026.1, 1-month revised papers from 2026.1, and
 | Assignments Deadline                           | Chairs              | Wednesday, Sep 17, 2025   |
 | Evaluation and Interactive Discussion Start    | Reviewers + Authors | Wednesday, Sep 17, 2025   |
 | Preliminary Review Deadline                    | Reviewers           | Wednesday, Oct 1, 2025    |
-| Preliminary Updates Deadline                   | Authors             | Wednesday, Oct 8, 2025    |
+| Preliminary Authors Updates Deadline           | Authors             | Wednesday, Oct 8, 2025    |
 | Evaluation and Interactive Discussion Continue | Reviewers + Authors | Until decision is reached |
 | Finalized Deadline                             | Reviewers + Chairs  | Friday, Oct 31, 2025      |
 
@@ -33,7 +33,7 @@ their artifact submission.
 | Assignments Deadline                           | Chairs              | Wednesday, Dec 17, 2025   |
 | Evaluation and Interactive Discussion Start    | Reviewers + Authors | Wednesday, Dec 17, 2025   |
 | Preliminary Review Deadline                    | Reviewers           | Wednesday, Jan 7, 2026    |
-| Preliminary Updates Deadline                   | Authors             | Wednesday, Jan 14, 2026   |
+| Preliminary Authors Updates Deadline           | Authors             | Wednesday, Jan 14, 2026   |
 | Evaluation and Interactive Discussion Continue | Reviewers + Authors | Until decision is reached |
 | Finalized Deadline                             | Reviewers + Chairs  | Friday, Feb 6, 2026       |
 
@@ -51,7 +51,7 @@ their artifact submission.
 | Assignments Deadline                           | Chairs              | Wednesday, Mar 18, 2026   |
 | Evaluation and Interactive Discussion Start    | Reviewers + Authors | Wednesday, Mar 18, 2026   |
 | Preliminary Review Deadline                    | Reviewers           | Wednesday, Apr 1, 2026    |
-| Preliminary Updates Deadline                   | Authors             | Wednesday, Apr 8, 2026    |
+| Preliminary Authors Updates Deadline           | Authors             | Wednesday, Apr 8, 2026    |
 | Evaluation and Interactive Discussion Continue | Reviewers + Authors | Until decision is reached |
 | Finalized Deadline                             | Reviewers + Chairs  | Friday, May 1, 2026       |
 
@@ -70,6 +70,6 @@ their artifact submission.
 | Assignments Deadline                           | Chairs              | Wednesday, Jun 10, 2026   |
 | Evaluation and Interactive Discussion Start    | Reviewers + Authors | Wednesday, Jun 10, 2026   |
 | Preliminary Review Deadline                    | Reviewers           | Friday, Jun 19, 2026      |
-| Preliminary Updates Deadline                   | Authors             | Friday, Jun 26, 2026      |
+| Preliminary Authors Updates Deadline           | Authors             | Friday, Jun 26, 2026      |
 | Evaluation and Interactive Discussion Continue | Reviewers + Authors | Until decision is reached |
 | Finalized Deadline                             | Reviewers + Chairs  | Friday, Jul 10, 2026      |

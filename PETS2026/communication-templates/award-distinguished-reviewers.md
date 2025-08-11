@@ -14,6 +14,6 @@ PETS 2026 Distinguished Artifact Reviewers:
 
 Best regards,
 --
-Miti and Yohan
+Miti Mazmudar and Yohan Beugin
 PoPETs 2026 Artifact Evaluation Chairs
 artifact26@petsymposium.org
