@@ -102,9 +102,11 @@
   "mailbody_requestreview": "Dear %NAME%,\n\nOn behalf of the Artifact2026.1 program committee, %REQUESTERCONTACT% has asked you to review Artifact2026.1 submission #%NUMBER%.%IF(REASON)% They supplied this note: %REASON%%ENDIF%\n\n* Title: %TITLE%\n* Author(s): %OPT(AUTHORS)%\n* Site: https:\/\/artifact.petsymposium.org\/artifact2026.1\/review.php\/%NUMBER%?cap=%REVIEWACCEPTOR%\n\nOnce you have viewed the submission and decided whether you are willing to review it, please accept or decline this review request at the submission site.\n\n%IF(NEEDPASSWORD)%You haven't used the site as %EMAIL% before, so you may need to create a password to sign in. Use this link to set one up:\n\n%PASSWORDLINK%\n\nShould the link expire, obtain a new one using \"Forgot my password\".\n\n%ENDIF%Thank you for your help -- we appreciate that reviewing is hard work.\n\nContact PoPETs Artifact Chairs <artifact26@petsymposium.org> with any questions or concerns.\n\n- Artifact2026.1 Submissions",
   "named_search": [],
   "pc_warn_bulk_download": false,
+  "preference_fuzz": 0,
   "preference_instructions": "<p>IMPORTANT: Please set -5 for any submission you cannot review due to missing resources. Note that we provide VMs with GPUs. Contact the artifact chairs for access to these VMs.<\/p>\n\n<p>A review preference is a small integer that indicates how much you want to review a submission. Positive numbers mean you want to review, negative numbers mean you don’t, and −100 means you think you have a conflict. It’s useful for the chairs when bids have clear semantics. So please use the following:<\/p>\n<ul>\n   <li>3     I want to review this artifact<\/li>\n   <li>2     It's a good artifact for me<\/li>\n   <li>1     It's an ok artifact for me<\/li>\n   <li>0     Doesn't seem right for me (default)<\/li>\n   <li>-1    I really shouldn't be reviewing this<\/li>\n   <li>-5    I cannot review this  due to missing resources<\/li>\n   <li>-100  Conflict <\/li>\n<\/ul>\n<p>Multiple submissions can have the same preference. The automatic assignment algorithm attempts to assign reviews in descending preference order, using topic scores to break ties.<\/p>\n\n<p>Select a column heading to sort by that column. Enter preferences in the text boxes or on the paper pages. You may also upload preferences from a text file; see the “Download” and “Upload” links below the paper list.<\/p>",
   "preference_max": 1000000,
   "preference_min": -1000000,
+  "preference_shuffle": false,
   "response": [
     {
       "id": 1,
@@ -429,6 +431,7 @@
     {
       "id": "submission",
       "order": 2,
+      "name": "Submission",
       "description": "Please upload the latest version of your PETS paper (this does not need to be anonymized).",
       "condition": true,
       "edit_condition": true,
@@ -456,7 +459,7 @@
       "id": "authors",
       "order": 5,
       "name": "Authors",
-      "description": "List the authors, including email addresses and affiliations.",
+      "description": "List <b>all<\/b> authors of the corresponding accepted PETS paper, including email addresses and affiliations.",
       "edit_condition": true,
       "max": 0
     },
@@ -513,10 +516,10 @@
     },
     {
       "id": 7,
-      "name": "Link to your ARTIFACT-EVALUATION.md content",
+      "name": "Link to your ARTIFACT-APPENIDX.md content",
       "order": 8,
       "type": "text",
-      "description": "Please provide a link to your ARTIFACT-EVALUATION.md file or the file that contains it (e.g., README.md) in your artifact. Ensure that all sections of this template are filled out accordingly to the badges you are applying for.",
+      "description": "Please provide a link to your ARTIFACT-APPENDIX.md file or the file that contains it (e.g., README.md) in your artifact. Ensure that all sections of this template are filled out accordingly to the badges you are applying for.",
       "required": "submit",
       "display": "right",
       "visibility": "all",
@@ -527,7 +530,7 @@
       "id": "topics",
       "order": 9,
       "name": "Topics",
-      "description": "Please provide information on the hardware requirements of your artifacts on type of artifact, by selecting all topics that apply to your submission. This helps us to find fitting reviewers for your artifact.",
+      "description": "Please provide information on the hardware requirements and type of your artifact by selecting all topics that apply to your submission. This helps us to find fitting reviewers for your artifact.",
       "condition": true,
       "edit_condition": true,
       "required": "submit",
@@ -536,10 +539,10 @@
     },
     {
       "id": 3,
-      "name": "Credentials or access for reviewers (if needed)",
+      "name": "Credentials or other access for reviewers (if needed)",
       "order": 10,
       "type": "mtext",
-      "description": "If needed, please provide here any credential or access that reviewers may need to perform the evaluation of the artifact.\n\nExamples: VM access, SSH keys and config, VPN access, required password or API keys, etc.",
+      "description": "If needed, please provide here any credential or other access that reviewers may need to perform the evaluation of the artifact.\n\nExamples: VM access, SSH keys and config, VPN access, required password or API keys, private dataset, etc.\n\nMake sure to preserve the anonymity of the reviewer at any time.",
       "required": "no",
       "display": "rest",
       "visibility": "all",
@@ -726,10 +729,11 @@
         "viewrevid": "all",
         "assrev": "all",
         "unassrev": "all",
-        "viewtracker": "all",
         "admin": "none",
         "hiddentag": "none",
-        "viewallrev": "all"
+        "viewallrev": "all",
+        "comment": "all",
+        "viewtracker": "all"
       }
     }
   ]

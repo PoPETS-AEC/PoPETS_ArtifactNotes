@@ -96,26 +96,25 @@ Note that once your artifact evaluation is finalized and a badge decision has
 been made, artifact chairs will collect a stable and permanent reference to your
 artifact to list on the website. For repositories that evolve over time (e.g.,
 git repositories), this will be a specific commit-id or tag. We do not suggest
-providing such link here at submission time, as it is very likely that changes
-will happen during the evaluation process to address the reviewer's feedback
-and so the link would need to be updated.
+providing such link for your artifact here at submission time, as it is very
+likely that changes will happen during the evaluation process to address the
+reviewer's feedback and so the link would need to be updated.
 
-### Set up the environment (Required for Functional and Reproduced badges, encouraged for Available badge)
+### Set up the environment (Required for Functional and Reproduced badges)
 Replace the following by a description of how one should set up the environment
 for your artifact, including downloading and installing dependencies and the
-installation of the artifact itself (from the very first download or clone
-command reviewer should perform). Be as specific as possible here. If possible,
-use code segments to simply the workflow, e.g.,
+installation of the artifact itself (i.e., from the very first download or clone
+command one should perform). Be as specific as possible here. If possible, use
+code segments to simply the workflow, e.g.,
 
 ```bash
 git clone git@my_awesome_artifact.com/repo
 apt install libxxx xxx
-./setup-dependencies.sh
 ```
 
 Describe the expected results where it makes sense to do so.
 
-### Testing the Environment (Required for Functional and Reproduced badges, encouraged for Available badge)
+### Testing the Environment (Encouraged for Functional and Reproduced badges)
 Replace the following by a description of the basic functionality tests to check
 if the environment is set up correctly. These tests could be unit tests,
 training an ML model on very low training data, etc. If these tests succeed, all
@@ -128,13 +127,13 @@ the workflow, e.g.,
 
 Include the expected output for unambiguous outputs of tests.
 
-## Artifact Evaluation (Required for Functional and Reproduced badges, encouraged for Available badge)
+## Artifact Evaluation (Required for Functional and Reproduced badges)
 This section should include all the steps required to evaluate your artifact's
 functionality and validate your paper's key results and claims. Therefore,
 highlight your paper's main results and claims in the first subsection. And
 describe the experiments that support your claims in the subsection after that.
 
-### Main Results and Claims (Required for Functional and Reproduced badges, encouraged for Available badge)
+### Main Results and Claims (Required for Functional and Reproduced badges)
 List all your paper's results and claims that are supported by your submitted
 artifacts.
 
@@ -151,7 +150,7 @@ reproducible by executing [Experiment 2](#experiment-2-example-experiment)
 #### Main Result 3: Name
 ...
 
-### Experiments (Required for Functional and Reproduced badges, encouraged for Available badge)
+### Experiments (Required for Functional and Reproduced badges)
 List each experiment to execute to reproduce your results. Describe:
  - How to execute it in detailed steps.
  - What the expected result is.
@@ -185,10 +184,10 @@ simulation automatically with the different parameters specified in the paper.
 
 Results from this example experiment will be aggregated over several iterations
 by the script and output directly in raw format along with variances and
-confidence intervals in file `output-filename`, as well as `.pdf` format for the
-plot, and in `.tex` format for the table. These can be directly compared to the
-results reported in the paper, and should not vary by more than 10% from
-expected results.
+confidence intervals in the `output-folder/` directory. You will also find there
+the plots in `.pdf` format and the table in `.tex` format. These can be directly
+compared to the results reported in the paper, and should not vary by more than
+10% from expected results.
 
 #### Experiment 3: Name
 ...
@@ -198,7 +197,7 @@ Describe which steps, experiments, results, graphs, tables, etc. are included or
 are not reproducible with the provided artifact. Provide an argument why this is
 not included/possible.
 
-## Notes on Reusability (Required for Functional and Reproduced badges)
+## Notes on Reusability (Encouraged for all badges)
 First, this section might not apply to your artifacts. Use it to share
 information on how your artifact can be used beyond your research paper, e.g.,
 as a general framework. The overall goal of artifact evaluation is not only to
