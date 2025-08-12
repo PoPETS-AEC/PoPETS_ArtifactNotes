@@ -22,4 +22,4 @@ website](https://secartifacts.github.io/) as well.
 	- [PETS25](PETS2025/stats.md)
 - [Webpage](PETS2026/webpage.md)
 - [Communication Templates](PETS2026/communication-templates)
-- [File: ARTIFACT-EVALUATION.md](PETS2026/ARTIFACT-EVALUATION.md)
+- [File: ARTIFACT-APPENDIX.md](PETS2026/ARTIFACT-APPENDIX.md)
