@@ -6,7 +6,6 @@ authors of all accepted papers, and although they are optional, we strongly
 encourage you to submit your artifacts for review.
 
 Possible artifacts include (but are not limited to):
-
 - Source code (e.g., system implementations, proof of concepts)
 - Datasets (e.g., network traces, raw study data)
 - Scripts for data processing or simulations
@@ -69,7 +68,7 @@ the dependencies and prerequisites necessary to build the code.
   credentials with enough credits. Our reviewers won't invest their money or
   credit cards to set up accounts. If this cannot be provided, provide an
   alternative way of running your artifact. If this is not possible, reconsider
-  your choices of badges (see below).
+  your choices of badges (see badges guidance section).
 
 If the code is in a compiled language, the code should compile in the provided
 build environment by performing the provided instructions. Compilation and setup
@@ -116,10 +115,10 @@ Each accepted artifact can be granted up to three badges. During submission,
 authors must select which badges they want their artifacts to be evaluated
 against. To ease reviewing effort, we encourage authors to apply appropriately
 to all the badges for which they believe requirements are met by their artifact
-(see below). Our interpretation of the individual badges is aligned with the one
-of [other conferences](https://secartifacts.github.io/). If you have concerns or
-questions about these badges please contact the artifact evaluation chairs
-directly.
+(see details below). Our interpretation of the individual badges is aligned with
+the one of [other conferences](https://secartifacts.github.io/). If you have
+concerns or questions about these badges please contact the artifact evaluation
+chairs directly.
 
 ### Artifact Available
 This "Artifact Available" badge indicates that the artifact is publicly
@@ -160,8 +159,9 @@ machine learning model as a key component of the system, and so, achieving
 completeness may be difficult. Artifacts may rely on datasets that are too large
 to be included, or contain personally identifiable information, and so,
 satisfying exercisability may be difficult. Below the description of the three
-badges, we guide authors using some examples, on how they can still prepare
-their artifact to achieve the "Artifact Functional" badge in these cases.
+badges, authors will find examples on how they can still prepare their artifact
+to achieve the "Artifact Functional" badge in these cases (see badges guidance
+section).
 
 Checklist for "Functional Badge":
 - [ ] Clear documentation is provided.
@@ -204,11 +204,10 @@ results and the standard deviation, and check that results from the paper can be
 reproduced.
 
 Finally, some artifacts, such as longitudinal studies or hardware-based
-contributions, may be infeasible for the “Artifact Reproduced” badge (see
-examples provided below the description of the three badges), as reviewers have
-limited time and only commodity hardware available. Nevertheless, these authors
-can and should still prepare their artifacts for the “Artifact Functional”
-badge.
+contributions, may be infeasible for the “Artifact Reproduced” badge (see badges
+guidance below), as reviewers have limited time and only commodity hardware
+available. Nevertheless, these authors can and should still prepare their
+artifacts for the “Artifact Functional” badge.
 
 Note: by nature, an artifact awarded the "Artifact Reproduced" badge needs to
 also meet the requirements of the "Artifact Functional" badge.
@@ -231,8 +230,16 @@ to address reviewers' feedback, we will only collect this persistent and stable
 link (likely a DOI, or a link to a specific git commit/tag depending on the
 hosting option picked) after a final decision is made.
 
+### Badges Guidance
+Next, we provide some guidance around the choice of badges for authors, followed
+by a few examples encountered in past editions along with our suggestions to
+authors in similar situations.
 
-### Examples <ToDO review examples>
+
+**All submitted artifacts should apply for the "Available Badge"** unless
+
+
+
 Consider the experiments in your artifact as arranged in a pipeline of multiple
 stages, such as data collection, data processing, and producing plots or tables
 for the paper. The “Completeness” and “Exercisability” criteria require each
@@ -334,39 +341,70 @@ efficiency and effectiveness of your submission and review process. We eagerly
 anticipate receiving your high-quality contributions and look forward to
 showcasing your research!
 
-## Artifact Award <ToDo>
-<TODO notes> criteria, for reviewers: imagine that you were working in the field of
-that artifact, would you be able to reuse it easily?
+## Artifact Award
+Since PETS 2022, some artifacts are recognized by an [artifact
+award](https://petsymposium.org/artifact-award.php). The main objective through
+that award is to reward authors that put a lot of effort into the release of
+their artifact and to showcase great exemplars of submissions that exceptionally
+contribute to the open-science and reproducibility efforts of our community.
 
+Reviewers can nominate the artifact they are assigned to as an award candidate
+based on several criteria such as quality, completeness, documentation, ease of
+reuse, artifact maturity and audience, interactivity and responsiveness of
+authors, etc. Ultimately, nominations are reviewed and ranked.
 
-# What Makes a Good Review <Todo>
-The goal of our artifact evaluation is to ensure the artifacts are as useful as
-possible. Towards this goal, artifact evaluation process is interactive, and we
-expect the authors to take into account the reviewers' comments and modify their
-artifacts accordingly. As such, the reviews or posted comments should contain
-sufficient details for the authors to make the appropriate changes; for example,
-if the code fails, then reviewers should include the environment that it is run
-on and the error messages. After the authors have fixed the issues, they will
-add a comment on the submission site, at which point the reviewers can either
-approve the artifact or provide additional comments for another rounds of
-revision.
+Our suggestion to authors is really to just prepare and release their artifact
+in the same way that they wish anyone in their field would do to facilitate
+adoption and reproducibility by others.
 
-<TODO notes> interactive, have read the call for artifact and appendix to
-understand the requirements and asks from authors, start evaluation early,
-discuss and work with authors to fix their artifact if any issue, edit
-preliminary review as edits are made by authors, stay polite and considerate,
-tag Artifact Evaluation Chairs on artifacts that may need our attention for some
-reason or if any question.
+# What Makes a Good Review
+The goal of the artifact evaluation is to ensure that the released artifacts are
+as useful as possible to others. To that end, common best practices and
+requirements have been encoded in the form of three different badges:
+"Available", "Functional", "Reproduced" that authors can apply towards. Artifact
+reviewers are invited to familiarize themselves with the artifact call,
+guidelines, requirements, artifact appendix format, and other resources that
+have been shared with authors, and to reach out to artifact chairs with any
+question or confusion if something is not clear.
+
+Towards the goal of contributing to open-science and reproducibility, the
+artifact evaluation process is designed to be interactive; authors are expected
+to take into account reviewers' comments and modify their artifact accordingly.
+As such, reviewers are kindly asked to start their evaluation as early as
+possible and to post reviews or comments that contain sufficient details for the
+authors to make the appropriate changes. For example, if the code fails, then
+reviewers should include the environment that it is run on, the error messages,
+and potential steps that were attempted to fix them. It is crucial for the
+process that reviewers discuss and work with authors to help them improve their
+artifact: once authors communicate to reviewers that issues were resolved,
+reviewers should then take another look and, either, approve the artifact or
+provide additional comments if other revisions are needed, until a final
+decision is made.
+
+Some reviewing practical tips that usually facilitate things include:
+- Starting evaluation early.
+- Notifying artifact evaluation chairs as soon as possible if missing resources
+  or hardware to perform the evaluation.
+- Posting a preliminary review and updating it as authors make edits.
+- Providing a concise list of issues/suggestions first (this helps give an
+  overview to everyone), followed by more details if needed.
+- Explicitly numbering or naming these issues/suggestions (this facilitates
+  future references to them in comments between authors and reviewers).
+- Actively participating in the discussion between authors and reviewers.
+- Kindly pinging authors for updates or for a timeline if no status or answer.
+- Staying polite and professional.
+- Tagging artifact evaluation chairs if any question or if something need to be
+  brought up to their attention.
 
 ## Distinguished Artifact Reviewers
-Since PETS 2025, we recognize members of the artifact evaluation committee that
-go above and beyond as [distinguished artifact
-reviewers](https://petsymposium.org/reviewer-awards.php), based on:
-
+Since PETS 2025, we recognize some members of the artifact evaluation committee
+as [distinguished artifact
+reviewers](https://petsymposium.org/reviewer-awards.php), based on the following
+criteria:
 - Timeliness, including responding to authors’ updates.
 - High quality reviews and discussions that significantly improve the artifact.
-- Helping out with extra reviews e.g., for artifacts with special requirements,
-  etc.
+- Going above and beyond, helping out with extra reviews, helping with artifacts
+  with special requirements, etc.
 
 # Volunteer for the Artifact Evaluation Committee
 We are looking for volunteers to serve on the artifact evaluation committee. As
