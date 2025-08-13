@@ -90,22 +90,24 @@ everything and how to verify that everything is set up correctly.
 ### Accessibility (Required for all badges)
 Replace the following by a description of how to access your artifact via
 persistent sources. Valid hosting options are institutional and third-party
-digital repositories. Do not use personal web pages.
+digital repositories (e.g., GitHub, Gitlab, BitBucket, Zenodo, Figshare, etc.).
+Please do not use personal web pages or cloud storage services like Google
+Drive, Dropbox, etc.
 
 Note that once your artifact evaluation is finalized and a badge decision has
-been made, artifact chairs will collect a stable and permanent reference to your
-artifact to list on the website. For repositories that evolve over time (e.g.,
-git repositories), this will be a specific commit-id or tag. We do not suggest
-providing such link for your artifact here at submission time, as it is very
-likely that changes will happen during the evaluation process to address the
-reviewer's feedback and so the link would need to be updated.
+been made, artifact chairs will collect a stable and persistent reference to
+your artifact to list on the website. For repositories that evolve over time
+(e.g., git repositories), this will be a specific commit-id or tag. We do not
+suggest providing such link for your artifact here at submission time, as it is
+very likely that changes will happen during the evaluation process to address
+the reviewer's feedback requiring the link to be updated.
 
 ### Set up the environment (Required for Functional and Reproduced badges)
 Replace the following by a description of how one should set up the environment
 for your artifact, including downloading and installing dependencies and the
 installation of the artifact itself (i.e., from the very first download or clone
 command one should perform). Be as specific as possible here. If possible, use
-code segments to simply the workflow, e.g.,
+code segments to simplify the workflow, e.g.,
 
 ```bash
 git clone git@my_awesome_artifact.com/repo
@@ -159,8 +161,8 @@ List each experiment to execute to reproduce your results. Describe:
  - Which claim and results does it support, and how.
 
 #### Experiment 1: Name
-- Time: replace with estimate in human-minutes/hours + compute-minutes/hours
-- Storage: replace with estimate if >10GB
+- Time: replace with estimate in human-minutes/hours + compute-minutes/hours.
+- Storage: replace with estimate for disk space used (omit if <10GB).
 
 Provide a short explanation of the experiment and expected results. Describe
 thoroughly the steps to perform the experiment and to collect and organize the
@@ -184,10 +186,10 @@ simulation automatically with the different parameters specified in the paper.
 
 Results from this example experiment will be aggregated over several iterations
 by the script and output directly in raw format along with variances and
-confidence intervals in the `output-folder/` directory. You will also find there
-the plots in `.pdf` format and the table in `.tex` format. These can be directly
-compared to the results reported in the paper, and should not vary by more than
-10% from expected results.
+standard deviations in the `output-folder/` directory. You will also find there
+the plots for "Figure F" in `.pdf` format and the table for "Table T" in `.tex`
+format. These can be directly compared to the results reported in the paper, and
+should not vary by more than 5% from expected results.
 
 #### Experiment 3: Name
 ...

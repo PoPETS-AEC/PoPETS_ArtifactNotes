@@ -1,5 +1,4 @@
 # PoPETs 2026 Artifact Evaluation
-
 PoPETs reviews and publishes digital artifacts related to its accepted papers.
 This process aids in the reproducibility of results and allows others to build
 on the work described in the papers. Artifact submissions are requested from
@@ -25,7 +24,6 @@ with a link to the artifact along with the obtained artifact badges so that
 interested readers can find and use your hard work.
 
 ## Artifact Submission Guidelines
-
 - All submitted artifacts should be relevant to their corresponding PoPETs
   paper. Please upload a copy of your paper.
 - Many papers have several artifacts (e.g., multiple source code repositories,
@@ -48,7 +46,6 @@ interested readers can find and use your hard work.
 
 
 ### Source Code Submissions
-
 All source code should be accompanied by a `README.md` file or other
 documentation that describes how to build and/or run the code. Reviewers will
 provide feedback on the clarity of the instructions and attempt to follow them
@@ -91,20 +88,19 @@ Our goal is that the artifacts are useful for as long as possible. Some tips
 on improving the longevity of your source code artifact are:
 - Include and pin the versions of your software's dependencies wherever
   possible.
-- Reference specific hashes of git commits for additional git repositories you
-  may be using (we suggest using [git
+- Reference specific hashes of git commits if using several git repositories (we
+  suggest using [git
   submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)).
 - Virtual machine images or Docker images tend to last longer than their
   respective install scripts or Docker files and allow researchers to more
   accurately reproduce your exact execution environment, though the trade-off is
   that they will be larger. If you make images available, we also require that
   you also release the scripts or files that let you build them.
-- Artifacts are not required to be able to run on all hardware and OSes. If
-  your artifact requires any particular hardware/OS for valid reasons,
-  please make it clear in the submission.
+- Artifacts are not required to be able to run on all hardware and OSes. If your
+  artifact requires any particular hardware/OS for reasonable reasons, please
+  make it clear in the submission.
 
 ### Dataset Submissions
-
 - All datasets should be clearly documented in a way that allows researchers
   working on similar problems to re-use the dataset for their work.
 - If the dataset includes survey results, provide a copy of the original survey
@@ -116,15 +112,14 @@ on improving the longevity of your source code artifact are:
   in the paper.
 
 ## Artifact Badges
-
 Each accepted artifact can be granted up to three badges. During submission,
 authors must select which badges they want their artifacts to be evaluated
 against. To ease reviewing effort, we encourage authors to apply appropriately
 to all the badges for which they believe requirements are met by their artifact
-(see below). Our interpretation of the individual badges is globally aligned
-with the ones of [other conferences](https://secartifacts.github.io/). If you
-have concerns or questions about these badges please contact the artifact
-evaluation chairs directly.
+(see below). Our interpretation of the individual badges is aligned with the one
+of [other conferences](https://secartifacts.github.io/). If you have concerns or
+questions about these badges please contact the artifact evaluation chairs
+directly.
 
 ### Artifact Available
 This "Artifact Available" badge indicates that the artifact is publicly
@@ -149,10 +144,11 @@ Checklist for "Available Badge":
 - [ ] Relevant to paper.
 - [ ] Corresponding content from `ARTIFACT-APPENDIX.md` completed.
 
-### Artifact Functional <ToDO: review>
-For the "Artifact Functional" badge the artifact should satisfy these criteria:
-- Documentation: It clearly documents how it relates to the paper, and how it
-  should be used.
+### Artifact Functional
+To be awarded the "Artifact Functional" badge the artifact should satisfy these
+criteria:
+- Documentation: The artifact clearly documents how it relates to the paper, and
+  how it should be used (i.e., installation + execution).
 - Completeness: It includes all the core contributions described in the paper.
 - Exercisability: It includes the scripts and data needed to run the experiments
   described in the paper. The software must successfully execute or compile in
@@ -163,49 +159,68 @@ exercisability criteria. For instance, an artifact may have a proprietary
 machine learning model as a key component of the system, and so, achieving
 completeness may be difficult. Artifacts may rely on datasets that are too large
 to be included, or contain personally identifiable information, and so,
-satisfying exercisability is difficult. We guide authors below, using some
-examples, on how they can still prepare their artifact to achieve this badge.
-Additionally, some artifacts, such as longitudinal studies or hardware-based
-contributions, may be infeasible for the “Artifact Reproduced” badge (see
-below), as reviewers have limited time and only commodity hardware available.
-Nevertheless, these authors can prepare their artifacts for the “Artifact
-Functional” badge, as described in the examples:
+satisfying exercisability may be difficult. Below the description of the three
+badges, we guide authors using some examples, on how they can still prepare
+their artifact to achieve the "Artifact Functional" badge in these cases.
 
 Checklist for "Functional Badge":
-- [ ] 
+- [ ] Clear documentation is provided.
+- [ ] Completeness criterion fulfilled (with potential limitations reasonably argued).
+- [ ] Exercisability criterion fulfilled (with potential limitations reasonably argued).
 - [ ] Corresponding content from `ARTIFACT-APPENDIX.md` completed.
 
-<TODO Notes> 
-IP protections and commercialization prospects should not inhibit this; e.g.
-authors can choose restrictive licenses that prohibit others from using their
-code or design a smaller working prototype to demonstrate reproducibility; the
-Functional + Reproduced badge combo can be used towards this. 
-
-SLURM cluster -> smaller example?
-
-
-### Artifact Reproduced <ToDO: review>
+### Artifact Reproduced
 The "Artifact Reproduced" badge requires the core contributions of the paper to
 be reproduced by the reviewers. Authors must specify the commands to run the
 artifacts clearly and describe how to reproduce each core finding of the paper.
 Best practice is to point out which part of the paper is reproduced by a given
 script, e.g., name the table or figure. Also, the authors must highlight which
-results of the paper are not reproducible with the given artifacts and argue
-why.
+results of the paper are not reproducible with the given artifacts and
+reasonably argue why. Additionally, authors are encouraged to contemplate how
+their artifact could be re-used by others in the future and describe potential
+ways for improvement, etc.
 
+Authors are also asked to automate as much as possible the execution of the
+experiments, manual effort from reviewers to run and interpret the results
+should be kept to a minimum. For instance, if an experiment is performing a swap
+across different parameters, a script automating it should be provided. Ideally,
+results should also be automatically parsed and output in a comprehensible way.
+
+To award the "Artifact Reproduced" badge, reviewers must be absolutely confident
+that they can reproduce the core results of the paper with the provided
+artifact. As a rule of thumb, a claim should be considered reproducible if the
+results by reviewers are within 5% of the reported value in the paper. It is the
+reviewer's role to enforce that this expectation (or a similar one adapted to
+each specific artifact) is met before awarding the "Artifact Reproduced" badge.
+
+Additionally, some experiments may by nature be harder to fully reproduced
+during the timeframe of the artifact evaluation: e.g., take a while to run, need
+several iterations, train a model on a large dataset, etc. In these cases,
+authors should still provide the instructions and expected results for the
+"long" version of the experiment, and if possible, also for a "shorter" one
+(e.g., fewer iterations, smaller dataset, etc.). Indeed, even on a shorter
+version or fewer runs, reviewers should still somewhat be able to look at the
+results and the standard deviation, and check that results from the paper can be
+reproduced.
+
+Finally, some artifacts, such as longitudinal studies or hardware-based
+contributions, may be infeasible for the “Artifact Reproduced” badge (see
+examples provided below the description of the three badges), as reviewers have
+limited time and only commodity hardware available. Nevertheless, these authors
+can and should still prepare their artifacts for the “Artifact Functional”
+badge.
+
+Note: by nature, an artifact awarded the "Artifact Reproduced" badge needs to
+also meet the requirements of the "Artifact Functional" badge.
 
 Checklist for "Reproduced Badge":
-- [ ] 
+- [ ] Meets "Functional Badge" requirements.
+- [ ] List of the core contributions and claims of the paper identified.
+- [ ] Clear mapping between claims, experiments, and results provided.
+- [ ] Minimal amount of manual effort required from reviewers, i.e., fair amount
+  of automation.
+- [ ] Reviewers obtain reproducible results (i.e., within 5% of the claimed value).
 - [ ] Corresponding content from `ARTIFACT-APPENDIX.md` completed.
-
-
-<TODO notes> Note that minor additional experiments that do not significantly
-contribute to the paper may not be included in the artifact.
-
-Make it clear that reviewers are supposed to look at the standard deviation figs
-and then even with fewer runs than the total number used in the paper, they can
-still check whether the results have been reproduced.
-
 
 ### Persistent and Stable Link
 When the artifact evaluation is over, a persistent and stable link pointing to
@@ -262,8 +277,16 @@ publish the raw results of the experiments, so that reviewers can verify the
 remaining stages as functional.
 
 
-# What makes a Good Submission
+<TODO Notes> 
+IP protections and commercialization prospects should not inhibit this; e.g.
+authors can choose restrictive licenses that prohibit others from using their
+code or design a smaller working prototype to demonstrate reproducibility; the
+Functional + Reproduced badge combo can be used towards this. 
 
+SLURM cluster -> smaller example?
+
+
+# What makes a Good Submission
 To ensure a smooth submission process, please follow these important guidelines:
 
 Authors should fill out the [ARTIFACT-APPENDIX.md](ARTIFACT-APPENDIX.md) file
@@ -278,14 +301,14 @@ fresh install (or ask an acquaintance to do so) and fix potential issues that
 are uncovered before submission.
 
 Authors are also encouraged to check out the [resources and
-examples](TODO-ADD_LINK) of artifact packaging that have been put together by
-the artifact evaluation chairs. These guides describe some best practices and
-ways to package artifact for different popular programming workflows, authors
-should feel free to use them as starting point and build on them to package and
-release their artifact. Note that these resources are not comprehensive, so
-authors and reviewers are asked please to not interpret them as the only way to
-package an artifact (we also welcome suggestions to these resources in the form
-of issues, pull requests, or direct contributions).
+examples](https://github.com/PoPETS-AEC) of artifact packaging that have been
+put together by the artifact evaluation chairs. These guides describe some best
+practices and ways to package artifact for different popular programming
+workflows, authors should feel free to use them as starting point and build on
+them to package and release their artifact. Note that these resources are not
+comprehensive, so authors and reviewers are asked please to not interpret them
+as the only way to package an artifact (we also welcome suggestions to these
+resources in the form of issues, pull requests, or direct contributions).
 
 For the "Artifact Functional" and/or "Artifact Reproduced" badges, very clear
 documentation, instructions, and mapping between claims, results, and
@@ -312,13 +335,11 @@ anticipate receiving your high-quality contributions and look forward to
 showcasing your research!
 
 ## Artifact Award <ToDo>
-
 <TODO notes> criteria, for reviewers: imagine that you were working in the field of
 that artifact, would you be able to reuse it easily?
 
 
 # What Makes a Good Review <Todo>
-
 The goal of our artifact evaluation is to ensure the artifacts are as useful as
 possible. Towards this goal, artifact evaluation process is interactive, and we
 expect the authors to take into account the reviewers' comments and modify their
@@ -338,7 +359,6 @@ tag Artifact Evaluation Chairs on artifacts that may need our attention for some
 reason or if any question.
 
 ## Distinguished Artifact Reviewers
-
 Since PETS 2025, we recognize members of the artifact evaluation committee that
 go above and beyond as [distinguished artifact
 reviewers](https://petsymposium.org/reviewer-awards.php), based on:
@@ -348,9 +368,7 @@ reviewers](https://petsymposium.org/reviewer-awards.php), based on:
 - Helping out with extra reviews e.g., for artifacts with special requirements,
   etc.
 
-
 # Volunteer for the Artifact Evaluation Committee
-
 We are looking for volunteers to serve on the artifact evaluation committee. As
 a committee member, you will perform review of artifacts according to the
 guidelines above. We are looking for volunteers who will be interested in
