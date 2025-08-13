@@ -158,10 +158,18 @@ exercisability criteria. For instance, an artifact may have a proprietary
 machine learning model as a key component of the system, and so, achieving
 completeness may be difficult. Artifacts may rely on datasets that are too large
 to be included, or contain personally identifiable information, and so,
-satisfying exercisability may be difficult. Below the description of the three
-badges, authors will find examples on how they can still prepare their artifact
-to achieve the "Artifact Functional" badge in these cases (see badges guidance
-section).
+satisfying exercisability may be difficult. 
+
+Consider the experiments in your artifact as arranged in a pipeline of multiple
+stages, such as data collection, data processing, and producing plots or tables
+for the paper. The "Completeness" and 'Exercisability" criteria require each
+stage to be represented. Our key advice is to present each stage, including the
+ones that cannot be fully run. These can be represented in either a simplified
+manner or run on dummy data to check the functionality of the stage. If
+possible, provide the expected outcome of the fully run stage such that
+preceding stages are performed on 'real' data again. We provide under the
+"Badges Guidance" section, some specific examples on how authors can still
+prepare their artifact for the "Artifact Functional" badge in these cases.
 
 Checklist for "Functional Badge":
 - [ ] Clear documentation is provided.
@@ -197,11 +205,10 @@ Additionally, some experiments may by nature be harder to fully reproduced
 during the timeframe of the artifact evaluation: e.g., take a while to run, need
 several iterations, train a model on a large dataset, etc. In these cases,
 authors should still provide the instructions and expected results for the
-"long" version of the experiment, and if possible, also for a "shorter" one
-(e.g., fewer iterations, smaller dataset, etc.). Indeed, even on a shorter
-version or fewer runs, reviewers should still somewhat be able to look at the
-results and the standard deviation, and check that results from the paper can be
-reproduced.
+"long" version of the experiment, and also for a simplified one (e.g., fewer
+iterations, smaller dataset, etc.). Indeed, even on a simplified version or
+fewer runs, reviewers should still somewhat be able to look at the results and
+the standard deviation, and check that results from the paper can be reproduced.
 
 Finally, some artifacts, such as longitudinal studies or hardware-based
 contributions, may be infeasible for the “Artifact Reproduced” badge (see badges
@@ -235,63 +242,59 @@ Next, we provide some guidance around the choice of badges for authors, followed
 by a few examples encountered in past editions along with our suggestions to
 authors in similar situations.
 
+**All submitted artifacts should apply at least for "Artifact Available".**
+Unless for some unusual and reasonably justified cases, when doing so could
+endanger someone. For instance, if the artifact demonstrates exploiting a
+vulnerability and making the artifact available would harm users, authors could
+apply for just the "Functional and Reproduced Badges". Note that IP protections
+and commercialization prospects should not inhibit authors from applying for the
+"Artifact Available" badge; e.g., authors can choose restrictive licenses that
+prohibit others from using their code or design a smaller working prototype to
+demonstrate reproducibility.
 
-**All submitted artifacts should apply for the "Available Badge"** unless
+**Lengthy experiment runtimes or large amount of compute resources needed.**
+Although experiments may require days or weeks of compute time on commodity
+hardware, the "Artifact Functional" badge can usually still be achieved. In such
+cases, authors should also provide a simplified version of the experiments,
+which may run on fewer data or fewer epochs of time, in order to enable the
+reviewers to check the functionality of that stage. Authors should additionally
+provide results of the full experiments in the repository, so that reviewers can
+verify the functionality of the later stages with these results. A similar
+approach could also be adopted to apply for the "Artifact Reproduced" badge, if
+the results of the simplified experiments somewhat align with the ones reported
+in the paper.
 
-
-
-Consider the experiments in your artifact as arranged in a pipeline of multiple
-stages, such as data collection, data processing, and producing plots or tables
-for the paper. The “Completeness” and “Exercisability” criteria require each
-stage to be represented. Our key advice is to present each stage, including the
-ones that cannot be fully run. These can be represented in either a simplified
-manner or run on dummy data to check the functionality of the stage. If
-possible, provide the expected outcome of the fully run stage such that
-preceding stages are performed on 'real' data again. In the following we
-present some examples:
-
-**Tools based on large machine learning (ML) models.** If an ML model is
-required to execute the presented tool, the authors should provide it, unless it
-is proprietary. Authors may use `git-lfs` to commit large model files to their
-repository. If they can not share the model, we expect them to share a dummy
-model, which may perhaps perform worse, but which can be used to test the
+**Tools based on large datasets, machine learning (ML) models, or other files.**
+If a large dataset, ML model, or other file is required to execute the presented
+tool, the authors should provide it, unless it is proprietary. If they can not
+share the dataset or model, we expect them to share a synthetic dataset or dummy
+model, which may, perhaps perform worse, but which can be used to test the
 principle functionality of the presented tool. Ideally, authors should provide
 the code to train the original model, though depending on the contributions of
 the paper, it need not be executed.
 
-**Lengthy experiment runtimes.** Similar to the point above, even if the
-experiment requires days or weeks of compute time on commodity hardware, the
-"Artifact Functional" badge can be achieved. In such cases the authors should
-also provide a simplified version of the experiment, which may run on less
-training data or for fewer epochs of time, in order to enable the reviewers to
-check the functionality of that stage. Authors should additionally provide
-results of the full experiments in the repository, so that reviewers can verify
-the functionality of the later stages with these results.
+Authors should note that the hosting options that we consider as valid have
+different file size limits and constraints and that dividing or compressing such
+large files may be needed. For instance, GitHub has a 100MiB file size limit and
+that `git-lfs` can be used to commit large files (2GB limit). For Zenodo (our
+suggestion to host datasets), the per record limitation is 50GB/100 files with a
+one-time quota increase up to 200GB per record. Other alternatives (HuggingFace,
+OCI containers, etc.) exist and would need to be explored by authors to see if
+they meet their artifact's needs.
 
-**User studies, longitudinal studies and crawls.**  Some studies cannot be
-repeated within the reviewing process. However, the authors should provide the
-evaluation scripts to reproduce the main results of the paper. Pseudonymized raw
-data should also be provided, unless forbidden by legal requirements, privacy,
-or ethical concerns. In such cases, a data set with dummy data should be
-included. Reviewers should be able to execute the evaluation scripts on either
-the pseudonymized raw data or dummy data.
+**User studies, longitudinal studies, and crawls.** Some studies cannot be
+repeated within the reviewing process. However, the authors should still provide
+the evaluation scripts to reproduce the main results of the paper. Anonymized
+raw data should also be provided, unless forbidden by legal requirements,
+privacy, or ethical concerns. In such cases, a dataset with dummy or synthetic
+data should be included. Reviewers should be able to execute the evaluation
+scripts on either anonymized raw data or dummy data.
 
 **Hardware-based contributions.** If the artifact requires certain hardware,
-please request for it within the "hardware requirement" section in the
-[ARTIFACT-APPENDIX.md](ARTIFACT-APPENDIX.md) template. If special physical
-setups are required, the authors may simulate the hardware. Authors should
-publish the raw results of the experiments, so that reviewers can verify the
-remaining stages as functional.
-
-
-<TODO Notes> 
-IP protections and commercialization prospects should not inhibit this; e.g.
-authors can choose restrictive licenses that prohibit others from using their
-code or design a smaller working prototype to demonstrate reproducibility; the
-Functional + Reproduced badge combo can be used towards this. 
-
-SLURM cluster -> smaller example?
-
+please make sure to indicate it adequately at submission time. If special
+physical setups are required, the authors may simulate the hardware. Authors
+should also publish the raw results of the experiments, so that reviewers can
+verify the remaining stages as functional.
 
 # What makes a Good Submission
 To ensure a smooth submission process, please follow these important guidelines:
@@ -381,8 +384,8 @@ reviewers should then take another look and, either, approve the artifact or
 provide additional comments if other revisions are needed, until a final
 decision is made.
 
-Some reviewing practical tips that usually facilitate things include:
-- Starting evaluation early.
+Some reviewing practical tips include:
+- Starting the evaluation early.
 - Notifying artifact evaluation chairs as soon as possible if missing resources
   or hardware to perform the evaluation.
 - Posting a preliminary review and updating it as authors make edits.
@@ -390,7 +393,7 @@ Some reviewing practical tips that usually facilitate things include:
   overview to everyone), followed by more details if needed.
 - Explicitly numbering or naming these issues/suggestions (this facilitates
   future references to them in comments between authors and reviewers).
-- Actively participating in the discussion between authors and reviewers.
+- Actively participating in the discussions.
 - Kindly pinging authors for updates or for a timeline if no status or answer.
 - Staying polite and professional.
 - Tagging artifact evaluation chairs if any question or if something need to be
