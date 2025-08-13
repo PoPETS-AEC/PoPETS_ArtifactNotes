@@ -5,12 +5,12 @@ Artifact Evaluation of PETS
 
 ## New artifact chair
 
-- Send email to candidate that was picked
+- Send invite email to candidate that was picked
 - Video call for onboarding
 - Give access to GitHub organization, Slack with other Artifact chairs from
   other conferences, create artifactYY@email alias
 - Make admin on past year’s instances to navigate and poke around (familiarize with things)
-- Attend current PETS if possible
+- Attend current PETS if possible, collect suggestions from authors
 - Help with potential backlog of artifact reviews
 - Help extract statistics, review slides for town hall, awards, BoF session,
   etc.
@@ -19,11 +19,11 @@ Artifact Evaluation of PETS
 
 
 - Overview role: preparing submission servers for artifacts, updating calls,
-  fixing deadlines, putting together a PC, managing submissions, bidding,
-  assigning reviews, sharing with publicity chairs the list of accepted
-  artifacts, communicating with chairs from regular PC for artifact invite
-  (initial email being sent to authors), maintaining list of authors and papers
-  from previous rounds and status.
+fixing deadlines, putting together a PC, managing submissions, bidding,
+assigning reviews, sharing with publicity chairs the list of accepted
+artifacts, communicating with chairs from regular PC for artifact invite
+(initial email being sent to authors), maintaining list of authors and papers
+from previous rounds and status.
 
 - A lot of emails and reminders to stay on top of things for each round.
 
@@ -34,15 +34,13 @@ overwhelming handling the last round alone since usually there are double as
 many artifacts as in the previous rounds.
 
 - Finalizing the list of all papers, with their final badges (which may differ
-  from the initial ones) and their final links to be sent to the web chairs
+from the initial ones) and their final links to be sent to the web chairs
 
 - Infrastructure Chair deploys the hotcrp instance and configures email alias
-  for chairs
+for chairs
 
-- Artifact Infrastructure Chair for the VMs (Tobias Fiebig) “Technically, this
-is not me, but https://measurement.network providing the service... but I am
-currently the main person doing things there (frantically trying to onboard
-more, but still a way to go. ;-))”
+- Artifact Infrastructure Chair for the VMs (Tobias Fiebig through the service
+  https://measurement.network that he created).
 
 ## Starting a new year for artifact review
 
@@ -107,6 +105,66 @@ Configure the "Review form" accordingly.
 
 You can see the [HotCRP site configuration used in 2026 here](/PETS2026/hotcrp-site-configuration.json)
 
+### VM instances
+
+We offer VMs to reviewers for artifact evaluation if necessary. These VMs can be
+directly spawn from the HotCRP interface. This is a service provided by
+https://measurement.network currently ran by Tobias Fiebig.
+
+We need to contact the infrastructure chair in charge of the VMs for integration
+with the HotCRP instance. Essentially, they apply patches to the HotCRP source
+code to add an integration with a hypervisor that allows for the creation and
+management of VMs from the submission website. Thanks to these patches, we also
+support markdown for reviews and comments (which is very useful for artifact
+evaluation).
+
+As of 2026, the VM types (for 22.04 and 24.04) available are:
+
+- Standard (16gb memory, 4 cores, 40GB Disk)
+- Docker pre-installed (16gb memory, 4 cores, 40GB Disk)
+- Compute (64gb memory, 16 cores, 100GB Disk)
+- scan (16gb memory, 4 cores, 40GB Disk; Like base, but on a dedicated network
+  and auto-configuring a webserver with information on these systems being used
+  for artifact evaluation for active measurements; This has blanket-coverage
+  from our IRB for artifact evaluation, as long as the original paper got IRB
+  clearance from their own org.)
+
+Additionally, there are gpu-0x01 and gpu-0x02. These are VMs with 64gb memory
+and 16 cores, and each with a dedicated NVIDIA A30.
+
+In general, only _one_ instance of each (gpu-0x01 and gpu-0x02) can be running
+at the same time. Multiple users can have shut-down VMs, though.
+
+So, for example:
+
+User A, User B and User C create a gpu-0x01 instance (no matter if ubuntu 22.04
+or ubuntu 24.04). If User A is running the VM, and User B wants to use it, User
+A must shut down the VM. However, when User B is done and shuts it down, User A
+can boot their instance again, and all data will have been persistent.
+
+The same for GPU-0x02; And, of course, _one_ instance of each can run in
+parallel, but does _not_ share data.
+
+So, in the example above, if User A runs GPU-0x01, and User C wants to also use
+their GPU-0x01, but instead decides to boot up a new GPU-0x02 instance, they
+will not have access to their data from their GPU-0x01 instance.
+
+
+Users can (and should!) shutdown and delete their VMs as soon as they are done
+with them. Of course, users usually forget, so you (as chair) should have an eye
+on that.
+
+The GPU VMs are somewhat special, and you should stay on top of their use, i.e.,
+ensure that people check in with you when using them, and also turn them off
+when they are no longer needed.
+
+
+Once artifact evaluations are finalized for an issue, contact back the
+infrastructure chair in charge of the VMs for them to remove the VMs and disable
+the VM integration with the HotCRP instance.
+
+
+Related archive file: [PETS2024/terms-of-use-vm.md](PETS2024/terms-of-use-vm.md)
 
 ## Invite to submit an artifact and badge notification
 After a paper has been accepted to an issue of PoPETs the list of accepted
