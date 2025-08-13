@@ -29,14 +29,15 @@ interested readers can find and use your hard work.
   datasets, build environments), which is great! Please keep in mind that we'll
   need a single link to put on the PETS website and that all artifacts
   associated with your paper should be discoverable from that one link. If you
-  have several git repositories, we suggest using
-  [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
+  have several git repositories, we suggest using [git
+  submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 - Please include a `README.md` file with your submission that briefly explains
   the type and purpose of the artifact. At a prominent position in the
   `README.md` file make clear to which paper the artifact belongs (i.e., paper
   title, authors, year, even BibTeX cite if you want) and how the artifact is
   relevant to the paper.
-- Please include the content of the [ARTIFACT-APPENDIX.md](ARTIFACT-APPENDIX.md)
+- Please include the content of the
+  [ARTIFACT-APPENDIX.md](https://petsymposium.org/files/ARTIFACT-APPENDIX.md)
   file in your artifact (either include it in the `README.md` file or add it as
   a separate file.). It contains information that should be filled out by
   authors and that is important for not only reviewers during the evaluation
@@ -50,9 +51,9 @@ documentation that describes how to build and/or run the code. Reviewers will
 provide feedback on the clarity of the instructions and attempt to follow them
 and build and/or run the code.
 
-Any source code submissions should be accompanied by a build environment such
-as a virtual machine or a Docker container that has been configured with all
-the dependencies and prerequisites necessary to build the code.
+Any source code submissions should be accompanied by a build environment such as
+a virtual machine or a Docker container that has been configured with all the
+dependencies and prerequisites necessary to build the code.
 - If you use a virtual machine, please state how many resources it will consume
   and any configuration steps that are required. Your virtual machine should not
   usually have to download additional dependencies when you run your
@@ -83,8 +84,8 @@ The following resources may help you to choose a license:
     https://www.gnu.org/licenses/license-list.en.html and
     https://opensource.org/licenses
 
-Our goal is that the artifacts are useful for as long as possible. Some tips
-on improving the longevity of your source code artifact are:
+Our goal is that the artifacts are useful for as long as possible. Some tips on
+improving the longevity of your source code artifact are:
 - Include and pin the versions of your software's dependencies wherever
   possible.
 - Reference specific hashes of git commits if using several git repositories (we
@@ -173,8 +174,10 @@ prepare their artifact for the "Artifact Functional" badge in these cases.
 
 Checklist for "Functional Badge":
 - [ ] Clear documentation is provided.
-- [ ] Completeness criterion fulfilled (with potential limitations reasonably argued).
-- [ ] Exercisability criterion fulfilled (with potential limitations reasonably argued).
+- [ ] Completeness criterion fulfilled (with potential limitations reasonably
+  argued).
+- [ ] Exercisability criterion fulfilled (with potential limitations reasonably
+  argued).
 - [ ] Corresponding content from `ARTIFACT-APPENDIX.md` completed.
 
 ### Artifact Reproduced
@@ -225,7 +228,8 @@ Checklist for "Reproduced Badge":
 - [ ] Clear mapping between claims, experiments, and results provided.
 - [ ] Minimal amount of manual effort required from reviewers, i.e., fair amount
   of automation.
-- [ ] Reviewers obtain reproducible results (i.e., within 5% of the claimed value).
+- [ ] Reviewers obtain reproducible results (i.e., within 5% of the claimed
+  value).
 - [ ] Corresponding content from `ARTIFACT-APPENDIX.md` completed.
 
 ### Persistent and Stable Link
@@ -299,7 +303,8 @@ verify the remaining stages as functional.
 # What makes a Good Submission
 To ensure a smooth submission process, please follow these important guidelines:
 
-Authors should fill out the [ARTIFACT-APPENDIX.md](ARTIFACT-APPENDIX.md) file
+Authors should fill out the
+[ARTIFACT-APPENDIX.md](https://petsymposium.org/files/ARTIFACT-APPENDIX.md) file
 provided and include it in their artifact (either in the `README.md` file or as
 a separate file). Check the badges you deem reasonable for your artifact and, if
 necessary, describe which stages are simplified or skipped and why. This will
@@ -334,8 +339,8 @@ constructive discussions and allow for timely feedback incorporation.
 
 Lastly, in the event that changes are requested during the review process, we
 kindly ask authors to endeavor to incorporate them, at least partially, within
-two weeks after the request. These requested modifications should not be left
-to the last minute, if some fixes require more time, authors are encouraged to
+two weeks after the request. These requested modifications should not be left to
+the last minute, if some fixes require more time, authors are encouraged to
 communicate a timeline by which these changes will be made for reviewers to best
 plan around for their evaluation.
 
