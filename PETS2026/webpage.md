@@ -6,21 +6,20 @@ authors of all accepted papers, and although they are optional, we strongly
 encourage you to submit your artifacts for review.
 
 Possible artifacts include (but are not limited to):
-- Source code (e.g., system implementations, proof of concepts)
+- Source code (e.g., system implementation, proof of concepts)
 - Datasets (e.g., network traces, raw study data)
-- Scripts for data processing or simulations
 - Machine-generated proofs
 - Formal specifications
 - Build environments (e.g., VMs, Docker containers, configuration scripts)
+- User study questionnaires and aggregate, anonymized results (after ethical considerations)
 
-Artifacts are evaluated by the artifact evaluation committee. The committee
-evaluates the artifacts to ensure that they provide an acceptable level of
-utility. Issues considered include software bugs, readability of the
-documentation, appropriate licensing, and the reproducibility of the results
-presented in the paper. After your artifact has been approved by the committee,
-we will accompany the paper link on [petsymposium.org](https://petsymposium.org)
-with a link to the artifact along with the obtained artifact badges so that
-interested readers can find and use your hard work.
+Artifacts are evaluated by the artifact evaluation committee. Issues considered 
+include software bugs, readability of the documentation, appropriate licensing, 
+and the reproducibility of the results presented in the paper. After your artifact 
+has been approved by the committee,
+the paper link on [petsymposium.org](https://petsymposium.org) will be accompanied
+by a link to the artifact along with the obtained artifact badges so that
+interested readers can find and build upon your work.
 
 ## Artifact Submission Guidelines
 - All submitted artifacts should be relevant to their corresponding PoPETs
