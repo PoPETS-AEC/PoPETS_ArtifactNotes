@@ -316,14 +316,15 @@ fresh install (or ask an acquaintance to do so) and fix potential issues that
 are uncovered before submission.
 
 Authors are also encouraged to check out the [resources and
-examples](https://github.com/PoPETS-AEC) of artifact packaging that have been
-put together by the artifact evaluation chairs. These guides describe some best
-practices and ways to package artifact for different popular programming
-workflows, authors should feel free to use them as starting point and build on
-them to package and release their artifact. Note that these resources are not
-comprehensive, so authors and reviewers are asked please to not interpret them
-as the only way to package an artifact (we also welcome suggestions to these
-resources in the form of issues, pull requests, or direct contributions).
+examples](https://github.com/PoPETS-AEC/examples-and-other-resources) of
+artifact packaging that have been put together by the artifact evaluation
+chairs. These guides describe some best practices and ways to package artifact
+for different popular programming workflows, authors should feel free to use
+them as starting point and build on them to package and release their artifact.
+Note that these resources are not comprehensive, so authors and reviewers are
+asked please to not interpret them as the only way to package an artifact (we
+also welcome suggestions to these resources in the form of issues, pull
+requests, or direct contributions).
 
 For the "Artifact Functional" and/or "Artifact Reproduced" badges, very clear
 documentation, instructions, and mapping between claims, results, and
