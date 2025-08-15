@@ -53,9 +53,10 @@ relevant in cases were results might be influenced by the hardware used (e.g.,
 performance and timing experiments, etc.).
 
 ### Software Requirements (Required for Functional and Reproduced badges, encouraged for Available badge)
-Replace the following by the minimal OS and software requirements to evaluate
-your artifact. This description is essential if you rely on proprietary software
-or software that might not be easily accessible for other reasons.
+Replace the following by the minimal OS and software requirements, as well as
+their versions, to evaluate your artifact. This description is essential if you
+rely on proprietary software or software that might not be easily accessible for
+other reasons.
 
 Note that if you are giving access to something to reviewers for the purpose of
 the artifact evaluation only (private dataset for instance), do not provide
@@ -69,9 +70,10 @@ should provide dummy and/or synthetic data to replace potentially private
 dataset, showcase the expected data format, and demonstrate the functionality of
 the rest of the artifact.
 
-Additionally, if you are applying for the "Reproduced" badge, please also list
-the exact software specifications used for the experiments and results reported
-in the paper (or point to a file in your artifact that has that list).
+Additionally, if you are applying for the "Reproduced" badge, make sure to list
+the exact software specifications and versions used for the experiments and
+results reported in the paper (or point to a file in your artifact that has that
+list).
 
 ### Estimated Time and Storage Consumption (Required for Functional and Reproduced badges, encouraged for Available badge)
 Replace the following by estimated values for:
@@ -144,13 +146,18 @@ Describe the results in 1 to 3 sentences. Refer to the related sections,
 figures, and/or tables in your paper and reference the experiments that support
 this result/claim (see example below).
 
-#### Main Result 2: Example Result
+#### Main Result 2: Name
+Describe the results in 1 to 3 sentences. Refer to the related sections,
+figures, and/or tables in your paper and reference the experiments that support
+this result/claim (see example below).
+
+...
+
+#### Main Result 3: Example Name
 Our paper claims that an "example result" of "X unit" and "Y unit" (reported in
 "Figure F" and "Table T") can be obtained with our prototype, this is
-reproducible by executing [Experiment 2](#experiment-2-example-experiment)
+reproducible by executing [Experiment 3](#experiment-3-example-name)
 
-#### Main Result 3: Name
-...
 
 ### Experiments (Required for Functional and Reproduced badges)
 List each experiment to execute to reproduce your results. Describe:
@@ -172,16 +179,30 @@ simplify the workflow, e.g.,
 python experiment_1.py
 ```
 
-#### Experiment 2: Example Experiment
+#### Experiment 2: Name
+- Time: replace with estimate in human-minutes/hours + compute-minutes/hours.
+- Storage: replace with estimate for disk space used (omit if <10GB).
+
+Provide a short explanation of the experiment and expected results. Describe
+thoroughly the steps to perform the experiment and to collect and organize the
+results as expected from your paper (see example below). Use code segments to
+simplify the workflow, e.g.,
+```bash
+./experiment2.sh
+```
+
+...
+
+#### Experiment 3: Example Name
 - Time: 10 human-minutes + 3 compute-hours
 - Storage: 20GB
 
-This example experiment reproduces [Main Result 2: Example
-Result](#main-result-2-example-result), the following script will run the
+This example experiment reproduces [Main Result 3: Example
+Name](#main-result-3-example-name), the following script will run the
 simulation automatically with the different parameters specified in the paper.
 
 ```bash
-./experiment2.sh
+./experiment-example.sh
 ```
 
 Results from this example experiment will be aggregated over several iterations
@@ -189,10 +210,8 @@ by the script and output directly in raw format along with variances and
 standard deviations in the `output-folder/` directory. You will also find there
 the plots for "Figure F" in `.pdf` format and the table for "Table T" in `.tex`
 format. These can be directly compared to the results reported in the paper, and
-should not vary by more than 5% from expected results.
+should not quantitatively vary by more than 5% from expected results.
 
-#### Experiment 3: Name
-...
 
 ## Limitations (Required for Functional and Reproduced badges, encouraged for Available badge)
 Describe which steps, experiments, results, graphs, tables, etc. are included or

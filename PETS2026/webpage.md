@@ -158,11 +158,11 @@ exercisability criteria. For instance, an artifact may have a proprietary
 machine learning model as a key component of the system, and so, achieving
 completeness may be difficult. Artifacts may rely on datasets that are too large
 to be included, or contain personally identifiable information, and so,
-satisfying exercisability may be difficult. 
+satisfying exercisability may be difficult.
 
 Consider the experiments in your artifact as arranged in a pipeline of multiple
 stages, such as data collection, data processing, and producing plots or tables
-for the paper. The "Completeness" and 'Exercisability" criteria require each
+for the paper. The "Completeness" and "Exercisability" criteria require each
 stage to be represented. Our key advice is to present each stage, including the
 ones that cannot be fully run. These can be represented in either a simplified
 manner or run on dummy data to check the functionality of the stage. If
@@ -198,10 +198,13 @@ results should also be automatically parsed and output in a comprehensible way.
 
 To award the "Artifact Reproduced" badge, reviewers must be absolutely confident
 that they can reproduce the core results of the paper with the provided
-artifact. As a rule of thumb, a claim should be considered reproducible if the
-results by reviewers are within 5% of the reported value in the paper. It is the
-reviewer's role to enforce that this expectation (or a similar one adapted to
-each specific artifact) is met before awarding the "Artifact Reproduced" badge.
+artifact. As a rule of thumb, a quantitative claim should generally be
+considered reproducible if the results obtained by reviewers are within 5% of
+the reported value in the paper. Having said so, some artifact-specific factors
+may prevent this, in these cases, artifact reviewers should also consider if the
+results that they obtain align qualitatively with the claims made in the paper.
+It is the reviewer's role to enforce that these quantitative and/or qualitative
+expectations are met before awarding the "Artifact Reproduced" badge.
 
 Additionally, some experiments may by nature be harder to fully reproduced
 during the timeframe of the artifact evaluation: e.g., take a while to run, need
@@ -227,8 +230,8 @@ Checklist for "Reproduced Badge":
 - [ ] Clear mapping between claims, experiments, and results provided.
 - [ ] Minimal amount of manual effort required from reviewers, i.e., fair amount
   of automation.
-- [ ] Reviewers obtain reproducible results (i.e., within 5% of the claimed
-  value).
+- [ ] Reviewers obtain reproducible results quantitatively (i.e., within 5% of
+  the claimed value) and/or qualitatively.
 - [ ] Corresponding content from `ARTIFACT-APPENDIX.md` completed.
 
 ### Persistent and Stable Link
@@ -274,7 +277,10 @@ share the dataset or model, we expect them to share a synthetic dataset or dummy
 model, which may, perhaps perform worse, but which can be used to test the
 principle functionality of the presented tool. Ideally, authors should provide
 the code to train the original model, though depending on the contributions of
-the paper, it need not be executed.
+the paper, it need not be executed. For proprietary models accesses through an
+API, authors should provide on HotCRP with their submission an account with an
+API key and enough credits to perform the evaluation (there is a specific field
+in the submission form for that).
 
 Authors should note that the hosting options that we consider as valid have
 different file size limits and constraints and that dividing or compressing such
@@ -393,7 +399,9 @@ Some reviewing practical tips include:
 - Starting the evaluation early.
 - Notifying artifact evaluation chairs as soon as possible if missing resources
   or hardware to perform the evaluation.
-- Posting a preliminary review and updating it as authors make edits.
+- Posting a preliminary review and updating it as authors make edits (an
+  "[EDIT]" tag or striking out text can be useful to indicate modified and/or
+  solved comments, etc.).
 - Providing a concise list of issues/suggestions first (this helps give an
   overview to everyone), followed by more details if needed.
 - Explicitly numbering or naming these issues/suggestions (this facilitates
