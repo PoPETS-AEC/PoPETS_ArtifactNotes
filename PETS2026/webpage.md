@@ -13,8 +13,7 @@ Possible artifacts include (but are not limited to):
 - Machine-generated proofs
 - Formal specifications
 - Build environments (e.g., VMs, Docker containers, configuration scripts)
-- User study questionnaires and aggregate, anonymized results (after ethical
-  considerations)
+- User study questionnaires and aggregate, anonymized results
 
 Artifacts are evaluated by the artifact evaluation committee. Issues considered
 include software bugs, readability of the documentation, appropriate licensing,
