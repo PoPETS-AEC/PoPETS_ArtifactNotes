@@ -60,5 +60,7 @@ Please let us know at <artifact26@petsymposium.org> if you have any concerns
 with meeting these deadlines, would like to submit to a later artifact issue,
 or, have any questions regarding the process.
 
--- Miti Mazmudar and Yohan Beugin PoPETs 2026 Artifact Evaluation Chairs
+-- 
+Miti Mazmudar and Yohan Beugin
+PoPETs 2026 Artifact Evaluation Chairs
 artifact26@petsymposium.org
