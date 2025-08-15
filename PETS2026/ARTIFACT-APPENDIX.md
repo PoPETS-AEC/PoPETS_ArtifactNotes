@@ -18,8 +18,11 @@ artifact or as part of their existing documentation (e.g., `README.md`). In the
 latter case, we only ask that section titles remain the same.
 
 ## Description (Required for all badges)
-Replace this by a short description of your artifact and how it links to your
-paper.
+Replace this with the following:
+- List the paper that the artifact relates to (i.e., paper
+title, authors, year, or even a BibTex cite). 
+- A short description of your artifact and how it is relevant to your
+paper. 
 
 ### Security/Privacy Issues and Ethical Concerns (Required for all badges)
 Replace this by a description of security or privacy risks that your artifact
