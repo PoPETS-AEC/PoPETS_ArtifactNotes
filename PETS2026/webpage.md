@@ -393,9 +393,12 @@ assess your artifact for the Functional or Reproduced badges.
 #### **My paper involves a large dataset, machine learning (ML) model, or other such large files. How can I get the Artifact Functional badge?**
 
 If a large dataset, ML model, or other file is required to execute the presented
-tool, the authors should provide it, unless it is proprietary. If they can not
-share the dataset or model, we expect them to share a synthetic dataset or dummy
-model, which may, perhaps perform worse, but which can be used to test the
+tool, the authors should include it within their artifact, unless it is proprietary.
+(For proprietary models accesses through an
+API, authors should provide an
+API key and enough credits to perform the evaluation along with their submission on HotCRP; there is a submission field for this.)
+In any case, if the dataset or model is not included in the artifact, authors should share a synthetic dataset or dummy
+model, which may, perhaps perform worse, but which can be used by other researchers to test the
 principle functionality of the presented tool. Ideally, authors should provide
 the code to train the original model, though depending on the contributions of
 the paper, it need not be executed.
