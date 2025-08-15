@@ -318,9 +318,9 @@ These examples are in the form of GitHub repositories that include:
   follow resources we point to).
 
 Authors can fork these repositories, and use the fork as a starting point for
-their artifact. For example, for Python-based projects, authors should modify or
-a `requirements.txt` (or similar) file with pinned versions of their
-dependencies.
+their artifact. For example, for Python-based projects, authors should modify
+the `Dockerfile` and add the pinned versions of their dependencies to a
+`requirements.txt` (or similar) file.
 
 Note that these resources are not comprehensive, so authors and reviewers are
 not to interpret them as the only way to package an artifact; we also welcome
