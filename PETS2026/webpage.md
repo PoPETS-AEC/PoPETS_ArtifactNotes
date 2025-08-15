@@ -378,34 +378,30 @@ running your artifact; you may communicate with the artifact chairs. If this is
 not possible, reconsider your choices of badges, as it may be impossible to
 assess your artifact for the Functional or Reproduced badges.
 
-
-### My paper includes a dataset. How should I prepare the dataset? 
+### My paper includes a dataset. How should I prepare the dataset?
 
 - Document your dataset so that others can reuse it.
-- Add scripts to automatically download the dataset (if necessary), parse the data and produce the tables, graphs or statistics that appear in the paper.
+- Add scripts to automatically download the dataset (if necessary), parse the
+  data and produce the tables, graphs or statistics that appear in the paper.
 - If the dataset includes survey results, provide a copy of the original survey
   with raw results. This is vital for replication studies and helping
   researchers interpret the context of your results.
 
-Please refer to the
-instructions under one of the previous FAQs on how to upload large files
-to your repository.
+Please refer to the instructions under one of the previous FAQs on how to upload
+large files to your repository.
 
 #### **My paper involves a large machine learning (ML) model, or other such large files that are difficult to share. How can I get the Artifact Functional badge?**
 
-If a large ML model, or other file is required to execute the presented
-tool, the authors should include it within their artifact, unless it is
-proprietary. If the
-dataset or model is not included in the artifact, authors must share a
+If a large ML model, or other file is required to execute the presented tool,
+the authors should include it within their artifact, unless it is proprietary.
+If the dataset or model is not included in the artifact, authors must share a
 synthetic dataset or dummy model, which may, perhaps perform worse, but which
 can be used by other researchers to test the principle functionality of the
-artifact. Authors should provide the code to train the original
-model, though depending on the contributions of the paper, it need not be
-executed.
+artifact. Authors should provide the code to train the original model, though
+depending on the contributions of the paper, it need not be executed.
 
-Please refer to the
-instructions under one of the previous FAQs on how to upload large files
-to your repository.
+Please refer to the instructions under one of the previous FAQs on how to upload
+large files to your repository.
 
 #### **My experiment has a lengthy runtime or requires a large amount of compute resources. How can I get the Artifact Functional badge?**
 
@@ -450,21 +446,23 @@ Authors should provide:
 
 To ensure a smooth submission process, please follow these important guidelines:
 
-- **Alpha-test your artifact** from a
-fresh install or ask a friend to do so. Fix potential issues that are
-uncovered before submission. 
+- **Alpha-test your artifact** from a fresh install or ask a friend to do so.
+  Fix potential issues that are uncovered before submission.
 - As discussed in the FAQ, go through the
-[resources and examples](https://github.com/PoPETS-AEC/examples-and-other-resources)
-of artifact packaging (Dockerfiles etc.) that have been put together by the artifact evaluation
-chairs.
+  [resources and examples](https://github.com/PoPETS-AEC/examples-and-other-resources)
+  of artifact packaging (Dockerfiles etc.) that have been put together by the
+  artifact evaluation chairs.
 - For the "Artifact Functional" and/or "Artifact Reproduced" badges, clear
-documentation and mapping between claims, results, and
-experiments usually go a long way in facilitating the evaluation. Ideally,
-reviewers should be able to execute a single script to install, configure, and
-reproduce results. 
+  documentation and mapping between claims, results, and experiments usually go
+  a long way in facilitating the evaluation. Ideally, reviewers should be able
+  to execute a single script to install, configure, and reproduce results.
 - **Respond professionally to reviews and comments within one week.**
-- **Incorporate requested changes, at least partially, within
-two weeks after the request**. Partial progress should be evident to reviewers through version control (Git commits or updates to Zenodo records etc.). Do _not_ leave updates to the last minute. If some fixes require more time, authors _should_ communicate a timeline by which these changes will be made for reviewers to plan a re-evaluation.
+- **Incorporate requested changes, at least partially, within two weeks after
+  the request**. Partial progress should be evident to reviewers through version
+  control (Git commits or updates to Zenodo records etc.). Do _not_ leave
+  updates to the last minute. If some fixes require more time, authors _should_
+  communicate a timeline by which these changes will be made for reviewers to
+  plan a re-evaluation.
 
 Your cooperation in adhering to these guidelines will greatly contribute to the
 efficiency and effectiveness of your submission and review process. We eagerly
@@ -491,38 +489,41 @@ and reproducibility by others.
 
 # What Makes a Good Review
 
-Artifact
-reviewers should familiarize themselves with the artifact call, the aforementioned
-guidelines, the format of the `ARTIFACT-APPENDIX.md` file. Reviewers should reach out to artifact chairs with any questions.
+Artifact reviewers should familiarize themselves with the artifact call, the
+aforementioned guidelines, the format of the `ARTIFACT-APPENDIX.md` file.
+Reviewers should reach out to artifact chairs with any questions.
 
 Towards the goal of contributing to open-science and reproducibility, the
 artifact evaluation process is designed to be interactive; authors are expected
 to take into account reviewers' comments and modify their artifact accordingly.
 As such, reviewers are kindly asked to start their evaluation as early as
-possible and to post reviews or comments regularly. Once authors communicate to reviewers that issues were resolved,
-reviewers should then take another look and either approve the artifact or
-provide additional comments until a final decision is made.
+possible and to post reviews or comments regularly. Once authors communicate to
+reviewers that issues were resolved, reviewers should then take another look and
+either approve the artifact or provide additional comments until a final
+decision is made.
 
 We provide practical tips for reviewers below:
 
 - Start the evaluation early.
-- Notify artifact evaluation chairs ASAP if you are missing
-  hardware or resources to perform the evaluation.
-- Post a preliminary review and update it as authors make edits. An
-  "[EDIT]" tag on HotCRP or striking out the text can indicate modified and/or
-  solved comments, etc.
+- Notify artifact evaluation chairs ASAP if you are missing hardware or
+  resources to perform the evaluation.
+- Post a preliminary review and update it as authors make edits. An "[EDIT]" tag
+  on HotCRP or striking out the text can indicate modified and/or solved
+  comments, etc.
 - Provide a concise list of issues/suggestions first (this helps give an
-  overview to everyone), followed by more details (for the
-  authors to make changes).
+  overview to everyone), followed by more details (for the authors to make
+  changes).
 - Explicitly number or name these issues/suggestions; doing so facilitates
   future references to them in comments between authors and reviewers.
-- If the code fails, then reviewers should include the environment that it is run on, the error messages, and potential steps that were attempted to fix them.
+- If the code fails, then reviewers should include the environment that it is
+  run on, the error messages, and potential steps that were attempted to fix
+  them.
 - Actively participate in the discussions.
-- Politely ping authors for updates or for a timeline if no response is
-  received to your comments after a week.
+- Politely ping authors for updates or for a timeline if no response is received
+  to your comments after a week.
 - Respond politely and professionally.
-- Tag artifact evaluation chairs if you do not hear back from the authors,
-  or if something needs to be brought up to their attention.
+- Tag artifact evaluation chairs if you do not hear back from the authors, or if
+  something needs to be brought up to their attention.
 
 ## Distinguished Artifact Reviewers
 
