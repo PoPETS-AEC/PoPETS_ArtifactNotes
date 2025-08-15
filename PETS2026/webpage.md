@@ -42,18 +42,6 @@ can find and build upon your work.
 4. For your submission on HotCRP, you will need to provide a copy of your paper
    and a direct link to the "ARTIFACT-APPENDIX.md" file.
 
-### Dataset Submissions
-
-- All datasets should be clearly documented in a way that allows researchers
-  working on similar problems to re-use the dataset for their work.
-- If the dataset includes survey results, provide a copy of the original survey
-  with raw results. This is vital for replication studies and helping
-  researchers interpret the context of your results.
-- Please state the sizes of datasets in the documentation.
-- It's encouraged to accompany the data with processing scripts that demonstrate
-  how to use the data and produce the graphs or statistical output that appear
-  in the paper.
-
 ## Artifact Badges
 
 Each accepted artifact can be granted up to three badges. During submission,
@@ -390,24 +378,33 @@ running your artifact; you may communicate with the artifact chairs. If this is
 not possible, reconsider your choices of badges, as it may be impossible to
 assess your artifact for the Functional or Reproduced badges.
 
-#### **My paper involves a large dataset, machine learning (ML) model, or other such large files. How can I get the Artifact Functional badge?**
 
-If a large dataset, ML model, or other file is required to execute the presented
+### My paper includes a dataset. How should I prepare the dataset? 
+
+- Document your dataset so that others can reuse it.
+- Add scripts to automatically download the dataset (if necessary), parse the data and produce the tables, graphs or statistics that appear in the paper.
+- If the dataset includes survey results, provide a copy of the original survey
+  with raw results. This is vital for replication studies and helping
+  researchers interpret the context of your results.
+
+Please refer to the
+instructions under one of the previous FAQs on how to upload large files
+to your repository.
+
+#### **My paper involves a large machine learning (ML) model, or other such large files that are difficult to share. How can I get the Artifact Functional badge?**
+
+If a large ML model, or other file is required to execute the presented
 tool, the authors should include it within their artifact, unless it is
-proprietary. (For proprietary models accesses through an API, authors should
-provide an API key and enough credits to perform the evaluation along with their
-submission on HotCRP; there is a submission field for this.) In any case, if the
-dataset or model is not included in the artifact, authors should share a
+proprietary. If the
+dataset or model is not included in the artifact, authors must share a
 synthetic dataset or dummy model, which may, perhaps perform worse, but which
 can be used by other researchers to test the principle functionality of the
-presented tool. Ideally, authors should provide the code to train the original
+artifact. Authors should provide the code to train the original
 model, though depending on the contributions of the paper, it need not be
 executed.
 
-Authors should note that the hosting options listed under the "Artifact
-Available" badge have different file size limits and constraints and that
-dividing or compressing such large files may be needed. Please refer to the
-instructions under the "Artifact Available" badge on how to upload large files
+Please refer to the
+instructions under one of the previous FAQs on how to upload large files
 to your repository.
 
 #### **My experiment has a lengthy runtime or requires a large amount of compute resources. How can I get the Artifact Functional badge?**
@@ -453,40 +450,21 @@ Authors should provide:
 
 To ensure a smooth submission process, please follow these important guidelines:
 
-Authors should fill out the
-[ARTIFACT-APPENDIX.md](https://petsymposium.org/files/ARTIFACT-APPENDIX.md) file
-provided and include it in their artifact (either in the `README.md` file or as
-a separate file). Check the badges you deem reasonable for your artifact and, if
-necessary, describe which stages are simplified or skipped and why. This will
-help the reviewer better understand your work and ensure a seamless review
-process.
-
-Authors should alpha-test their artifact and instructions themselves from a
-fresh install (or ask a friend to do so) and fix potential issues that are
-uncovered before submission. As discussed in the FAQ, authors are also
-encouraged to check out the
+- **Alpha-test your artifact** from a
+fresh install or ask a friend to do so. Fix potential issues that are
+uncovered before submission. 
+- As discussed in the FAQ, go through the
 [resources and examples](https://github.com/PoPETS-AEC/examples-and-other-resources)
-of artifact packaging that have been put together by the artifact evaluation
+of artifact packaging (Dockerfiles etc.) that have been put together by the artifact evaluation
 chairs.
-
-For the "Artifact Functional" and/or "Artifact Reproduced" badges, very clear
-documentation, instructions, and mapping between claims, results, and
+- For the "Artifact Functional" and/or "Artifact Reproduced" badges, clear
+documentation and mapping between claims, results, and
 experiments usually go a long way in facilitating the evaluation. Ideally,
 reviewers should be able to execute a single script to install, configure, and
-reproduce results. Similarly, parameters swap for experiments should be
-automated.
-
-During the evaluation, prompt and professional communication with reviewers is
-essential to reach a final decision. Authors are kindly requested to respond to
-reviews and comments within a time span of one week. This will facilitate
-constructive discussions and allow for timely feedback incorporation.
-
-Lastly, in the event that changes are requested during the review process, we
-kindly ask authors to endeavor to incorporate them, at least partially, within
-two weeks after the request. These requested modifications should not be left to
-the last minute, if some fixes require more time, authors are encouraged to
-communicate a timeline by which these changes will be made for reviewers to best
-plan around for their evaluation.
+reproduce results. 
+- **Respond professionally to reviews and comments within one week.**
+- **Incorporate requested changes, at least partially, within
+two weeks after the request**. Partial progress should be evident to reviewers through version control (Git commits or updates to Zenodo records etc.). Do _not_ leave updates to the last minute. If some fixes require more time, authors _should_ communicate a timeline by which these changes will be made for reviewers to plan a re-evaluation.
 
 Your cooperation in adhering to these guidelines will greatly contribute to the
 efficiency and effectiveness of your submission and review process. We eagerly
@@ -513,45 +491,37 @@ and reproducibility by others.
 
 # What Makes a Good Review
 
-The goal of the artifact evaluation is to ensure that the released artifacts are
-as useful as possible to others. To that end, common best practices and
-requirements have been encoded in the form of three different badges:
-"Available", "Functional", "Reproduced" that authors can apply towards. Artifact
-reviewers are invited to familiarize themselves with the artifact call,
-guidelines, requirements, artifact appendix format, and other resources that
-have been shared with authors, and to reach out to artifact chairs with any
-question or confusion if something is not clear.
+Artifact
+reviewers should familiarize themselves with the artifact call, the aforementioned
+guidelines, the format of the `ARTIFACT-APPENDIX.md` file. Reviewers should reach out to artifact chairs with any questions.
 
 Towards the goal of contributing to open-science and reproducibility, the
 artifact evaluation process is designed to be interactive; authors are expected
 to take into account reviewers' comments and modify their artifact accordingly.
 As such, reviewers are kindly asked to start their evaluation as early as
-possible and to post reviews or comments that contain sufficient details for the
-authors to make the appropriate changes. For example, if the code fails, then
-reviewers should include the environment that it is run on, the error messages,
-and potential steps that were attempted to fix them. It is crucial for the
-process that reviewers discuss and work with authors to help them improve their
-artifact: once authors communicate to reviewers that issues were resolved,
+possible and to post reviews or comments regularly. Once authors communicate to reviewers that issues were resolved,
 reviewers should then take another look and either approve the artifact or
 provide additional comments until a final decision is made.
 
-Some reviewing practical tips include:
+We provide practical tips for reviewers below:
 
-- Starting the evaluation early.
-- Notifying artifact evaluation chairs as soon as possible if you are missing
-  resources or hardware to perform the evaluation.
-- Posting a preliminary review and updating it as authors make edits (an
-  "[EDIT]" tag or striking out text can be useful to indicate modified and/or
-  solved comments, etc.).
-- Providing a concise list of issues/suggestions first (this helps give an
-  overview to everyone), followed by more details if needed.
-- Explicitly numbering or naming these issues/suggestions; doing so facilitates
+- Start the evaluation early.
+- Notify artifact evaluation chairs ASAP if you are missing
+  hardware or resources to perform the evaluation.
+- Post a preliminary review and update it as authors make edits. An
+  "[EDIT]" tag on HotCRP or striking out the text can indicate modified and/or
+  solved comments, etc.
+- Provide a concise list of issues/suggestions first (this helps give an
+  overview to everyone), followed by more details (for the
+  authors to make changes).
+- Explicitly number or name these issues/suggestions; doing so facilitates
   future references to them in comments between authors and reviewers.
-- Actively participating in the discussions.
-- Politely pinging authors for updates or for a timeline if no response is
+- If the code fails, then reviewers should include the environment that it is run on, the error messages, and potential steps that were attempted to fix them.
+- Actively participate in the discussions.
+- Politely ping authors for updates or for a timeline if no response is
   received to your comments after a week.
-- Staying polite and professional.
-- Tagging artifact evaluation chairs if you do not hear back from the authors,
+- Respond politely and professionally.
+- Tag artifact evaluation chairs if you do not hear back from the authors,
   or if something needs to be brought up to their attention.
 
 ## Distinguished Artifact Reviewers
