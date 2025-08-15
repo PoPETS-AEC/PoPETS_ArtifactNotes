@@ -20,9 +20,9 @@ latter case, we only ask that section titles remain the same.
 ## Description (Required for all badges)
 Replace this with the following:
 - List the paper that the artifact relates to (i.e., paper
-title, authors, year, or even a BibTex cite). 
+title, authors, year, or even a BibTex cite).
 - A short description of your artifact and how it is relevant to your
-paper. 
+paper.
 
 ### Security/Privacy Issues and Ethical Concerns (Required for all badges)
 Replace this by a description of security or privacy risks that your artifact
@@ -156,6 +156,7 @@ this result/claim (see example below).
 
 ...
 
+For example:
 #### Main Result 3: Example Name
 Our paper claims that an "example result" of "X unit" and "Y unit" (reported in
 "Figure F" and "Table T") can be obtained with our prototype, this is
@@ -196,6 +197,7 @@ simplify the workflow, e.g.,
 
 ...
 
+For example:
 #### Experiment 3: Example Name
 - Time: 10 human-minutes + 3 compute-hours
 - Storage: 20GB

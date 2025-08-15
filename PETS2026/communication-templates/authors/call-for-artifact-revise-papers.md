@@ -14,3 +14,6 @@ extending to you the following **conditional** invitation to submit an artifact
 
 %TITLE% %URL%/paper/%NUMBER%
 
+---
+
+<INCLUDE HERE THE CONTENT OF [`call-for-artifact-body.md`](call-for-artifact-body.md)>
