@@ -12,8 +12,9 @@ Further, please verify that your affiliation information is correct in HotCRP
 webpage (https://petsymposium.org/cfp26.php). Let us know if there are any
 errors.
 
-We have opened up bidding for committee members to indicate preferences on
-which artifacts they would like to review.
+We have opened up bidding for committee members to indicate preferences on which
+artifacts they would like to review. The deadline for preferences is **Monday,
+Sep 15, 2025**, after this we will be assigning reviews.
 
 IMPORTANTLY: Please set a negative preference of -5 for any submission you
 cannot review due to missing resources. Note that we provide VMs with GPUs
@@ -58,9 +59,6 @@ and authors. Please do not feel you need to spend time selecting your
 artifacts. But if something particularly interests you or if you think
 something is too far outside your expertise, this is your chance to
 indicate it.
-
-The deadline for preferences is **Monday, Sep 15, 2025**, after this we
-will be assigning reviews.
 
 Please don't hesitate to contact us with any questions or concerns at
 any stage of this process!
