@@ -196,12 +196,13 @@ as close to the output in the paper as possible (table or figure etc.).
 
 To award the "Artifact Reproduced" badge, reviewers must be able to reproduce
 the main claims of the paper with the provided artifact. As a rule of thumb, a
-quantitative claim should generallybe considered reproducible if the results obtainedby reviewers are within
-5% of the reported value in the paper. That being said, some artifact-specific factors
-may prevent this; in these cases, artifact reviewers should also consider if the
-results that they obtain align qualitatively with the claims made in the paper.It is the reviewer's role to enforce that
-these quantitative and/or qualitative
-expectations are met before awarding the "Artifact Reproduced" badge.
+quantitative claim should generally be considered reproducible if the results
+obtained by reviewers are within 5% of the reported value in the paper. That
+being said, some artifact-specific factors may prevent this; in these cases,
+artifact reviewers should also consider if the results that they obtain align
+qualitatively with the claims made in the paper.It is the reviewer's role to
+enforce that these quantitative and/or qualitative expectations are met before
+awarding the "Artifact Reproduced" badge.
 
 Additionally, some experiments may by nature be harder to fully reproduced
 during the timeframe of the artifact evaluation: e.g., take a while to run, need
@@ -225,8 +226,8 @@ Nevertheless, these authors can and should still prepare their artifacts for the
 - [ ] Clear mapping between claims, experiments, and results provided.
 - [ ] Minimal amount of manual effort required from reviewers, i.e., fair amount
       of automation.
-- [ ] Reviewers obtain reproducible results quantitatively(i.e., within 5% of the claimed
-      value)and/or qualitatively.
+- [ ] Reviewers obtain reproducible results quantitatively(i.e., within 5% of
+      the claimed value)and/or qualitatively.
 - [ ] Corresponding content from `ARTIFACT-APPENDIX.md` completed.
 
 ### Artifact Link
@@ -397,7 +398,7 @@ share the dataset or model, we expect them to share a synthetic dataset or dummy
 model, which may, perhaps perform worse, but which can be used to test the
 principle functionality of the presented tool. Ideally, authors should provide
 the code to train the original model, though depending on the contributions of
-the paper, it need not be executed. 
+the paper, it need not be executed.
 
 Authors should note that the hosting options listed under the "Artifact
 Available" badge have different file size limits and constraints and that
