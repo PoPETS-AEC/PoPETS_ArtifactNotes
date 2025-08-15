@@ -8,7 +8,8 @@ load is balanced across all issues. If you have not already indicated your
 conflicts, please do so.
 
 Please follow the instructions attached below to indicate preferences on which
-artifacts you would like to review.
+artifacts you would like to review. The deadline for preferences is **Monday,
+Dec 15, 2025**, after this we will be assigning reviews.
 
 IMPORTANTLY: Please set a negative preference of -5 for any submission you
 cannot review due to missing resources. Note that we provide VMs with GPUs
@@ -54,9 +55,6 @@ and authors. Please do not feel you need to spend time selecting your
 artifacts. But if something particularly interests you or if you think
 something is too far outside your expertise, this is your chance to
 indicate it.
-
-The deadline for preferences is **Monday, Dec 15, 2025**, after this we
-will be assigning reviews.
 
 Please don't hesitate to contact us with any questions or concerns at
 any stage of this process!
