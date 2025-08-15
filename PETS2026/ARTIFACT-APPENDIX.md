@@ -15,12 +15,12 @@ This template includes several placeholders. When filling in this template for
 their artifact, the authors should:
 
 1. Remove this note.
-2. Delete the sections that are _not_ required for the badge(s) they are applying
-  for.
+2. Delete the sections that are _not_ required for the badge(s) they are
+   applying for.
 3. Omit suffixes of the form "(required/encouraged for badge ...)" from the
-  section titles.
+   section titles.
 4. Authors should not leave the placeholder descriptions initially provided with
-  this file into the submitted version with their artifact.
+   this file into the submitted version with their artifact.
 
 While this template is provided for artifact review, you should write your
 instructions for someone trying to reuse your artifact in the future (i.e., not
@@ -29,8 +29,8 @@ an artifact reviewer).
 ## Description (Required for all badges)
 Replace this with the following:
 
-1. List the paper that the artifact relates to (i.e., paper title, authors, year,
-  or even a BibTex cite).
+1. List the paper that the artifact relates to (i.e., paper title, authors,
+   year, or even a BibTex cite).
 2. A short description of your artifact and how it is relevant to your paper.
 
 ### Security/Privacy Issues and Ethical Concerns (Required for all badges)
@@ -69,7 +69,8 @@ Replace this with the following:
 
 ### Software Requirements (Required for Functional and Reproduced badges)
 
-Replace this with the software required to run your artifact and its versions, as follows.
+Replace this with the software required to run your artifact and its versions,
+as follows.
 
 1. List the OS you used to run your artifact, along with its version (e.g.
    Ubuntu 22.04). If your artifact can only run on a specific OS or a specific
@@ -201,11 +202,11 @@ that support this result/claim. See example below.
 #### Main Result 2: Example Name
 
 Our paper claims that when varying the file size linearly, the runtime also
-increases linearly. We change the file size linearly, from 2KB to 24KB, at
-intervals of 2KB each, and we show that the runtime also increases linearly,
-reaching at most 1ms. We report these results in "Figure 1a" and "Table 3"
-(Column 3 or Row 2). This claim is reproducible by executing
-[Experiment 2](#experiment-2-example-name).
+increases linearly. This claim is reproducible by executing our
+[Experiment 2](#experiment-2-example-name). In this experiment, we change the
+file size linearly, from 2KB to 24KB, at intervals of 2KB each, and we show that
+the runtime also increases linearly, reaching at most 1ms. We report these
+results in "Figure 1a" and "Table 3" (Column 3 or Row 2) of our paper.
 
 ### Experiments
 List each experiment to execute to reproduce your results. Describe:
