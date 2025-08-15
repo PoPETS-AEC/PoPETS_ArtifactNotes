@@ -163,7 +163,7 @@
       "name": "What steps did you take to evaluate the artifact?",
       "order": 2,
       "type": "text",
-      "description": "Please briefly describe the steps you took and other relevant information to evaluate this artifact.",
+      "description": "Please briefly describe the steps you followed to evaluate this artifact.",
       "required": false,
       "visibility": "au",
       "condition": "all"
@@ -507,7 +507,7 @@
       "name": "Artifact links and brief description",
       "order": 7,
       "type": "mtext",
-      "description": "Please add a brief description of the artifacts and the link to access it here. Refrain from submitting a permanent or stable link at this stage (we will collect it later once a decision is finalized), as edits will likely happen based on reviewers' feedback.",
+      "description": "Please add a brief description of the artifact and a link to access it here. The link may point to an institutional or third-party repository service such as Github, Gitlab, BitBucket or Zenodo.",
       "required": "submit",
       "display": "right",
       "visibility": "all",
@@ -554,7 +554,7 @@
       "name": "Alpha test performed by authors",
       "order": 11,
       "type": "checkbox",
-      "description": "A lot of issues seen in the past, and that slow down artifact evaluation, tend to occur at install time (missing dependencies, incorrect or private links, unclear steps to follow, etc.).\n<br>\nTo avoid most of these, <b>we ask that authors follow their own artifact instructions on a fresh install<\/b> (or ask an acquaintance to do so) before submitting their artifact, and make modifications if any issue. \n<br>\n<b>Artifact reviewers should not be considered as alpha testers.<\/b>",
+      "description": "A lot of issues seen in the past, and that slow down artifact evaluation, tend to occur at install time (missing dependencies, incorrect or private links, unclear steps to follow, etc.).\n<br>\nTo avoid most of these, <b>we ask that authors follow their own artifact instructions on a fresh install<\/b> (or ask a friend to do so) before submitting their artifact, and make modifications if any issue. \n<br>\n<b>Artifact reviewers should not be considered as alpha testers.<\/b>",
       "required": "submit",
       "display": "rest",
       "visibility": "all",
@@ -566,7 +566,7 @@
       "name": "Authors are expected to be responsive",
       "order": 12,
       "type": "checkbox",
-      "description": "The artifact evaluation is meant to be interactive. Authors are expected to be responsive to reviewers' comments and suggestions: authors should not leave updates to the last minute and must work with reviewers to obtain the artifact badges.",
+      "description": "The artifact evaluation is meant to be interactive. Authors are expected to respond to reviewers' comments and suggestions under one week: authors should not leave updates to the last minute and must work with reviewers to obtain the artifact badges.",
       "required": "submit",
       "display": "rest",
       "visibility": "all",
@@ -684,7 +684,7 @@
     },
     {
       "id": 7,
-      "name": "Requirement: High Storage (>20GB)"
+      "name": "Requirement: High Storage (>10GB)"
     },
     {
       "id": 5,

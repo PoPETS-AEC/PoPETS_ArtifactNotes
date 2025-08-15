@@ -20,6 +20,7 @@ website](https://secartifacts.github.io/) as well.
 	- [PETS23](PETS2023/stats.md),
 	- [PETS24](PETS2024/stats.md),
 	- [PETS25](PETS2025/stats.md)
+	- [PETS26](PETS2026/stats.md)
 - [Webpage](PETS2026/webpage.md)
 - [Communication Templates](PETS2026/communication-templates)
 - [File: ARTIFACT-APPENDIX.md](PETS2026/ARTIFACT-APPENDIX.md)
