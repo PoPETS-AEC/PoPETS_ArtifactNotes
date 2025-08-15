@@ -7,92 +7,118 @@ Requested Badge(s):
   - [ ] **Functional**
   - [ ] **Reproduced**
 
-Note:
-- Authors should not leave the placeholder descriptions initially provided with
-this file into the submitted version with their artifact.
-- Similarly, authors should feel free to remove this note, delete the sections
-that are not required for the badge(s) they are applying for, and omit from the
-section titles the "(required/encouraged for badge ...)" indications.
-- Authors should feel free to provide this content as a separate file in their
-artifact or as part of their existing documentation (e.g., `README.md`). In the
-latter case, we only ask that section titles remain the same.
+Authors can provide this content _either_ as a separate file in their artifact
+_or_ as part of their existing documentation (e.g., `README.md`). In the latter
+case, you should have the same section titles as in this template.
+
+This template includes several placeholders. When filling in this template for
+their artifact, the authors should:
+
+1. Remove this note.
+2. Delete the sections that are _not_ required for the badge(s) they are applying
+  for.
+3. Omit suffixes of the form "(required/encouraged for badge ...)" from the
+  section titles.
+4. Authors should not leave the placeholder descriptions initially provided with
+  this file into the submitted version with their artifact.
+
+While this template is provided for artifact review, you should write your
+instructions for someone trying to reuse your artifact in the future (i.e., not
+an artifact reviewer).
 
 ## Description (Required for all badges)
 Replace this with the following:
-- List the paper that the artifact relates to (i.e., paper
-title, authors, year, or even a BibTex cite).
-- A short description of your artifact and how it is relevant to your
-paper.
+
+1. List the paper that the artifact relates to (i.e., paper title, authors, year,
+  or even a BibTex cite).
+2. A short description of your artifact and how it is relevant to your paper.
 
 ### Security/Privacy Issues and Ethical Concerns (Required for all badges)
-Replace this by a description of security or privacy risks that your artifact
+
+Replace this with a description of security or privacy risks that your artifact
 may hold for the machine of the person trying to evaluate or reuse your
-artifact. For example, if your artifact requires a specific security mechanism,
-like a firewall, ASLR, or another thing, to be disabled for its execution. Also,
-emphasize if your artifact contains malware samples, or something similar, to be
-analyzed. In addition, you should highlight any ethical concerns regarding your
-artifact.
+artifact. This is especially relevant for artifacts that _disable a security
+mechanism_, such as a firewall, ASLR etc., to demonstrate an attack, as well as
+to artifacts that _run vulnerable code_, such as exploits, malware samples,
+etc., to demonstrate a vulnerability.
 
-## Basic Requirements (Required for Functional and Reproduced badges, encouraged for Available badge)
+User study artifacts that include anonymized transcripts or survey responses
+should list the ethical review / IRB process followed to obtain participants'
+consent to publishing this anonymized dataset. They may also list how
+participants were compensated.
 
-### Hardware Requirements (Required for Functional and Reproduced badges, encouraged for Available badge)
-Replace the following by the minimal hardware requirements to execute your
-artifact. If no specific hardware is needed, then state something like "Can run
-on a laptop (No special hardware requirements)".
+## Basic Requirements (Required for Functional and Reproduced badges)
 
-Note that if you are giving remote access to some hardware to reviewers for the
-purpose of the artifact evaluation only, do not provide these instructions here
-but rather in the corresponding submission field on HotCRP. Also, make sure to
-preserve the anonymity of the reviewer at any time.
+For both sections below, if you are giving reviewers remote access to special
+hardware (e.g. Intel SGX v2.0) or proprietary software (e.g. Matlab R2025a) for
+the purpose of the artifact evaluation, do not provide these instructions here
+but rather in the corresponding submission field on HotCRP.
 
-Instead, provide here instructions for someone trying to reuse your artifact in
-the future (i.e., not an artifact reviewer). For instance state how they could
-gain access to that hardware, e.g., by buying, renting, or even emulating it.
+### Hardware Requirements (Required for Functional and Reproduced badges)
 
-Additionally, if you are applying for the "Reproduced" badge, please also list
-the exact hardware specifications of the machine(s) and/or device(s) on which
-experiments and results reported in the paper were performed. This is especially
-relevant in cases were results might be influenced by the hardware used (e.g.,
-performance and timing experiments, etc.).
+Replace this with the following:
 
-### Software Requirements (Required for Functional and Reproduced badges, encouraged for Available badge)
-Replace the following by the minimal OS and software requirements, as well as
-their versions, to evaluate your artifact. This description is essential if you
-rely on proprietary software or software that might not be easily accessible for
-other reasons.
+1. A list of the _minimal hardware requirements_ to execute your artifact. If no
+   specific hardware is needed, then state "Can run on a laptop (No special
+   hardware requirements)". You may state how a researcher could gain access to
+   that hardware, e.g., by buying, renting, or even emulating it.
+2. When applying for the "Reproduced" badge, list _the specifications of the
+   hardware_ on which the experiments reported in the paper were performed. This
+   is especially relevant in cases were results might be influenced by the
+   hardware used (e.g., latency, bandwidth, throughput experiments, etc.).
 
-Note that if you are giving access to something to reviewers for the purpose of
-the artifact evaluation only (private dataset for instance), do not provide
-these instructions here but rather in the corresponding submission field on
-HotCRP.
+### Software Requirements (Required for Functional and Reproduced badges)
 
-Instead, provide here instructions for someone trying to reuse your artifact in
-the future (i.e., not an artifact reviewer). Describe how someone can obtain and
-install all third-party software, datasets, models, etc. For instance, you
-should provide dummy and/or synthetic data to replace potentially private
-dataset, showcase the expected data format, and demonstrate the functionality of
-the rest of the artifact.
+Replace this with the software required to run your artifact and its versions, as follows.
 
-Additionally, if you are applying for the "Reproduced" badge, make sure to list
-the exact software specifications and versions used for the experiments and
-results reported in the paper (or point to a file in your artifact that has that
-list).
+1. List the OS you used to run your artifact, along with its version (e.g.
+   Ubuntu 22.04). If your artifact can only run on a specific OS or a specific
+   OS version, list it and explain why here. In general, your artifact reviewers
+   will probably have access to a machine with a different OS or different OS
+   version than yours; they should still be able to run appropriately packaged
+   artifact.
+2. List the OS packages that your artifact requires, along with their versions.
+3. Artifact packaging: If you use a container runtime (e.g. Docker) to run the
+   artifact, list the container runtime and its version (e.g. Docker 23.0.3). If
+   you use VMs, list the hypervisor (e.g. VirtualBox) to run the artifact.
+4. List the programming language compiler or interpreter you used to run your
+   artifact (e.g. Python 3.13.7). Your Docker image or VM image should have this
+   version of the programming languages installed already. Your Dockerfile
+   should start from a base image with this programming language version.
+5. List packages that your artifact depends on, along with their versions. For
+   example, Python-based privacy-preserving machine learning artifacts typically
+   require `numpy`, `scipy` etc. You may point to a file in your artifact with
+   this list, such as a `requirements.txt` file. If you rely on proprietary
+   software (e.g. Matlab R2025a), list this here and consider providing access
+   to reviewers through HotCRP.
+6. List any Machine Learning Models required to run your artifact, along with
+   their versions. If your model is hosted on a different repository, such as on
+   Zenodo, then your artifact should download it automatically. If a requisite
+   ML model is _not_ in your artifact, provide a dummy model to demonstrate the
+   functionality of the rest of your artifact.
+7. List any datasets required to run your artifact. If any requisite datasets
+   are not in your artifact, you should provide a synthetic dataset that
+   showcases the expected data format.
 
-### Estimated Time and Storage Consumption (Required for Functional and Reproduced badges, encouraged for Available badge)
-Replace the following by estimated values for:
-- The overall human and compute times running the artifact will take.
-- The overall disk space it will consume.
+### Estimated Time and Storage Consumption (Required for Functional and Reproduced badges)
 
-This helps reviewers to schedule the evaluation in their time plan and others in
+Replace the following with estimated values for:
+
+- The overall human and compute times required to run the artifact.
+- The overall disk space consumed by the artifact.
+
+This helps reviewers schedule the evaluation in their time plan and others in
 general to see if everything is running as intended. This should also be
 specified at a finer granularity for each experiment (see below).
 
 ## Environment (Required for all badges)
+
 In the following, describe how to access your artifact and all related and
 necessary data and software components. Afterward, describe how to set up
 everything and how to verify that everything is set up correctly.
 
 ### Accessibility (Required for all badges)
+
 Replace the following by a description of how to access your artifact via
 persistent sources. Valid hosting options are institutional and third-party
 digital repositories (e.g., GitHub, Gitlab, BitBucket, Zenodo, Figshare, etc.).
@@ -101,13 +127,17 @@ Drive, Dropbox, etc.
 
 Note that once your artifact evaluation is finalized and a badge decision has
 been made, artifact chairs will collect a stable and persistent reference to
-your artifact to list on the website. For repositories that evolve over time
-(e.g., git repositories), this will be a specific commit-id or tag. We do not
-suggest providing such link for your artifact here at submission time, as it is
-very likely that changes will happen during the evaluation process to address
-the reviewer's feedback requiring the link to be updated.
+your artifact to list on the website. For version-controlled repositories (e.g.,
+Git repositories), this will be a specific commit-id or tag.
+
+You _should not_ link to a specific commit here at submission time, as changes
+will happen during the evaluation process to address the reviewers' feedback,
+resulting in the link being out-of-date. Instead, you may link to the latest
+commit in your branch (e.g. main) as follows:
+https://github.com/PoPETS-AEC/example-docker-python-pip/tree/main
 
 ### Set up the environment (Required for Functional and Reproduced badges)
+
 Replace the following by a description of how one should set up the environment
 for your artifact, including downloading and installing dependencies and the
 installation of the artifact itself (i.e., from the very first download or clone
@@ -115,55 +145,69 @@ command one should perform). Be as specific as possible here. If possible, use
 code segments to simplify the workflow, e.g.,
 
 ```bash
-git clone git@my_awesome_artifact.com/repo
-apt install libxxx xxx
+git clone git@github.com:PoPETS-AEC/example-docker-python-pip.git
+docker build -t example-docker-python-pip:main .
 ```
 
 Describe the expected results where it makes sense to do so.
 
-### Testing the Environment (Encouraged for Functional and Reproduced badges)
+### Testing the Environment (Required for Functional and Reproduced badges)
+
 Replace the following by a description of the basic functionality tests to check
 if the environment is set up correctly. These tests could be unit tests,
 training an ML model on very low training data, etc. If these tests succeed, all
 required software should be functioning correctly. Use code segments to simplify
 the workflow, e.g.,
 
+This only works when the working directory of Docker with the test.sh
+
+```bash
+docker run --rm -it -v ${PWD}:/workspaces/example-docker-python-pip \
+    -w /workspaces/example-docker-python-pip \
+    --entrypoint bash example-docker-python-pip:main
+```
+
+Then within the Docker container, run
+
 ```bash
 ./test.sh
 ```
 
-Include the expected output for unambiguous outputs of tests.
+Include the expected output.
 
 ## Artifact Evaluation (Required for Functional and Reproduced badges)
+
 This section should include all the steps required to evaluate your artifact's
 functionality and validate your paper's key results and claims. Therefore,
 highlight your paper's main results and claims in the first subsection. And
 describe the experiments that support your claims in the subsection after that.
 
-### Main Results and Claims (Required for Functional and Reproduced badges)
+### Main Results and Claims
+
 List all your paper's results and claims that are supported by your submitted
 artifacts.
 
 #### Main Result 1: Name
-Describe the results in 1 to 3 sentences. Refer to the related sections,
-figures, and/or tables in your paper and reference the experiments that support
-this result/claim (see example below).
 
-#### Main Result 2: Name
-Describe the results in 1 to 3 sentences. Refer to the related sections,
-figures, and/or tables in your paper and reference the experiments that support
-this result/claim (see example below).
+Describe the results in 1 to 3 sentences. Mention what the independent and
+dependent variables are; independent variables are the ones on the x-axes of
+your figures, whereas the dependent ones are on the y-axes. By varying the
+independent variable (e.g. file size) in a given manner (e.g. linearly), we
+expect to see trends in the dependent variable (e.g. runtime, communication
+overhead) vary in another manner (e.g. exponentially). Refer to the related
+sections, figures, and/or tables in your paper and reference the experiments
+that support this result/claim. See example below.
 
-...
+#### Main Result 2: Example Name
 
-For example:
-#### Main Result 3: Example Name
-Our paper claims that an "example result" of "X unit" and "Y unit" (reported in
-"Figure F" and "Table T") can be obtained with our prototype, this is
-reproducible by executing [Experiment 3](#experiment-3-example-name)
+Our paper claims that when varying the file size linearly, the runtime also
+increases linearly. We change the file size linearly, from 2KB to 24KB, at
+intervals of 2KB each, and we show that the runtime also increases linearly,
+reaching at most 1ms. We report these results in "Figure 1a" and "Table 3"
+(Column 3 or Row 2). This claim is reproducible by executing
+[Experiment 2](#experiment-2-example-name).
 
-
-### Experiments (Required for Functional and Reproduced badges)
+### Experiments
 List each experiment to execute to reproduce your results. Describe:
  - How to execute it in detailed steps.
  - What the expected result is.
@@ -178,36 +222,24 @@ List each experiment to execute to reproduce your results. Describe:
 Provide a short explanation of the experiment and expected results. Describe
 thoroughly the steps to perform the experiment and to collect and organize the
 results as expected from your paper (see example below). Use code segments to
-simplify the workflow, e.g.,
+simplify the workflow, as follows.
+
 ```bash
 python experiment_1.py
 ```
 
-#### Experiment 2: Name
-- Time: replace with estimate in human-minutes/hours + compute-minutes/hours.
-- Storage: replace with estimate for disk space used (omit if <10GB).
+#### Experiment 2: Example Name
 
-Provide a short explanation of the experiment and expected results. Describe
-thoroughly the steps to perform the experiment and to collect and organize the
-results as expected from your paper (see example below). Use code segments to
-simplify the workflow, e.g.,
-```bash
-./experiment2.sh
-```
-
-...
-
-For example:
-#### Experiment 3: Example Name
 - Time: 10 human-minutes + 3 compute-hours
 - Storage: 20GB
 
-This example experiment reproduces [Main Result 3: Example
-Name](#main-result-3-example-name), the following script will run the
-simulation automatically with the different parameters specified in the paper.
+This example experiment reproduces
+[Main Result 2: Example Name](#main-result-2-example-name), the following script
+will run the simulation automatically with the different parameters specified in
+the paper. (You may run the following command from the example Docker image.)
 
 ```bash
-./experiment-example.sh
+python3 main.py
 ```
 
 Results from this example experiment will be aggregated over several iterations
@@ -218,17 +250,19 @@ format. These can be directly compared to the results reported in the paper, and
 should not quantitatively vary by more than 5% from expected results.
 
 
-## Limitations (Required for Functional and Reproduced badges, encouraged for Available badge)
-Describe which steps, experiments, results, graphs, tables, etc. are included or
-are not reproducible with the provided artifact. Provide an argument why this is
-not included/possible.
+## Limitations (Required for Functional and Reproduced badges)
+
+Describe which steps, experiments, results, graphs, tables, etc. are _not
+reproducible_ with the provided artifact. Explain why this is not
+included/possible and argue why the artifact should _still_ be evaluated for the
+respective badges.
 
 ## Notes on Reusability (Encouraged for all badges)
-First, this section might not apply to your artifacts. Use it to share
-information on how your artifact can be used beyond your research paper, e.g.,
-as a general framework. The overall goal of artifact evaluation is not only to
-reproduce and verify your research but also to help other researchers to re-use
-and improve on your artifacts. Please describe how your artifacts can be adapted
-to other settings, e.g., more input dimensions, other datasets, and other
-behavior, through replacing individual modules and functionality or running more
-iterations of a specific part.
+
+First, this section might not apply to your artifacts. Describe how your
+artifact can be used beyond your research paper, e.g., as a general framework.
+The overall goal of artifact evaluation is not only to reproduce and verify your
+research but also to help other researchers to re-use and extend your artifacts.
+Discuss how your artifacts can be adapted to other settings, e.g., more input
+dimensions, other datasets, and other behavior, through replacing individual
+modules and functionality or running more iterations of a specific module.
