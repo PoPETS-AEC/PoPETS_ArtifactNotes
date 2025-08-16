@@ -38,7 +38,7 @@ Replace this with the following:
 Replace this with a description of security or privacy risks that your artifact
 may hold for the machine of the person trying to evaluate or reuse your
 artifact. This is especially relevant for artifacts that _disable a security
-mechanism_, such as a firewall, ASLR etc., to demonstrate an attack, as well as
+mechanism_, such as a firewall, ASLR, etc., to demonstrate an attack, as well as
 to artifacts that _run vulnerable code_, such as exploits, malware samples,
 etc., to demonstrate a vulnerability.
 
@@ -50,9 +50,9 @@ participants were compensated.
 ## Basic Requirements (Required for Functional and Reproduced badges)
 
 For both sections below, if you are giving reviewers remote access to special
-hardware (e.g. Intel SGX v2.0) or proprietary software (e.g. Matlab R2025a) for
-the purpose of the artifact evaluation, do not provide these instructions here
-but rather in the corresponding submission field on HotCRP.
+hardware (e.g., Intel SGX v2.0) or proprietary software (e.g., Matlab R2025a)
+for the purpose of the artifact evaluation, do not provide these instructions
+here but rather in the corresponding submission field on HotCRP.
 
 ### Hardware Requirements (Required for Functional and Reproduced badges)
 
@@ -72,34 +72,34 @@ Replace this with the following:
 Replace this with the software required to run your artifact and its versions,
 as follows.
 
-1. List the OS you used to run your artifact, along with its version (e.g.
+1. List the OS you used to run your artifact, along with its version (e.g.,
    Ubuntu 22.04). If your artifact can only run on a specific OS or a specific
    OS version, list it and explain why here. In general, your artifact reviewers
    will probably have access to a machine with a different OS or different OS
    version than yours; they should still be able to run appropriately packaged
-   artifact.
+   artifacts.
 2. List the OS packages that your artifact requires, along with their versions.
-3. Artifact packaging: If you use a container runtime (e.g. Docker) to run the
-   artifact, list the container runtime and its version (e.g. Docker 23.0.3). If
-   you use VMs, list the hypervisor (e.g. VirtualBox) to run the artifact.
+3. Artifact packaging: If you use a container runtime (e.g., Docker) to run the
+   artifact, list the container runtime and its version (e.g., Docker 23.0.3).
+   If you use VMs, list the hypervisor (e.g., VirtualBox) to run the artifact.
 4. List the programming language compiler or interpreter you used to run your
-   artifact (e.g. Python 3.13.7). Your Docker image or VM image should have this
-   version of the programming languages installed already. Your Dockerfile
+   artifact (e.g., Python 3.13.7). Your Docker image or VM image should have
+   this version of the programming languages installed already. Your Dockerfile
    should start from a base image with this programming language version.
 5. List packages that your artifact depends on, along with their versions. For
    example, Python-based privacy-preserving machine learning artifacts typically
-   require `numpy`, `scipy` etc. You may point to a file in your artifact with
+   require `numpy`, `scipy`, etc. You may point to a file in your artifact with
    this list, such as a `requirements.txt` file. If you rely on proprietary
    software (e.g. Matlab R2025a), list this here and consider providing access
    to reviewers through HotCRP.
 6. List any Machine Learning Models required to run your artifact, along with
    their versions. If your model is hosted on a different repository, such as on
-   Zenodo, then your artifact should download it automatically. If a requisite
-   ML model is _not_ in your artifact, provide a dummy model to demonstrate the
-   functionality of the rest of your artifact.
-7. List any datasets required to run your artifact. If any requisite datasets
-   are not in your artifact, you should provide a synthetic dataset that
-   showcases the expected data format.
+   Zenodo, then your artifact should download it automatically (same for
+   datasets). If a required ML model is _not_ in your artifact, provide a dummy
+   model to demonstrate the functionality of the rest of your artifact.
+7. List any datasets required to run your artifact. If any required dataset is
+   not in your artifact, you should provide a synthetic dataset that showcases
+   the expected data format.
 
 ### Estimated Time and Storage Consumption (Required for Functional and Reproduced badges)
 
@@ -132,9 +132,9 @@ your artifact to list on the website. For version-controlled repositories (e.g.,
 Git repositories), this will be a specific commit-id or tag.
 
 You _should not_ link to a specific commit here at submission time, as changes
-will happen during the evaluation process to address the reviewers' feedback,
-resulting in the link being out-of-date. Instead, you may link to the latest
-commit in your branch (e.g. main) as follows:
+will likely happen during the evaluation process to address the reviewers'
+feedback, resulting in the link being out-of-date. Instead, you may link to the
+latest commit in your branch (e.g. main) as follows:
 https://github.com/PoPETS-AEC/example-docker-python-pip/tree/main
 
 ### Set up the environment (Required for Functional and Reproduced badges)
@@ -160,7 +160,9 @@ training an ML model on very low training data, etc. If these tests succeed, all
 required software should be functioning correctly. Use code segments to simplify
 the workflow, e.g.,
 
-This only works when the working directory of Docker with the test.sh
+Launch the Docker container, attach the current working directory (i.e., run
+from the root of the cloned git repository) as a volume, set the context to be
+that volume, and provide an interactive bash terminal:
 
 ```bash
 docker run --rm -it -v ${PWD}:/workspaces/example-docker-python-pip \
@@ -168,7 +170,7 @@ docker run --rm -it -v ${PWD}:/workspaces/example-docker-python-pip \
     --entrypoint bash example-docker-python-pip:main
 ```
 
-Then within the Docker container, run
+Then within the Docker container, run:
 
 ```bash
 ./test.sh
@@ -193,9 +195,9 @@ artifacts.
 Describe the results in 1 to 3 sentences. Mention what the independent and
 dependent variables are; independent variables are the ones on the x-axes of
 your figures, whereas the dependent ones are on the y-axes. By varying the
-independent variable (e.g. file size) in a given manner (e.g. linearly), we
-expect to see trends in the dependent variable (e.g. runtime, communication
-overhead) vary in another manner (e.g. exponentially). Refer to the related
+independent variable (e.g., file size) in a given manner (e.g., linearly), we
+expect to see trends in the dependent variable (e.g., runtime, communication
+overhead) vary in another manner (e.g., exponentially). Refer to the related
 sections, figures, and/or tables in your paper and reference the experiments
 that support this result/claim. See example below.
 
@@ -226,7 +228,7 @@ results as expected from your paper (see example below). Use code segments to
 simplify the workflow, as follows.
 
 ```bash
-python experiment_1.py
+python3 experiment_1.py
 ```
 
 #### Experiment 2: Example Name
@@ -246,7 +248,7 @@ python3 main.py
 Results from this example experiment will be aggregated over several iterations
 by the script and output directly in raw format along with variances and
 standard deviations in the `output-folder/` directory. You will also find there
-the plots for "Figure F" in `.pdf` format and the table for "Table T" in `.tex`
+the plots for "Figure 1a" in `.pdf` format and the table for "Table 3" in `.tex`
 format. These can be directly compared to the results reported in the paper, and
 should not quantitatively vary by more than 5% from expected results.
 
