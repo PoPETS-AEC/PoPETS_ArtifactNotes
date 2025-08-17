@@ -24,7 +24,7 @@ To help you track of PETS Artifact 2026 Program Committee tasks and key
 milestones, we have created a calendar file (.ics). You can download and import
 it into your calendar application, or add it directly as a new calendar using
 the following link:
- > https://petsymposium.org/files/PoPETs-Artifacts-2026.ics
+ > https://petsymposium.org/files/PoPETS-Artifacts-2026.ics
 
 Integrity checksums:
 SHA-256: `38eab5ee66dbef655a75919e4864f4991e79bd72daa2974114e851c0e352f1bc`
