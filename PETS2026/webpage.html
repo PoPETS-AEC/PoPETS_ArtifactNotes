@@ -71,7 +71,7 @@
   <p>Each accepted artifact can be granted up to three badges. During
     submission, authors must select which badges they want their artifacts
     to be evaluated against. As we detail below, in general, all submitted
-    artifact should apply at least for “Artifact Available” badge, unless
+    artifact should apply at least for "Artifact Available" badge, unless
     doing so would endanger someone. To ease reviewing effort, we encourage
     authors to apply appropriately to all the badges for which they believe
     requirements are met by their artifact. Our interpretation of the
@@ -82,7 +82,7 @@
     directly.</p>
 
   <h3 class="text-headings" id="artifact-available">Artifact Available</h3>
-  <p>For the “Artifact Available” badge, the reviewers check that the
+  <p>For the "Artifact Available" badge, the reviewers check that the
     artifact is publicly accessible, has a license and is relevant to the
     paper.</p>
 
@@ -91,7 +91,7 @@
     access or private repository. If the artifact requires you as an author
     to manually approve requests for access, it is not public and will not
     qualify for the “Artifact Available” badge. Note that all components of
-    your artifact should be publicly available (e.g. source code, datasets,
+    your artifact should be publicly available (e.g.&nbsp;source code, datasets,
     etc.).</p>
 
   <p>Valid hosting options are institutional and third-party digital
@@ -105,7 +105,7 @@
     demonstrates exploiting a vulnerability and the possible harms from
     releasing a proof of concept would outweigh the benefits of making it
     available as part of a responsible disclosure process. In this case,
-    authors could apply for just the “Functional and Reproduced Badges”. If
+    authors could apply for just the "Functional and Reproduced Badges". If
     you wish to commercialize your project, you can and should still submit
     your artifact for this badge, under restricted licensing, as discussed
     in the FAQ below.</p>
@@ -117,10 +117,10 @@
     Badge”:</h4>
 
   <ul>
-    <li> ▢ Publicly available artifact with a single link.</li>
-    <li> ▢ Presence of a license.</li>
-    <li> ▢ Relevance to paper.</li>
-    <li> ▢ Corresponding content from <code>ARTIFACT-APPENDIX.md</code>
+    <li> [ ] Publicly available artifact with a single link.</li>
+    <li> [ ] Presence of a license.</li>
+    <li> [ ] Relevance to paper.</li>
+    <li> [ ] Corresponding content from <code>ARTIFACT-APPENDIX.md</code>
       completed.</li>
   </ul>
 
@@ -130,7 +130,7 @@
 
   <h3 class="text-headings" id="artifact-functional">Artifact Functional</h3>
 
-  <p>To be awarded the “Artifact Functional” badge the artifact should
+  <p>To be awarded the "Artifact Functional" badge the artifact should
     satisfy these criteria:</p>
 
   <ul>
@@ -152,7 +152,7 @@
   <p><strong>Completeness:</strong> Consider the experiments in your
     artifact as arranged in a pipeline of multiple stages, such as data
     collection, data processing, and producing plots or tables for the
-    paper. The “Completeness” criteria requires each stage to be
+    paper. The "Completeness" criteria requires each stage to be
     represented. For instance, an artifact may have a proprietary machine
     learning model as a key component of the system, and so, achieving
     completeness may be difficult. If you are unable to represent any stage,
@@ -183,23 +183,23 @@
     Badge”:</h4>
 
   <ul>
-    <li> ▢ Meets “Available Badge” requirements (except for unusual situations
+    <li> [ ] Meets "Available Badge" requirements (except for unusual situations
       discussed previously).</li>
-    <li> ▢ Clear documentation is provided.</li>
-    <li> ▢ Completeness criterion fulfilled (with potential limitations reasonably
+    <li> [ ] Clear documentation is provided.</li>
+    <li> [ ] Completeness criterion fulfilled (with potential limitations reasonably
       argued).</li>
-    <li> ▢ Exercisability criterion fulfilled (with potential limitations
+    <li> [ ] Exercisability criterion fulfilled (with potential limitations
       reasonably argued).</li>
-    <li> ▢ Corresponding content from <code>ARTIFACT-APPENDIX.md</code>
+    <li> [ ] Corresponding content from <code>ARTIFACT-APPENDIX.md</code>
       completed.</li>
   </ul>
 
   <h3 class="text-headings" id="artifact-reproduced">Artifact Reproduced</h3>
 
-  <p>The “Artifact Reproduced” badge requires the main claims of the paper
+  <p>The "Artifact Reproduced" badge requires the main claims of the paper
     to be reproduced by the reviewers. Implicitly, an artifact awarded the
-    “Artifact Reproduced” badge needs to also meet the requirements of the
-    “Artifact Functional” badge.</p>
+    "Artifact Reproduced" badge needs to also meet the requirements of the
+    "Artifact Functional" badge.</p>
 
   <p>Authors must specify the commands to run the artifacts clearly and
     describe how to reproduce each main claim of the paper. Best practice is
@@ -250,14 +250,14 @@
     Badge”:</h4>
 
   <ul>
-    <li> ▢ Meets “Functional Badge” requirements.</li>
-    <li> ▢ of the core contributions and claims of the paper identified.</li>
-    <li> ▢ Clear mapping between claims, experiments, and results provided.</li>
-    <li> ▢ Minimal amount of manual effort required from reviewers, i.e., fair
+    <li> [ ] Meets "Functional Badge" requirements.</li>
+    <li> [ ] of the core contributions and claims of the paper identified.</li>
+    <li> [ ] Clear mapping between claims, experiments, and results provided.</li>
+    <li> [ ] Minimal amount of manual effort required from reviewers, i.e., fair
       amount of automation.</li>
-    <li> ▢ Reviewers obtain reproducible results quantitatively (i.e., within 5% of
+    <li> [ ] Reviewers obtain reproducible results quantitatively (i.e., within 5% of
       the claimed value) and/or qualitatively.</li>
-    <li> ▢ Corresponding content from <code>ARTIFACT-APPENDIX.md</code>
+    <li> [ ] Corresponding content from <code>ARTIFACT-APPENDIX.md</code>
       completed.</li>
   </ul>
 
@@ -279,7 +279,7 @@
     want to commercialize my artifact. Should I still apply for any
     badges?</h3>
   <p>IP protections and commercialization prospects should not inhibit
-    authors from applying for the “Artifact Available” badge. For instance,
+    authors from applying for the "Artifact Available" badge. For instance,
     authors can choose restrictive licenses that prohibit others from using
     their code. Alternately, authors can design a smaller working prototype
     to demonstrate reproducibility of the contributions of their paper.</p>
@@ -499,16 +499,16 @@
   <h3 id="faq-lenghty-experiments">
     My
     experiment has a lengthy runtime or requires a large amount of compute
-    resources. How can I get the “Artifact Functional” badge?</h3>
+    resources. How can I get the "Artifact Functional" badge?</h3>
   <p>Although experiments may require days or weeks of compute time on
-    commodity hardware, the “Artifact Functional” badge can usually still be
+    commodity hardware, the "Artifact Functional" badge can usually still be
     achieved, by following <em>each</em> of the steps below.</p>
   <ul>
     <li>Provide a simplified version of the experiments, which may run on
       fewer data or fewer epochs of time, in order to enable the reviewers to
       check the functionality of that stage. If the results of the simplified
       experiments align with the ones reported in the paper, then authors can
-      also aim for the “Artifact Reproduced” badge.</li>
+      also aim for the "Artifact Reproduced" badge.</li>
     <li>Provide instructions and results of the full experiment in the
       repository, so that reviewers can verify the functionality of the later
       stages with these results.</li>
@@ -540,7 +540,7 @@
       attempt to procure the hardware from other artifact evaluation committee
       members. If this is not possible, then the artifact chairs may require
       authors to be involved in a video call to evaluate the artifact for the
-      “Artifact Functional” and “Artifact Reproduced” badges.</li>
+      "Artifact Functional" and "Artifact Reproduced" badges.</li>
     <li>The authors may also simulate the hardware, though this can be
       challenging.</li>
     <li>Authors should additionally publish the raw results of the
@@ -560,7 +560,7 @@
         href="https://github.com/PoPETS-AEC/examples-and-other-resources">resources
         and examples</a> of artifact packaging (Dockerfiles etc.) that have been
       put together by the artifact evaluation chairs.</li>
-    <li>For the “Artifact Functional” and/or “Artifact Reproduced” badges,
+    <li>For the "Artifact Functional" and/or "Artifact Reproduced" badges,
       clear documentation and mapping between claims, results, and experiments
       usually go a long way in facilitating the evaluation. Ideally, reviewers
       should be able to execute a single script to install, configure, and
