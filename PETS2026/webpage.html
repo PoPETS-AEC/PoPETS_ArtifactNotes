@@ -1,0 +1,666 @@
+<div class="content">
+
+  <h2 class="text-headings"><u>PoPETs 2026 Artifact Evaluation</u></h2>
+
+  <p>PoPETs reviews and publishes digital artifacts related to its
+    accepted papers. This process aids in the reproducibility of results and
+    allows others to build on the work described in the papers. Artifact
+    submissions are requested from authors of all accepted papers, and
+    although they are optional, we strongly encourage you to submit your
+    artifacts for review.</p>
+
+  <p>Possible artifacts include (but are not limited to):</p>
+  <ul>
+    <li>Source code (e.g., system implementation, proof of concepts)</li>
+    <li>Datasets (e.g., network traces, raw study data)</li>
+    <li>Machine-generated proofs</li>
+    <li>Formal specifications</li>
+    <li>Build environments (e.g., VMs, Docker containers, configuration
+      scripts)</li>
+    <li>User study questionnaires and aggregate, anonymized results</li>
+  </ul>
+
+  <p>Artifacts are evaluated by the artifact evaluation committee. Issues
+    considered include software bugs, readability of the documentation,
+    appropriate licensing, and the reproducibility of the results presented
+    in the paper. After your artifact has been approved by the committee,
+    the paper link on <a href="https://petsymposium.org">petsymposium.org</a> will be accompanied
+    by a link to the artifact along with the obtained artifact badges so
+    that interested readers can find and build upon your work.</p>
+
+  <h2 class="text-headings  sub-heading">Outline</h2>
+  <ul>
+    <li><a href="#artifact-submission-steps-for-authors">Artifact Submission Steps
+        for Authors</a></li>
+    <li><a href="#artifact-badges">Artifact Badges</a></li>
+    <li><a href="#faq">Frequently Asked Questions
+        (FAQ)</a></li>
+    <li><a href="#what-makes-a-good-submission">What makes a Good
+        Submission</a></li>
+    <li><a href="#what-makes-a-good-review">What Makes a Good Review</a></li>
+  </ul>
+
+
+  <h2 class="text-headings  sub-heading" id="artifact-submission-steps-for-authors">Artifact Submission Steps
+    for Authors</h2>
+
+  <ol>
+    <li>Please include the content of the <a
+        href="https://petsymposium.org/files/ARTIFACT-APPENDIX.md"><code>ARTIFACT-APPENDIX.md</code></a>
+      file either within your <code>README.md</code> file or as a separate
+      file. The file is important for not only reviewers during the evaluation
+      process, but also for future researchers attempting to re-use your
+      artifact. This file has different, marked sections for different
+      badges.</li>
+    <li>Decide which badges you want to apply for. As we describe below, in
+      general, all submitted artifact should apply at least for “Artifact
+      Available” badge, unless doing so would endanger someone. Authors should
+      apply to all the badges for which they believe that their artifact meets
+      the respective badge requirements.</li>
+    <li>Ensure that you have filled out <em>all</em> sections of the
+      <code>ARTIFACT-APPENDIX.md</code> file that are relevant for the badges
+      that you apply for.
+    </li>
+    <li>For your submission on HotCRP, you will need to provide a copy of
+      your paper and a direct link to the <code>ARTIFACT-APPENDIX.md</code>
+      file.</li>
+  </ol>
+
+  <h2 class="text-headings" id="artifact-badges">Artifact Badges</h2>
+
+  <p>Each accepted artifact can be granted up to three badges. During
+    submission, authors must select which badges they want their artifacts
+    to be evaluated against. As we detail below, in general, all submitted
+    artifact should apply at least for “Artifact Available” badge, unless
+    doing so would endanger someone. To ease reviewing effort, we encourage
+    authors to apply appropriately to all the badges for which they believe
+    requirements are met by their artifact. Our interpretation of the
+    individual badges is aligned with the one of <a href="https://secartifacts.github.io/">other conferences</a>. If
+    you
+    have questions about which badges to apply for, first go through the FAQ
+    below and then please contact the artifact evaluation chairs
+    directly.</p>
+
+  <h3 class="text-headings" id="artifact-available">Artifact Available</h3>
+  <p>For the “Artifact Available” badge, the reviewers check that the
+    artifact is publicly accessible, has a license and is relevant to the
+    paper.</p>
+
+  <p>Your artifact should be publicly accessible at a permanent location;
+    it should <em>not</em> be behind any kind of paywall or restricted
+    access or private repository. If the artifact requires you as an author
+    to manually approve requests for access, it is not public and will not
+    qualify for the “Artifact Available” badge. Note that all components of
+    your artifact should be publicly available (e.g. source code, datasets,
+    etc.).</p>
+
+  <p>Valid hosting options are institutional and third-party digital
+    repositories (e.g., GitHub, Gitlab, BitBucket, Zenodo, Figshare, etc.).
+    Do <em>not</em> use personal web pages or cloud storage services like
+    Google Drive, Dropbox, etc.</p>
+
+  <p><strong>All submitted artifacts should apply at least for “Artifact
+      Available”</strong>, unless for some specific unusual situations when
+    doing so could endanger someone. For instance, if the artifact
+    demonstrates exploiting a vulnerability and the possible harms from
+    releasing a proof of concept would outweigh the benefits of making it
+    available as part of a responsible disclosure process. In this case,
+    authors could apply for just the “Functional and Reproduced Badges”. If
+    you wish to commercialize your project, you can and should still submit
+    your artifact for this badge, under restricted licensing, as discussed
+    in the FAQ below.</p>
+
+  <p>The FAQ also provides resources on licensing, dealing with large
+    files, and linking to multiple repositories.</p>
+
+  <h4 class="text-headings" id="checklist-for-available-badge">Checklist for “Available
+    Badge”:</h4>
+
+  <ul>
+    <li> ▢ Publicly available artifact with a single link.</li>
+    <li> ▢ Presence of a license.</li>
+    <li> ▢ Relevance to paper.</li>
+    <li> ▢ Corresponding content from <code>ARTIFACT-APPENDIX.md</code>
+      completed.</li>
+  </ul>
+
+  <p>This badge does <em>not</em> mean that the reviewers have checked
+    that the code executes or that they have reproduced the results of the
+    paper.</p>
+
+  <h3 class="text-headings" id="artifact-functional">Artifact Functional</h3>
+
+  <p>To be awarded the “Artifact Functional” badge the artifact should
+    satisfy these criteria:</p>
+
+  <ul>
+    <li>Documentation: The artifact clearly documents how it should be used
+      (i.e., installation + execution).</li>
+    <li>Completeness: It includes all key components described in the
+      paper.</li>
+    <li>Exercisability: It includes the scripts and data needed to run the
+      experiments described in the paper. The software must successfully
+      execute in the provided environment.</li>
+  </ul>
+
+  <p><strong>Documentation:</strong> The <code>ARTIFACT-APPENDIX.md</code>
+    file within all source code artifacts should describe how to build
+    and/or run the code. Reviewers will provide feedback on the clarity of
+    the instructions and attempt to follow them and build and run the
+    code.</p>
+
+  <p><strong>Completeness:</strong> Consider the experiments in your
+    artifact as arranged in a pipeline of multiple stages, such as data
+    collection, data processing, and producing plots or tables for the
+    paper. The “Completeness” criteria requires each stage to be
+    represented. For instance, an artifact may have a proprietary machine
+    learning model as a key component of the system, and so, achieving
+    completeness may be difficult. If you are unable to represent any stage,
+    then represent it in either a simplified manner or run it on dummy data,
+    in order for reviewers to check the functionality of the stage. Provide
+    the expected outcome of the fully run stage such that preceding stages
+    are performed on ‘real’ data. Under the FAQ, we have examples on how
+    authors can still prepare their artifact for the “Artifact Functional”
+    badge in cases that involve licensing issues, time, or resource
+    constraints.</p>
+
+  <p><strong>Exercisability:</strong> All source code should be
+    accompanied by a build environment such as a Dockerfile or a virtual
+    machine (VM) install script, with all the dependencies (software
+    <em>and</em> datasets) necessary to build the code. Include and pin the
+    versions of your software dependencies. If the code is in a compiled
+    language, the code should compile in the provided build environment by
+    running the provided instructions. Compilation and setup should be
+    automated as much as possible. Ideally, there will be one script that
+    builds your software, runs your tests, and produces the results in a
+    comprehensible way.
+  </p>
+
+  <p>To receive this badge, artifacts are <em>not</em> required to be able
+    to run on all hardware and OSes.</p>
+
+  <h4 class="text-headings" id="checklist-for-functional-badge">Checklist for “Functional
+    Badge”:</h4>
+
+  <ul>
+    <li> ▢ Meets “Available Badge” requirements (except for unusual situations
+      discussed previously).</li>
+    <li> ▢ Clear documentation is provided.</li>
+    <li> ▢ Completeness criterion fulfilled (with potential limitations reasonably
+      argued).</li>
+    <li> ▢ Exercisability criterion fulfilled (with potential limitations
+      reasonably argued).</li>
+    <li> ▢ Corresponding content from <code>ARTIFACT-APPENDIX.md</code>
+      completed.</li>
+  </ul>
+
+  <h3 class="text-headings" id="artifact-reproduced">Artifact Reproduced</h3>
+
+  <p>The “Artifact Reproduced” badge requires the main claims of the paper
+    to be reproduced by the reviewers. Implicitly, an artifact awarded the
+    “Artifact Reproduced” badge needs to also meet the requirements of the
+    “Artifact Functional” badge.</p>
+
+  <p>Authors must specify the commands to run the artifacts clearly and
+    describe how to reproduce each main claim of the paper. Best practice is
+    to point out which part of the paper is reproduced by a given script,
+    e.g., name the table or figure. Also, the authors must highlight which
+    results of the paper are not reproducible with the given artifact and
+    explain why. Authors are encouraged to contemplate how their artifact
+    could be re-used by others in the future and describe potential ways for
+    improvement, etc.</p>
+
+  <p>Authors are asked to automate as much of the execution of the
+    experiments as possible; manual effort from reviewers to run and
+    interpret the results should be minimized. For instance, if an
+    experiment is performing a swap across different parameters, a script
+    automating it should be provided. Ideally, results should also be
+    automatically parsed and output in a comprehensible way, as close to the
+    output in the paper as possible (table or figure, etc.).</p>
+
+  <p>To award the “Artifact Reproduced” badge, reviewers must be able to
+    reproduce the main claims of the paper with the provided artifact. As a
+    rule of thumb, a quantitative claim should generally be considered
+    reproducible if the results obtained by reviewers are within 5% of the
+    reported value in the paper. That being said, some artifact-specific
+    factors may prevent this; in these cases, artifact reviewers should also
+    consider if the results that they obtain align qualitatively with the
+    claims made in the paper. It is the reviewer’s role to enforce that
+    these quantitative and/or qualitative expectations are met before
+    awarding the “Artifact Reproduced” badge.</p>
+
+  <p>Additionally, some experiments may by nature be harder to fully
+    reproduced during the timeframe of the artifact evaluation: e.g., take a
+    while to run, need several iterations, train a model on a large dataset,
+    etc. In these cases, authors should still provide the instructions and
+    expected results for the “long” version of the experiment, and also for
+    a simplified one (e.g., fewer iterations, smaller dataset, etc.).
+    Indeed, even on a simplified version or fewer runs, reviewers should
+    still somewhat be able to look at the results and the standard
+    deviation, and check that results from the paper can be reproduced.</p>
+
+  <p>Finally, some artifacts, such as longitudinal studies or
+    hardware-based contributions, may be infeasible for the “Artifact
+    Reproduced” badge (see FAQ below), as reviewers have limited time and
+    only commodity hardware available. Nevertheless, these authors can and
+    should still prepare their artifacts for the “Artifact Functional”
+    badge.</p>
+
+  <h4 class="text-headings" id="checklist-for-reproduced-badge">Checklist for “Reproduced
+    Badge”:</h4>
+
+  <ul>
+    <li> ▢ Meets “Functional Badge” requirements.</li>
+    <li> ▢ of the core contributions and claims of the paper identified.</li>
+    <li> ▢ Clear mapping between claims, experiments, and results provided.</li>
+    <li> ▢ Minimal amount of manual effort required from reviewers, i.e., fair
+      amount of automation.</li>
+    <li> ▢ Reviewers obtain reproducible results quantitatively (i.e., within 5% of
+      the claimed value) and/or qualitatively.</li>
+    <li> ▢ Corresponding content from <code>ARTIFACT-APPENDIX.md</code>
+      completed.</li>
+  </ul>
+
+  <h3 class="text-headings" id="artifact-link">Artifact Link</h3>
+  <p>When the artifact evaluation is over, a persistent and stable link
+    pointing to the final evaluated version of the artifact will be
+    collected for each accepted artifact. Depending on the hosting option
+    picked, this is likely a link to a specific Git commit/tag or a DoI for
+    a Zenodo record, etc. This link and the awarded badge(s) will be added
+    to the website next to the corresponding paper title. As updates to the
+    artifact are likely to occur to address reviewers’ feedback, we will
+    only collect this link after a final decision is made.</p>
+
+
+  <h2 class="text-headings sub-heading" id="faq">Frequently Asked Questions
+    (FAQ)</h2>
+
+  <h3 id="faq-commercialization">I
+    want to commercialize my artifact. Should I still apply for any
+    badges?</h3>
+  <p>IP protections and commercialization prospects should not inhibit
+    authors from applying for the “Artifact Available” badge. For instance,
+    authors can choose restrictive licenses that prohibit others from using
+    their code. Alternately, authors can design a smaller working prototype
+    to demonstrate reproducibility of the contributions of their paper.</p>
+
+  <h3 id="faq-license">Which license
+    should I choose for my artifact?</h3>
+  <ul>
+    <li>For a clear, easy to follow guide see:
+      https://choosealicense.com/</li>
+    <li>For more in-depth detail on open source and copy-left licenses, see
+      https://www.gnu.org/licenses/license-list.en.html and
+      https://opensource.org/licenses.</li>
+    <li>Before you begin extending other authors’ libraries, check that
+      doing so would comply with the terms of the license.</li>
+  </ul>
+
+  <h3 id="faq-large-file">
+    I
+    need to upload a file that is larger than 100MB, but <a
+      href="https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#about-size-limits-on-github">GitHub
+      does not allow that</a>. How can I make my file available?</h3>
+  <ul>
+    <li>If your file is at most 2GB, GitHub recommends <a
+        href="https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage">using
+        Git LFS</a>.</li>
+    <li>If your file is at most 50GB, then you should consider <a
+        href="https://support.zenodo.org/help/en-gb/1-upload-deposit/80-what-are-the-size-limitations-of-zenodo">hosting
+        it as a record on Zenodo</a> for example. Artifacts have also used <a
+        href="https://huggingface.co/docs/hub/en/storage-limits">Huggingface</a>
+      successfully to host large ML models.</li>
+    <li>If directly uploading your (compressed) file to one of the
+      aforementioned platforms does <em>not</em> work, then you may split the
+      file into multiple chunks. You can also contact the artifact chairs if
+      you have trouble with this step.</li>
+    <li>Do <em>not</em> use Google Drive or Dropbox links; they are not
+      version-controlled or persistent in any way.</li>
+  </ul>
+  <h3 id="faq-single-link">
+    My
+    paper has several artifacts, such as one source code repository and few
+    datasets, or multiple source code repositories for different purposes.
+    What link should I use and submit?</h3>
+  <p>We will need a single link to put on the PETS website and all
+    artifacts associated with your paper should be discoverable from that
+    one link.</p>
+  <ul>
+    <li>If you have several Git repositories, we suggest using <a
+        href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">git
+        submodules</a>. Reference specific hashes of Git commits when using Git
+      submodules.</li>
+    <li>If you are using Zenodo (or similar service) to host your datasets
+      and a Git repository for your code, ensure that your
+      <code>README.md</code> in your Git repository includes a link to the
+      Zenodo record, and you may submit the link to your Git repository for
+      artifact evaluation.
+    </li>
+  </ul>
+
+  <h3 id="faq-user-study">I
+    have a user study. How can I get the “Artifact Available” badge?</h3>
+  <p>An example of a <a
+      href="https://github.com/blues-lab/priv-eng-dataset/tree/ca35ffbb3c38ff7877c01ee92bfda29b2033ae6e">good
+      user study artifact</a> is available here. Authors of papers with user
+    studies can generally achieve the “Artifact Available” badge, by
+    including the following in their artifact:</p>
+  <ul>
+    <li>User study questionnaire.</li>
+    <li>If participants were informed of, and consented to,
+      <em>anonymized</em> transcript or responses being released, explicitly
+      mention this, and release these transcripts or questionnaire
+      responses.
+    </li>
+    <li>We also recommend including demographics of your user study
+      participants.</li>
+  </ul>
+
+  <h3 id="faq-course">I
+    am designing a course or a game to teach privacy. How can I get the
+    “Artifact Available” badge?</h3>
+  <p>Here are examples of artifacts regarding <a
+      href="https://github.com/MaishaB/undergraduate-privacy-curriculum/tree/0a7f27a8b4220298040323fb100daa658583717b">an
+      undergraduate course</a> and a <a
+      href="https://github.com/DataSmithLab/Panopticon/tree/236b792058b2cc65a43c55b624bb4649b4bbd328">game</a>
+    to teach privacy.</p>
+  <p>For courses, thoroughly document the course structure, including the
+    number of lessons or modules, lesson titles, number and types of
+    assessments. You should also consider including:</p>
+
+  <ul>
+    <li>Written and programming exercises.</li>
+    <li>Tutorials.</li>
+    <li>Assessments, including quizzes or exams.</li>
+  </ul>
+
+  <p>For games, document the game mechanics, game materials, setup
+    instructions as well as per-round instructions. You may include videos
+    to supplement, but not replace, your documentation.</p>
+  <p>While in general we expect both game and course-related artifacts to
+    be awarded the “Artifact Available” badge, the aforementioned artifact
+    included programming exercises that could be fully exercised by the
+    reviewers and was thus awarded the “Artifact Functional” badge.</p>
+
+  <h3 id="faq-docker-examples">
+    I don’t have time to write a Dockerfile to build my project. Do you have
+    examples? Should I upload a Dockerfile or a Docker image or both?</h3>
+  <p>Authors are encouraged to check out the <a
+      href="https://github.com/PoPETS-AEC/examples-and-other-resources">repository
+      examples</a> that have been put together by the artifact evaluation
+    chairs.</p>
+  <p>These examples are in the form of GitHub repositories that
+    include:</p>
+  <ul>
+    <li>Dockerfiles for popular programming workflows, including
+      Python-based projects.</li>
+    <li>GitHub Action workflows to <em>automatically</em> generate a Docker
+      image based on the Dockerfile. Whenever the Dockerfile is changed, a new
+      Docker image will be released. That way, authors can focus on writing
+      and releasing their Dockerfile while reviewers can directly download the
+      Docker image from the “GitHub Container Registry” (or another registry
+      like DockerHub if authors follow resources we point to).</li>
+  </ul>
+  <p>Authors can fork these repositories, and use the fork as a starting
+    point for their artifact. For example, for Python-based projects,
+    authors should modify the <code>Dockerfile</code> and add the pinned
+    versions of their dependencies to a <code>requirements.txt</code> (or
+    similar) file.</p>
+  <p>Note that these resources are not comprehensive, so authors and
+    reviewers are not to interpret them as the only way to package an
+    artifact; we also welcome suggestions to these resources in the form of
+    issues, pull requests, or direct contributions.</p>
+
+  <h3 id="faq-vms-or-docker">Should I go for VMs or
+    Docker?</h3>
+  <p>For most artifacts, we have found that a Dockerfile suffices. As in
+    our response to the question above, please check our <a
+      href="https://github.com/PoPETS-AEC/examples-and-other-resources">repository
+      examples</a> on GitHub. If you use Docker: - Always include the
+    Dockerfile and other scripts used to build the Docker image in your
+    artifact. - Pin versions of dependencies as much as possible to avoid
+    future breaking changes (e.g., specify a specific hash rather than a
+    loose <code>latest</code> tag for the base image, same for dependencies
+    versions). - Note that if you do the above points, you do <em>not</em>
+    need to include both a Dockerfile and a Docker image; we strongly prefer
+    using a Dockerfile with pinned versions. - Finally, our example GitHub
+    repository automatically generates a Docker image from our (example)
+    Dockerfile and publishes it as a “GitHub release”, so you do not need to
+    worry about building and hosting the Docker image.</p>
+  <p>VMs could be a better fit for artifacts that require multiple nodes
+    communicating with each other (you could also explore <a href="https://docs.docker.com/compose/">Docker
+      Compose</a>
+    if that fits
+    your use case). If you include a VM:</p>
+  <ul>
+    <li>State the parameters used to create the VM, including the CPU
+      architecture, number of expected CPU cores, the amount of RAM to be
+      given, maximum size of the disk image that the VM was created with,
+      BIOS/UEFI configuration. You should also list any external virtualized
+      hardware that needs to be virtualized.</li>
+    <li>Include the scripts or files required to build the VM image.</li>
+    <li>Your VM should not usually have to download additional dependencies
+      after you run your installation scripts. If that is the case, reassess
+      your build process and consider making changes to limit the amount of
+      network resources needed.</li>
+    <li>We provide artifact reviewers with VM instances that can be spawn
+      from HotCRP to perform the evaluation. Your artifact, however, should
+      also be executable in general, and not only on these VMs. Hence, your
+      descriptions and scripts should be as generic as possible.</li>
+  </ul>
+
+  <h3 id="faq-cloud-platforms">
+    My
+    artifact runs on cloud computing platforms such as AWS EC2, etc., and
+    requires access credentials. How can I prepare my artifact for
+    review?</h3>
+  <p>Since PETS 2026, we have a dedicated submission field on HotCRP to
+    allow authors to specify account credentials, API access keys, etc.
+    Authors should state the amount of money/credits required to run the
+    experiments and provide account credentials with enough credits. Our
+    reviewers are <em>not</em> expected to invest their money or provide
+    their credit cards to set up accounts.</p>
+  <p>If any form of credentials cannot be provided, provide an alternative
+    way of running your artifact; you may communicate with the artifact
+    chairs. If this is not possible, reconsider your choices of badges, as
+    it may be impossible to assess your artifact for the “Artifact
+    Functional or Reproduced” badges.</p>
+
+  <h3 id="faq-dataset-preparation">My
+    paper includes a dataset. How should I prepare the dataset?</h3>
+  <ul>
+    <li>Document your dataset so that others can reuse it.</li>
+    <li>Add scripts to automatically download the dataset (if necessary),
+      parse the data, and produce the tables, graphs, or statistics that
+      appear in the paper.</li>
+    <li>If the dataset includes survey results, provide a copy of the
+      original survey with raw results. This is vital for replication studies
+      and helping researchers interpret the context of your results.</li>
+  </ul>
+  <p>Please refer to the instructions under one of the previous FAQs on
+    how to upload large files to your repository.</p>
+
+  <h3 id="faq-ml-large-model">
+    My
+    paper involves a large machine learning (ML) model, or other such large
+    files that are difficult to share. How can I get the “Artifact
+    Functional” badge?</h3>
+  <p>If a large ML model, or other file is required to execute the
+    presented tool, the authors should include it within their artifact,
+    unless it is proprietary. If the dataset or model is not included in the
+    artifact, authors must share a synthetic dataset or dummy model, which
+    may, perhaps perform worse, but which can be used by other researchers
+    to test the principle functionality of the artifact. Authors should
+    provide the code to train the original model, though depending on the
+    contributions of the paper, it need not be executed.</p>
+  <p>Please refer to the instructions under one of the previous FAQs on
+    how to upload large files to your repository.</p>
+
+  <h3 id="faq-lenghty-experiments">
+    My
+    experiment has a lengthy runtime or requires a large amount of compute
+    resources. How can I get the “Artifact Functional” badge?</h3>
+  <p>Although experiments may require days or weeks of compute time on
+    commodity hardware, the “Artifact Functional” badge can usually still be
+    achieved, by following <em>each</em> of the steps below.</p>
+  <ul>
+    <li>Provide a simplified version of the experiments, which may run on
+      fewer data or fewer epochs of time, in order to enable the reviewers to
+      check the functionality of that stage. If the results of the simplified
+      experiments align with the ones reported in the paper, then authors can
+      also aim for the “Artifact Reproduced” badge.</li>
+    <li>Provide instructions and results of the full experiment in the
+      repository, so that reviewers can verify the functionality of the later
+      stages with these results.</li>
+  </ul>
+
+  <h3 id="faq-crawl-longitudinal-experiments">
+    My
+    paper involves a longitudinal study or crawl. How can I get the
+    “Artifact Functional and Reproduced” badges?</h3>
+  <p>Authors should provide:</p>
+  <ul>
+    <li>Anonymized raw data, unless forbidden by legal requirements,
+      privacy, or ethical concerns. In this case, authors should include a
+      dataset with dummy or synthetic data. Please follow the instructions
+      above to upload large files to your artifact.</li>
+    <li>Evaluation scripts to reproduce the results of the paper. Reviewers
+      should be able to execute the evaluation scripts on either anonymized
+      raw data or dummy data.</li>
+  </ul>
+
+  <h3 id="faq-hardware-contribution">My
+    paper involves a hardware-based contribution. How can I prepare my
+    artifact?</h3>
+  <ul>
+    <li>If the artifact requires GPU VMs, Trusted Execution Environments,
+      IoT devices and Smartphones, ensure that you indicate this at submission
+      time.</li>
+    <li>If other special hardware is required, then artifact chairs will
+      attempt to procure the hardware from other artifact evaluation committee
+      members. If this is not possible, then the artifact chairs may require
+      authors to be involved in a video call to evaluate the artifact for the
+      “Artifact Functional” and “Artifact Reproduced” badges.</li>
+    <li>The authors may also simulate the hardware, though this can be
+      challenging.</li>
+    <li>Authors should additionally publish the raw results of the
+      experiments, so that reviewers can verify the remaining stages as
+      functional.</li>
+  </ul>
+
+  <h2 class="text-headings sub-heading" id="what-makes-a-good-submission">What makes a Good
+    Submission</h2>
+  <p>To ensure a smooth submission process, please follow these important
+    guidelines:</p>
+  <ul>
+    <li><strong>Alpha-test your artifact</strong> from a fresh install or
+      ask a friend to do so. Fix potential issues that are uncovered before
+      submission.</li>
+    <li>As discussed in the FAQ, go through the <a
+        href="https://github.com/PoPETS-AEC/examples-and-other-resources">resources
+        and examples</a> of artifact packaging (Dockerfiles etc.) that have been
+      put together by the artifact evaluation chairs.</li>
+    <li>For the “Artifact Functional” and/or “Artifact Reproduced” badges,
+      clear documentation and mapping between claims, results, and experiments
+      usually go a long way in facilitating the evaluation. Ideally, reviewers
+      should be able to execute a single script to install, configure, and
+      reproduce results.</li>
+    <li><strong>Respond professionally to reviews and comments within one
+        week.</strong></li>
+    <li><strong>Incorporate requested changes, at least partially, within
+        two weeks after the request</strong>. Partial progress should be evident
+      to reviewers through version control (Git commits or updates to Zenodo
+      records etc.). Do <em>not</em> leave updates to the last minute. If some
+      fixes require more time, authors <em>should</em> communicate a timeline
+      by which these changes will be made for reviewers to plan a
+      re-evaluation.</li>
+  </ul>
+  <p>Your cooperation in adhering to these guidelines will greatly
+    contribute to the efficiency and effectiveness of your submission and
+    review process. We eagerly anticipate receiving your high-quality
+    contributions and look forward to showcasing your research!</p>
+
+  <h3 class="text-headings" id="artifact-award">Artifact Award</h3>
+  <p>Since PETS 2022, distinguished artifacts are recognized by an <a
+      href="https://petsymposium.org/artifact-award.php">artifact award</a>.
+    The main objective through that award is to reward authors who put a lot
+    of effort into the release of their artifact and to showcase exemplar
+    submissions that contribute to the open-science and reproducibility
+    efforts of our community.</p>
+  <p>Since PETS 2026, we provide explicit criteria for reviewers to judge
+    whether an artifact should be nominated for this award. Reviewers should
+    consider the artifact quality, completeness, documentation, ease of
+    reuse, artifact maturity and scope of its target audience, interactivity
+    and responsiveness of authors, etc. Ultimately, nominations are reviewed
+    and ranked.</p>
+  <p>Our suggestion to authors is to simply prepare and release their
+    artifact in the same way that they wish anyone in their field would do
+    to facilitate adoption and reproducibility by others.</p>
+
+  <h2 class="text-headings sub-heading" id="what-makes-a-good-review">What Makes a Good
+    Review</h2>
+
+  <p>Artifact reviewers should familiarize themselves with the artifact
+    call, the aforementioned guidelines, and the format of the
+    <code>ARTIFACT-APPENDIX.md</code> file. Reviewers should reach out to
+    artifact chairs with any questions.
+  </p>
+  <p>Towards the goal of contributing to open-science and reproducibility,
+    the artifact evaluation process is designed to be interactive; authors
+    are expected to take into account reviewers’ comments and modify their
+    artifact accordingly. As such, reviewers are kindly asked to start their
+    evaluation as early as possible and to post reviews or comments
+    regularly. Once authors communicate to reviewers that issues were
+    resolved, reviewers should then take another look and either approve the
+    artifact or provide additional comments until a final decision is
+    made.</p>
+  <p>We provide practical tips for reviewers below:</p>
+  <ul>
+    <li><strong>Start the evaluation early.</strong></li>
+    <li>Notify artifact evaluation chairs <strong>ASAP</strong> if you are
+      missing hardware or resources to perform the evaluation.</li>
+    <li>Post a preliminary review and update it as authors make edits.
+      Adding an “[EDIT]” tag or striking out the text of the prior review can
+      indicate modified and/or solved comments, etc.</li>
+    <li>Provide a concise list of issues/suggestions first (this helps give
+      an overview to everyone), followed by more details (for the authors to
+      make changes).</li>
+    <li>Explicitly number or name these issues/suggestions; doing so
+      facilitates future references to them in comments between authors and
+      reviewers.</li>
+    <li>If the code fails, include the environment that it is run on, the
+      error messages, and potential steps that were attempted to fix
+      them.</li>
+    <li>Actively participate in the discussions.</li>
+    <li>Politely ping authors for updates or for a timeline if no response
+      is received to your comments after a week.</li>
+    <li>Respond politely and professionally.</li>
+    <li>Tag artifact evaluation chairs if you do not hear back from the
+      authors, or if something needs to be brought up to our attention.</li>
+  </ul>
+
+  <h3 class="text-headings" id="distinguished-artifact-reviewers">Distinguished
+    Artifact
+    Reviewers</h3>
+  <p>Since PETS 2025, we recognize members of the artifact evaluation
+    committee as <a href="https://petsymposium.org/reviewer-awards.php">distinguished
+      artifact reviewers</a>, based on the following criteria:</p>
+  <ul>
+    <li>Timeliness, including responding to authors’ updates.</li>
+    <li>High quality reviews and discussions that significantly improve the
+      artifact.</li>
+    <li>Going above and beyond, such as by helping out with extra reviews,
+      helping with artifacts with special requirements, etc.</li>
+  </ul>
+
+  <h3 class="text-headings" id="volunteer-for-the-artifact-evaluation-committee">Volunteer for
+    the Artifact Evaluation Committee</h3>
+  <p>We are looking for volunteers to serve on the artifact evaluation
+    committee. As a committee member, you will perform review of artifacts
+    according to the guidelines above. We are looking for volunteers who
+    will be interested in providing feedback on documentation and
+    instructions, trying to get source code to build, or have experience
+    with re-using published datasets. Please fill out the reviewer
+    nomination form linked in the menu of the PETS website.</p>
+
+</div>
