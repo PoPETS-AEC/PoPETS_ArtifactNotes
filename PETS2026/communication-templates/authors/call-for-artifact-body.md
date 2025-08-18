@@ -41,9 +41,9 @@ The next deadlines are:
 
 Note that the artifact review process is meant to be interactive between authors
 and reviewers in order to fix potential issues that are uncovered during the
-evaluation. To ensure this interactivity, within the deadlines, we have encoded
-a date by which reviewers will be asked to submit a preliminary review, as well
-as date by which the authors will be expected to have responded and made
+evaluation. To ensure this interactivity, within the deadlines, we have added a
+date by which reviewers will be asked to submit a preliminary review, as well as
+a date by which the authors will be expected to have responded and made
 preliminary updates. Thus, please actively respond to reviewers' comments and
 make modifications (if needed), so that your artifact can be awarded badge(s) by
 the Artifact Finalized Deadline.
