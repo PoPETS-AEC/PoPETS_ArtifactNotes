@@ -1,40 +1,42 @@
 Subject: Instructions and bidding by Sep 15, 2025 for PETS artifacts 2026.1
 
-Dear %NAME%,
+Dear {{NAME}},
 
-Welcome to the PoPETs 2026 artifact evaluation committee! The first issue of
-submissions are in and there are <NUMBER> submissions.  With <NUMBER> committee
-members we expect each member will be assigned <NUMBERS> reviews this issue. If
-you have not already indicated your conflicts, please do so.
+Welcome to the PoPETs 2026 artifact evaluation committee! 
+We have received {{NUMSUBMITTED}} submissions. With over 70 committee 
+members, we expect each member will be assigned at most 
+1 review this issue. If you have not already indicated your 
+conflicts, please do so.
 
-Further, please verify that your affiliation information is correct in HotCRP
-(https://artifact.petsymposium.org/artifact2026.1/users.php/pc) and on the PETS
-webpage (https://petsymposium.org/cfp26.php). Let us know if there are any
-errors.
+Please verify that your affiliation information is correct in HotCRP 
+({{LINK}}/users.php/pc) 
+and on the PETS webpage (https://petsymposium.org/cfp26.php). 
+Let us know if there are any errors.
 
-We have opened up bidding for committee members to indicate preferences on which
-artifacts they would like to review. The deadline for preferences is **Monday,
-Sep 15, 2025**, after this we will be assigning reviews.
+We have opened up bidding for committee members to indicate 
+preferences on which artifacts they would like to review. The 
+deadline for preferences is **Monday, Sep 15, 2025 AoE**. 
+We will be assigning reviews after this time.
 
-IMPORTANTLY: Please set a negative preference of -5 for any submission you
-cannot review due to missing resources. Note that we provide VMs with GPUs
-(contact artifact chairs for access to these VMs).
+IMPORTANTLY: Please set a negative preference of -5 for any 
+submission you cannot review due to missing resources. 
+Note that we provide VMs with GPUs. Email artifact chairs for 
+access to these VMs.
 
-Use the link below to sign in to the site.
-  > https://artifact.petsymposium.org/artifact2026.1
-
-
-Specific instructions for bids:
+Instructions for bids:
 -------------------------------
 
-Site URL: https://artifact.petsymposium.org/artifact2026.1
+1. Use the link below to sign in to the site.
+   > {{LINK}}
 
-**Enter bids, you can sort by relevance**:
-- Go to the "Review Preferences" page:
-  https://artifact.petsymposium.org/artifact2026.1/reviewprefs.php
+2. Go to the "Review Preferences" page:
+  > {{LINK}}/reviewprefs.php
 
-- Enter one of the following values as a bid (it’s useful for the
-chairs when bids have clear semantics):
+2. Sort by the "Topic Score" column on the right-hand side. 
+
+3. Enter one of the following values in the "Preference" 
+column. This is your bid; it’s useful for the chairs when 
+bids have clear semantics:
    3     I want to review this artifact
    2     It's a good artifact for me
    1     It's an ok artifact for me
@@ -43,15 +45,16 @@ chairs when bids have clear semantics):
    -5    I cannot review this due to missing resources
    -100  Conflict
 
-- Please try to enter a +2/+3 bid for at least 2 artifacts for which you think
-you are well qualified. Note that during the evaluation you do not need to do a
-detailed review of any source code, we are mostly checking to make sure the
-artifacts compile, run, and have easy to follow setup instructions. See our
-review guidelines for more information: https://petsymposium.org/artifacts.php
+- Please try to enter a +2/+3 bid for at least 2 artifacts for which you
+think you are well qualified. Note that during the evaluation you do 
+not need to do a detailed review of any source code, we are mostly 
+checking to make sure the artifacts compile, run, and have easy to 
+follow setup instructions. See our review guidelines for more 
+information: https://petsymposium.org/artifacts.php
 
-- New this year: the topics used to sort artifacts by relevance have been
-modified to be more fine-grained. We hope this will facilitate bidding and
-help us identify earlier on potential missing resources by reviewers.
+- New this year: the topics used to sort artifacts by relevance were 
+modified to allow reviews to indicate resource availability. We hope 
+this will facilitate bidding and help us identify missing resources earlier.
 
 This bidding process worked well last year, but we cannot guarantee you
 your preferences. However, we hope this continues to benefit reviewers
