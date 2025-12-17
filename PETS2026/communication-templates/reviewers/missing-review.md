@@ -7,17 +7,17 @@ We need to know if you will be able to complete your review soon or no. Otherwis
 Please response on where you are at with your artifact evaluation.
 
 * Title: {{TITLE}}
-* Site: https://artifact.petsymposium.org/artifact2026.1/paper.php/{{PID}}
+* Site: https://artifact.petsymposium.org/artifact2026.2/paper.php/{{PID}}
 
 Guidelines and practical tips for reviewers are on the call for artifacts page: https://petsymposium.org/artifacts.php#what-makes-a-good-review
 
-The deadlines for PETS issue 2026.1 were:
+The deadlines for PETS issue 2026.2 were:
 
-- Eval&Discussion Start (Reviewers+Authors) Sep 17
-- Preliminary Review Deadline (Reviewers) Oct 1
-- Preliminary Updates Deadline (Authors) Oct 8
-- Eval&Discussion Continue (Reviewers+Authors) Oct 31
-- Finalized Deadline (Reviewers+Chairs) Oct 31
+- Eval&Discussion Start (Reviewers+Authors) Dec 17
+- Preliminary Review Deadline (Reviewers) Jan 7
+- Preliminary Updates Deadline (Authors) Jan 14
+- Eval&Discussion Continue (Reviewers+Authors) Feb 6
+- Finalized Deadline (Reviewers+Chairs) Feb 6
 
 Kind regards,
 
