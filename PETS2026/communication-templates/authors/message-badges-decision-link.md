@@ -11,5 +11,5 @@ If authors wish us to use another link (it needs to be stable and permanent), pl
 Thanks for your responsiveness and congrats on getting the badge(s): we really appreciate all the hard work it represents to contribute to open-science for our community!
 
 Best regards,
---
+
 PoPETS 2026 Artifact Evaluation Chairs
