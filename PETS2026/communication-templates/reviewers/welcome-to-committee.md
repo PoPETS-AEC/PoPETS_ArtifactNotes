@@ -1,9 +1,9 @@
 Subject: Welcome to the PoPETS 2026 Artifact Evaluation Committee!
 
-The call for artifacts for the first PETS issue 2026.1 was sent out and the first submissions are already registered.
+The call for artifacts for the third PETS issue 2026.3 was sent out and the first submissions are already registered.
 
 **Login** To log into the submission site you can use the following link:
- > https://artifact.petsymposium.org/artifact2026.1/
+ > https://artifact.petsymposium.org/artifact2026.3/
 
 With this email we want to inform you about four things:
 
@@ -11,17 +11,17 @@ With this email we want to inform you about four things:
 
 2. **Topic Interests**: Indicate the artifacts you would be able to evaluate through the topic interests on your HotCRP profile. The same information is asked from authors at submission time. This will help us to avoid assigning reviewers with no access to the required hardware.
 
-3. **Schedule**: The deadlines for PETS issue 2026.1 are:
+3. **Schedule**: The deadlines for PETS issue 2026.3 are:
 
-- Call for Artifacts (Chairs) Aug 15
-- Submission Deadline (Authors) Sep 10
-- Bidding Deadline (Reviewers) Sep 15
-- Assignments Deadline (Chairs) Sep 17
-- Eval&Discussion Start (Reviewers+Authors) Sep 17
-- Preliminary Review Deadline (Reviewers) Oct 1
-- Preliminary Updates Deadline (Authors) Oct 8
-- Eval&Discussion Continue (Reviewers+Authors) Oct 31
-- Finalized Deadline (Reviewers+Chairs) Oct 31
+- Call for Artifacts (Chairs) Feb 13
+- Submission Deadline (Authors) Mar 11
+- Bidding Deadline (Reviewers) Mar 16
+- Assignments Deadline (Chairs) Mar 18
+- Eval&Discussion Start (Reviewers+Authors) Mar 18
+- Preliminary Review Deadline (Reviewers) Apr 1
+- Preliminary Updates Deadline (Authors) Apr 8
+- Eval&Discussion Continue (Reviewers+Authors) May 1
+- Finalized Deadline (Reviewers+Chairs) May 1
 
 To help you track of PETS Artifact 2026 Program Committee tasks and key milestones, we have created a calendar file (.ics). You can download and import it into your calendar application, or add it directly as a new calendar using the following link:
  > https://petsymposium.org/files/PoPETS-Artifacts-2026.ics

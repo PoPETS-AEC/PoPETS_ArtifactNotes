@@ -25,36 +25,28 @@ The deadline for artifact submissions for PETS 2026 issue 2 is:
 
 **Wednesday, Dec 10, 2025 at 23:59 AoE**.
 
-To submit your artifact, create an account on our artifact submission site for
-2026.2:
+To submit your artifact, create an account on our artifact submission site for 2026.3:
 
-> https://artifact.petsymposium.org/artifact2026.2/
+> https://artifact.petsymposium.org/artifact2026.3/
 
 The next deadlines are:
 
-- Artifact Submission Deadline: Wednesday, Dec 10, 2025
-- Evaluation and Interactive Discussion Start: Wednesday, Dec 17, 2025
-- Preliminary Artifact Review Deadline: Wednesday, Jan 7, 2026
-- Preliminary Artifact Authors Updates Deadline: Wednesday, Jan 14, 2026
+- Artifact Submission Deadline: Wednesday, Mar 11, 2026
+- Evaluation and Interactive Discussion Start: Wednesday, Mar 18, 2026
+- Preliminary Artifact Review Deadline: Wednesday, Apr 1, 2026
+- Preliminary Artifact Authors Updates Deadline: Wednesday, Apr 8, 2026
 - Evaluation and Interactive Discussion continue until decision is reached
-- Artifact Finalized Deadline (firm): Friday, Feb 6, 2026
+- Artifact Finalized Deadline (firm): Friday, May 1, 2026
 
-Note that the artifact review process is meant to be interactive between authors
-and reviewers in order to fix potential issues that are uncovered during the
-evaluation. To ensure this interactivity, within the deadlines, we have added a
-date by which reviewers will be asked to submit a preliminary review, as well as
-a date by which the authors will be expected to have responded and made
-preliminary updates. Thus, please actively respond to reviewers' comments and
-make modifications (if needed), so that your artifact can be awarded badge(s) by
-the Artifact Finalized Deadline. For this issue of the artifact review, we 
-have ensured that both the preliminary review deadline (Jan 7) and preliminary 
-authors' update deadline (Jan 14) do not fall during the holiday break.
+Note that the artifact review process is meant to be interactive between authors and reviewers in order to fix potential issues that are uncovered during the evaluation. To ensure this interactivity, within the deadlines, we have added a date by which reviewers will be asked to submit a preliminary review, as well as a date by which the authors will be expected to have responded and made preliminary updates.
+
+Thus, please actively respond to reviewers' comments and make modifications (if needed), so that your artifact can be awarded badge(s) by the Artifact Finalized Deadline.
 
 Please let us know at <artifact26@petsymposium.org> if you have any concerns
 with meeting these deadlines, would like to submit to a later artifact issue,
 or, have any questions regarding the process.
 
--- 
+--
 Miti Mazmudar and Yohan Beugin
 PoPETs 2026 Artifact Evaluation Chairs
 artifact26@petsymposium.org

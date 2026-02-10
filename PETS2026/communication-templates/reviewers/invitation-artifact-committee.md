@@ -4,7 +4,7 @@ You or someone else has nominated you for the PoPETs 2026 Artifact Evaluation Co
 
 **TL;DR:**
  - We invite you to serve in the PoPETS Artifact Evaluation Committee for 2026.
- - Please reply to this email by **Friday, August 29th, 2025** if you're willing to serve in the Artifact Evaluation Committee this upcoming year:
+ - Please reply to this email by **<TODO-CHANGE-DATE>** if you're willing to serve in the Artifact Evaluation Committee this upcoming year:
    - If 'yes', please confirm your details:
      - First Name: 
      - Last Name: 
@@ -32,7 +32,7 @@ We invite you to be part of the PoPETs Artifact Evaluation Committee for the upc
 
 **Suggestions or Questions**: If you have more suggestions for smoothing out the evaluation process and reducing the workload of the reviewers further, let us know at artifact26@petsymposium.org. In case of questions feel free to reach out to us at any time.
 
-**Actions**: Please reply to this email by **Friday, August 29th, 2025** if you're willing to serve in the Artifact Evaluation Committee this upcoming year:
+**Actions**: Please reply to this email by **<TODO-CHANGE-DATE>** if you're willing to serve in the Artifact Evaluation Committee this upcoming year:
 - If 'yes', please confirm your details:
   - First Name: 
   - Last Name: 
