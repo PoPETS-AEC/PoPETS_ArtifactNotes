@@ -1,0 +1,26 @@
+artifacts:
+    - paper_url: ""
+      title: "title 1"
+      artifact_url: "artifact link 1"
+      badges: "available"
+
+    - paper_url: ""
+      title: "title 2"
+      artifact_url: "artifact link 2"
+      badges: "available, functional"
+
+    - paper_url: ""
+      title: "title 3"
+      artifact_url: "artifact link 3"
+      badges: "available, functional, reproduced"
+
+    - paper_url: ""
+      title: "title 4"
+      artifact_url: "artifact link 4"
+      badges: "functional"
+
+    - paper_url: ""
+      title: "title 5"
+      artifact_url: "artifact link 5"
+      badges: "functional, reproduced"
+
