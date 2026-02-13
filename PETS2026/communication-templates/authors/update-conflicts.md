@@ -1,4 +1,4 @@
-Subject: REMINDER: Artifact submission: add conflicts by Sep 10, 2025
+Subject: REMINDER: Artifact submission: add conflicts by Mar 11, 2026
 
 Hello!
 
@@ -6,7 +6,7 @@ This is regarding your PETS artifact submission. If you have registered a
 submission, please check and add your conflicts with the artifact evaluation
 committee. The deadline for artifact submissions for this issue is
 
-  **Wednesday, Sep 10, 2025 at 23:59 AoE**.
+  **Wednesday, Mar 11, 2026 at 23:59 AoE**.
 
 Thanks,
 --
