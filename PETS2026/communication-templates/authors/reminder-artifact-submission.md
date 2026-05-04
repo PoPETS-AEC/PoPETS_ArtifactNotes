@@ -1,9 +1,8 @@
-Subject: REMINDER: Artifact submission deadline March 11, 2026.
+Subject: REMINDER: Artifact submission deadline June 8, 2026.
 
 Content: Hello!
 
-This is just a reminder that if you plan on submitting an artifact for your accepted PETs paper, the deadline is **March 11, 2026**. If you cannot make
-it to this issue, and would like to submit to a later issue, let the artifact evaluation chairs (artifact26@petsymposium.org) know.
+This is just a reminder that if you plan on submitting an artifact for your accepted PETs paper, the deadline is **June 8, 2026** and that there is no other artifact evaluation issue after that for papers accepted at PETS 2026. If you have any issue or question, let the artifact evaluation chairs (artifact26@petsymposium.org) know.
 Thanks!
 
 ---

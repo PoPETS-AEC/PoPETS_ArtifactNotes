@@ -1,10 +1,10 @@
-Subject: Finalizing discussions + decisions by Friday, May 1
+Subject: Finalizing discussions + decisions by Friday, July 10
 
 ---
 
 Hello reviewers,
 
-Thank you all for your service to the PoPETs 2026 Artifact Evaluation Committee. The finalized deadline for badges decision for 2026.3 artifacts is less than a week away (Friday, May 1st), and we need your help to make it!
+Thank you all for your service to the PoPETs 2026 Artifact Evaluation Committee. The finalized deadline for badges decision for 2026.4 artifacts is less than a week away (Friday, July 10), and we need your help to make it!
 
 In the past days, we (artifact chairs Miti and Yohan) have been posting comments tagging authors and reviewers on still undecided artifacts to help the evaluation, discussion, and updates move along.
 

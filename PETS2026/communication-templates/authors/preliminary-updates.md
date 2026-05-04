@@ -12,12 +12,12 @@ Finally, a few reviewers are still working on their initial assessment; their co
 
 The next deadlines are:
 
-- Preliminary Artifact Authors Updates Deadline: Wednesday, Apr 8, 2026
+- Preliminary Artifact Authors Updates Deadline: Friday, June 26, 2026
 - Evaluation and Interactive Discussion continue until decision is reached
-- Artifact Finalized Deadline (firm): Friday, May 1, 2026
+- Artifact Finalized Deadline (firm): Friday, July 10, 2026
 
 * Title: {{TITLE}}
-* Site: https://artifact.petsymposium.org/artifact2026.3/paper.php/{{PID}}
+* Site: https://artifact.petsymposium.org/artifact2026.4/paper.php/{{PID}}
 
 Thanks,
 --

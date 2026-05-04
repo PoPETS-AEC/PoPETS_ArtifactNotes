@@ -1,20 +1,20 @@
-Subject: Instructions and bidding by March 16, 2026 for PETS Artifacts 2026.3
+Subject: Instructions and bidding by Jun 9, 2026 for PETS Artifacts 2026.4
 Dear %NAME%,
 
-The third round of submissions are in, we expect that every committee member will be assigned more than one review this cycle. Review load is balanced across all issues. If you have not already indicated your conflicts, please do so.
+The fourth round of submissions are in, we expect that every committee member will be assigned more than one review this cycle. Review load is balanced across all issues. If you have not already indicated your conflicts, please do so.
 
-Please follow the instructions attached below to indicate preferences on which artifacts you would like to review. The deadline for preferences is **Monday, March 16, 2026**, after this we will be assigning reviews.
+Please follow the instructions attached below to indicate preferences on which artifacts you would like to review. The deadline for preferences is **Tuesday, June 9, 2026**, after this we will be assigning reviews.
 
 IMPORTANTLY: Please set a negative preference of -5 for any submission you cannot review due to missing resources. Note that we provide VMs with GPUs (contact artifact chairs for access to these VMs).
 
 Use the link below to sign in to the site.
-  > https://artifact.petsymposium.org/artifact2026.3
+  > https://artifact.petsymposium.org/artifact2026.4
 
 
 Specific instructions for bids:
 -------------------------------
 
-- Go to the "Review Preferences" page (note that you can sort by topics score):   https://artifact.petsymposium.org/artifact2026.3/reviewprefs.php
+- Go to the "Review Preferences" page (note that you can sort by topics score):   https://artifact.petsymposium.org/artifact2026.4/reviewprefs.php
 
 - Enter one of the following values as a bid (it’s useful for the chairs when bids have clear semantics):
    3     I want to review this artifact
