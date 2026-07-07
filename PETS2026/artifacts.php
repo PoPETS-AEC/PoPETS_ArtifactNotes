@@ -1,3 +1,11 @@
+<?php
+
+$pageName = 'artifacts';
+require "common/include.php";
+
+startIndex();
+?>
+
 <div class="content">
 
   <h2 class="text-headings"><u>PoPETs 2026 Artifact Evaluation</u></h2>
@@ -28,7 +36,7 @@
     by a link to the artifact along with the obtained artifact badges so
     that interested readers can find and build upon your work.</p>
 
-  <h2 class="text-headings  sub-heading">Outline</h2>
+ <h2 class="text-headings  sub-heading">Outline</h2>
   <ul>
     <li><a href="#artifact-submission-steps-for-authors">Artifact Submission Steps
         for Authors</a></li>
@@ -44,7 +52,7 @@
   <h2 class="text-headings  sub-heading" id="artifact-submission-steps-for-authors">Artifact Submission Steps
     for Authors</h2>
 
-  <ol>
+ <ol>
     <li>Please include the content of the <a
         href="https://petsymposium.org/files/ARTIFACT-APPENDIX.md"><code>ARTIFACT-APPENDIX.md</code></a>
       file either within your <code>README.md</code> file or as a separate
@@ -91,7 +99,7 @@
     access or private repository. If the artifact requires you as an author
     to manually approve requests for access, it is not public and will not
     qualify for the “Artifact Available” badge. Note that all components of
-    your artifact should be publicly available (e.g.&nbsp;source code, datasets,
+    your artifact should be publicly available (e.g. source code, datasets,
     etc.).</p>
 
   <p>Valid hosting options are institutional and third-party digital
@@ -251,7 +259,7 @@
 
   <ul>
     <li> [ ] Meets "Functional Badge" requirements.</li>
-    <li> [ ] of the core contributions and claims of the paper identified.</li>
+    <li> [ ] List of the core contributions and claims of the paper identified.</li>
     <li> [ ] Clear mapping between claims, experiments, and results provided.</li>
     <li> [ ] Minimal amount of manual effort required from reviewers, i.e., fair
       amount of automation.</li>
@@ -401,7 +409,7 @@
       Docker image from the “GitHub Container Registry” (or another registry
       like DockerHub if authors follow resources we point to).</li>
   </ul>
-  <p>Authors can fork these repositories, and use the fork as a starting
+  <p>Authors can reuse these repositories as a starting
     point for their artifact. For example, for Python-based projects,
     authors should modify the <code>Dockerfile</code> and add the pinned
     versions of their dependencies to a <code>requirements.txt</code> (or
@@ -416,17 +424,21 @@
   <p>For most artifacts, we have found that a Dockerfile suffices. As in
     our response to the question above, please check our <a
       href="https://github.com/PoPETS-AEC/examples-and-other-resources">repository
-      examples</a> on GitHub. If you use Docker: - Always include the
-    Dockerfile and other scripts used to build the Docker image in your
-    artifact. - Pin versions of dependencies as much as possible to avoid
+      examples</a> on GitHub. If you use Docker:</p>
+  <ul>
+    <li> Always include the Dockerfile and other scripts used to build the Docker image in your artifact.</li>
+    <li> Pin versions of dependencies as much as possible to avoid
     future breaking changes (e.g., specify a specific hash rather than a
     loose <code>latest</code> tag for the base image, same for dependencies
-    versions). - Note that if you do the above points, you do <em>not</em>
+    versions).</li>
+    <li>Note that if you do the above points, you do <em>not</em>
     need to include both a Dockerfile and a Docker image; we strongly prefer
-    using a Dockerfile with pinned versions. - Finally, our example GitHub
+    using a Dockerfile with pinned versions.</li>
+    <li>Finally, our example GitHub
     repository automatically generates a Docker image from our (example)
     Dockerfile and publishes it as a “GitHub release”, so you do not need to
-    worry about building and hosting the Docker image.</p>
+    worry about building and hosting the Docker image.</li>
+  </ul>
   <p>VMs could be a better fit for artifacts that require multiple nodes
     communicating with each other (you could also explore <a href="https://docs.docker.com/compose/">Docker
       Compose</a>
@@ -664,3 +676,7 @@
     nomination form linked in the menu of the PETS website.</p>
 
 </div>
+
+<?php
+endIndex();
+?>
