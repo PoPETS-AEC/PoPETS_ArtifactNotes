@@ -35,13 +35,7 @@ def plotArtifactsOverYears(df, figsDir):
         hue="badges",
         multiple="stack",
         hue_order=["reproduced", "functional", "available"],
-        palette=glasbey.create_palette(
-            palette_size=3,
-            colorblind_safe=True,
-            optimize_palette_search_radius=50,
-        )[
-            ::-1
-        ],  # type: ignore
+        palette=sns.color_palette()[0:3][::-1]
     )
     sns.move_legend(
         ax,
@@ -58,6 +52,7 @@ def plotArtifactsOverYears(df, figsDir):
 
 
 def plotCurrentYear(inputCurrentYear, figsDir):
+    from matplotlib.ticker import MaxNLocator
     sns.set_style("whitegrid")
     df = pd.read_csv(inputCurrentYear)
     df_long = df.melt(
@@ -76,13 +71,13 @@ def plotCurrentYear(inputCurrentYear, figsDir):
         kind="bar",
         height=4,
         aspect=1.2,
-        palette=glasbey.create_palette(
-            palette_size=2,
-            colorblind_safe=True,
-            optimize_palette_search_radius=50,
-        ),  # type: ignore
+        # palette=sns.color_palette("colorblind")
     )
-    # ax.set_xticklabels(rotation=45, horizontalalignment="right")
+
+    for item in ax.axes.flat:
+        #set yaxis to integer
+        item.yaxis.set_major_locator(MaxNLocator(integer=True))
+
     ax.set_axis_labels("", "Number of Artifacts")
     ax.set_titles("Issue {col_name}")
     sns.move_legend(
@@ -94,13 +89,49 @@ def plotCurrentYear(inputCurrentYear, figsDir):
         frameon=False,
         reverse=True,
     )
+
     saveFig(figsDir + "current-year.pdf")
+    return
+
+def plotOverviewCurrentYear(inputCurrentYear, figsDir):
+    from matplotlib.ticker import MaxNLocator
+    sns.set_style("whitegrid")
+    df = pd.read_csv(inputCurrentYear)
+
+    dfperissue = df.groupby("issue")["awarded"].sum().reset_index()
+
+    ax = sns.barplot(
+        dfperissue,
+        x="issue",
+        y="awarded"
+    )
+    ax.bar_label(ax.containers[0]) # type: ignore
+    ax.set_xlabel("Issue")
+    ax.set_ylabel("Number of Artifacts")
+
+    saveFig(figsDir + "current-year-per-issue.pdf")
+
+    dfperbadge = df.groupby("badges")["awarded"].sum().reset_index()
+
+    ax = sns.barplot(
+        dfperbadge,
+        x="badges",
+        y="awarded"
+    )
+    ax.bar_label(ax.containers[0]) # type: ignore
+    ax.set_xlabel("Badges")
+    ax.set_ylabel("Number of Artifacts")
+
+    saveFig(figsDir + "current-year-per-badge.pdf")
+
+
     return
 
 
 def plotAll(df, inputCurrentYear, figsDir):
-    # plotArtifactsOverYears(df, figsDir)
+    plotArtifactsOverYears(df, figsDir)
     plotCurrentYear(inputCurrentYear, figsDir)
+    plotOverviewCurrentYear(inputCurrentYear, figsDir)
 
     return
 
@@ -167,6 +198,5 @@ if __name__ == "__main__":
         import matplotlib.pyplot as plt
         import matplotlib
         import seaborn as sns
-        import glasbey
 
         plotAll(loadResults(args.inputDir), args.inputCurrentYear, args.figsDir)
