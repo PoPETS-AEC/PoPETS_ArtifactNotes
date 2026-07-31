@@ -66,7 +66,7 @@ Replace this with the following:
    hardware_ on which the experiments reported in the paper were performed. This
    is especially relevant in cases were results might be influenced by the
    hardware used (e.g., latency, bandwidth, throughput experiments, etc.).
-3. If your experiments require signifcant hardware resources (e.g., more than 8
+3. If your experiments require significant hardware resources (e.g., more than 8
    CPU cores, more than 16G RAM) consider providing experiments with reduced
    scale, especially for the "Functional" badge.
 
