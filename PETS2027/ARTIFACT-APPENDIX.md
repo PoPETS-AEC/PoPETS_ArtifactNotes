@@ -66,6 +66,9 @@ Replace this with the following:
    hardware_ on which the experiments reported in the paper were performed. This
    is especially relevant in cases were results might be influenced by the
    hardware used (e.g., latency, bandwidth, throughput experiments, etc.).
+3. If your experiments require signifcant hardware resources (e.g., more than 8
+   CPU cores, more than 16G RAM) consider providing experiments with reduced
+   scale, especially for the "Functional" badge.
 
 ### Software Requirements (Required for Functional and Reproduced badges)
 
@@ -111,6 +114,9 @@ Replace the following with estimated values for:
 This helps reviewers schedule the evaluation in their time plan and others in
 general to see if everything is running as intended. This should also be
 specified at a finer granularity for each experiment (see below).
+
+If your experiments require long compute times (e.g., more than 2 days) consider
+providing experiments with reduced scale, especially for the "Functional" badge.
 
 ## Environment (Required for all badges)
 
