@@ -8,8 +8,8 @@ Number of reviews per badge, suggestion: available (1 or 2), functional (2), rep
 Assign discussion leads for each artifact to ensure that artifact evaluation is moving along?
 
 Comments on artifact template:
-- capitalization of some titles to harmonize
-- check if we have ssh git clone instructions (and if so, replace by HTTPS to avoid issues when users are not logged in)
+- [x] capitalization of some titles to harmonize
+- [x] check if we have ssh git clone instructions (and if so, replace by HTTPS to avoid issues when users are not logged in)
 
 Preliminary and finalized deadlines were appreciated by both authors/reviewers
 Very important to keep preliminary review deadline to identify issues early on (with artifacts, or authors/reviewers not responsive)
@@ -26,18 +26,17 @@ Some reasons given by authors for not submitting or only applying for available 
 PETS PC chairs are not rotating every other year anymore: each year, someone new is picked, we could reconsider for artifact chairs too if the continuity is needed or if we can do it differently (with discussion lead model).
 
 ## In preparation for new edition
-
-1. Pick and invite co-chair
-2. Create artifactYY@petsymposium.org alias and share pub ssh key for git access to PETS website repos (ask PETS infra chair)
-3. Meet to discuss with co-chair first steps
-	- Share access to GG drive, AE slack, GH organization
-	- Get access to self-nomination form answers
-	- Invite new reviewers
-	- Edit/Improve call for artifact, artifact template, FAQ, resources, etc.
-	- Configure submission server
-	- Fix deadlines for new edition
-	- Adapt communication templates for new edition
-	- Reflections on lessons learned from prior edition
+1. [x] Pick and invite co-chair
+2. [x] Create artifactYY@petsymposium.org alias and share pub ssh key for git access to PETS website repos (ask PETS infra chair)
+3. [x] Meet to discuss with co-chair first steps
+	- [x] Share access to GG drive, AE slack, GH organization
+	- [ ] Get access to self-nomination form answers
+	- [ ] Invite new reviewers
+	- [x] Edit/Improve call for artifact, artifact template, FAQ, resources, etc.
+	- [ ] Configure submission server
+	- [x] Fix deadlines for new edition
+	- [ ] Adapt communication templates for new edition
+	- [x] Reflections on lessons learned from prior edition
 
 ## For each artifact issue
 1. Share call for artifact with PC chairs so that they can invite authors of accepted papers and conditional invite to papers with revision
@@ -50,6 +49,15 @@ PETS PC chairs are not rotating every other year anymore: each year, someone new
 8. Keep track of evaluation process, answer questions and concerns, help where needed, ping authors/reviewers, assign badges and collect final links
 9. Collect links, update websites, send stats/thank you to reviewers
 
+## Process with PC chairs
+For each paper issue:
+- artifact chairs share with PC chairs the template of the email invite to submit an artifact once the artifact submission server has been configured,
+- a week or two after paper decisions are sent to authors (i.e., author notification), PC chairs send the email invite from the paper submission server to authors of accepted papers from current issue to submit an artifact for evaluation.
+- at the same time, a conditional invite to submit an artifact is also sent to papers with a revise decision from current issue. That way authors of papers under revision know what to expect, rather than being told only after the revision deadline which is usually a few days just before our artifact submission deadline.
+- after the revision deadline, PC chairs share with artifact chairs a CSV file of the list of papers (title, authors, name, affiliation, email) that were accepted during the issue. This is so that artifact chairs can keep track of papers with submitted artifacts, and send reminders in following artifact evaluation issues to authors that have not applied yet (we allow artifact submission to any artifact issue until the conference).
+- from there, we, artifact chairs, are pretty independent: we manage our own submission server, with our set of artifact reviewers, share badges and link updates on the website and proceedings, etc. 
+- in rare occasions, we get a camera-ready or submission-related question that we redirect to PC/publication chairs, and vice versa for artifact-questions initially sent to PC chairs.
+- once the artifact evaluation issue is done, artifact chairs usually share for reference some stats with PC chairs.
 
 ## For conference
 - Pick artifact awards and runner ups, as well as distinguished artifact reviewers

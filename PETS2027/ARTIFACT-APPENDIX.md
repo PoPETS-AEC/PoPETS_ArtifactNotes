@@ -67,7 +67,7 @@ Replace this with the following:
    is especially relevant in cases were results might be influenced by the
    hardware used (e.g., latency, bandwidth, throughput experiments, etc.).
 3. If your experiments require significant hardware resources (e.g., more than 8
-   CPU cores, more than 16G RAM) consider providing experiments with reduced
+   CPU cores, more than 16GB RAM) consider providing experiments with reduced
    scale, especially for the "Functional" badge.
 
 ### Software Requirements (Required for Functional and Reproduced badges)
@@ -95,7 +95,7 @@ as follows.
    this list, such as a `requirements.txt` file. If you rely on proprietary
    software (e.g. Matlab R2025a), list this here and consider providing access
    to reviewers through HotCRP.
-6. List any Machine Learning Models required to run your artifact, along with
+6. List any machine learning models required to run your artifact, along with
    their versions. If your model is hosted on a different repository, such as on
    Zenodo, then your artifact should download it automatically (same for
    datasets). If a required ML model is _not_ in your artifact, provide a dummy
@@ -143,7 +143,7 @@ feedback, resulting in the link being out-of-date. Instead, you may link to the
 latest commit in your branch (e.g. main) as follows:
 https://github.com/PoPETS-AEC/example-docker-python-pip/tree/main
 
-### Set up the environment (Required for Functional and Reproduced badges)
+### Set Up the Environment (Required for Functional and Reproduced badges)
 
 Replace the following by a description of how one should set up the environment
 for your artifact, including downloading and installing dependencies and the
@@ -152,7 +152,7 @@ command one should perform). Be as specific as possible here. If possible, use
 code segments to simplify the workflow, e.g.,
 
 ```bash
-git clone git@github.com:PoPETS-AEC/example-docker-python-pip.git
+git clone https://github.com/PoPETS-AEC/example-docker-python-pip.git
 docker build -t example-docker-python-pip:main .
 ```
 
