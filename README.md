@@ -15,12 +15,13 @@ website](https://secartifacts.github.io/) as well.
 
 - [Process Description](processdescription.md)
 - Stats:
-	- [PETS21](PETS2021/stats.md),
-	- [PETS22](PETS2022/stats.md),
-	- [PETS23](PETS2023/stats.md),
-	- [PETS24](PETS2024/stats.md),
-	- [PETS25](PETS2025/stats.md)
-	- [PETS26](PETS2026/stats.md)
-- [Webpage](PETS2026/artifacts.php)
-- [Communication Templates](PETS2026/communication-templates)
-- [File: ARTIFACT-APPENDIX.md](PETS2026/ARTIFACT-APPENDIX.md)
+	- [PETS21](2021/stats.md),
+	- [PETS22](2022/stats.md),
+	- [PETS23](2023/stats.md),
+	- [PETS24](2024/stats.md),
+	- [PETS25](2025/stats.md)
+	- [PETS26](2026/stats.md)
+	- [PETS27](2027/stats.md)
+- [Webpage](2027/artifacts.php)
+- [Communication Templates](2027/communication-templates)
+- [File: ARTIFACT-APPENDIX.md](2027/ARTIFACT-APPENDIX.md)

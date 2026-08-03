@@ -1,0 +1,416 @@
+{
+  "accepted_author_visibility": true,
+  "author_visibility": "blind",
+  "autoassign_review_max_load_tag": "",
+  "autoassign_review_preference_gadget": "default",
+  "automatic_tag": [],
+  "badge": [
+    {
+      "style": "red",
+      "tags": ""
+    },
+    {
+      "style": "orange",
+      "tags": ""
+    },
+    {
+      "style": "yellow",
+      "tags": ""
+    },
+    {
+      "style": "green",
+      "tags": ""
+    },
+    {
+      "style": "blue",
+      "tags": ""
+    },
+    {
+      "style": "purple",
+      "tags": ""
+    },
+    {
+      "style": "gray",
+      "tags": ""
+    },
+    {
+      "style": "white",
+      "tags": ""
+    },
+    {
+      "style": "black",
+      "tags": ""
+    },
+    {
+      "style": "pink",
+      "tags": ""
+    }
+  ],
+  "comment_allow_always": false,
+  "comment_author": false,
+  "comment_author_initiate": false,
+  "comment_visibility_reviewer": "if_reviewers_visible",
+  "conference_abbreviation": "Artifact2027.1",
+  "conference_name": "PoPETS Artifact Evaluation 2027 (1)",
+  "conference_url": "https://petsymposium.org/",
+  "conflict_description": "This includes past advisors and students, people with the same affiliation, and any recent (~2 years) coauthors and collaborators.",
+  "conflict_visibility": "if_authors_visible",
+  "decision": [
+    {
+      "id": 1,
+      "name": "Accepted",
+      "category": "accept"
+    },
+    {
+      "id": -1,
+      "name": "Rejected",
+      "category": "reject"
+    }
+  ],
+  "decision_visibility_author": "no",
+  "decision_visibility_author_condition": "",
+  "decision_visibility_reviewer": "no",
+  "document_early_visibility": false,
+  "draft_submission_early_visibility": false,
+  "email_default_cc": "",
+  "email_default_reply_to": "artifact27@petsymposium.org",
+  "final_done": "",
+  "final_edit_message": "Congratulations! The paper has been accepted. Update the paper’s final version here. {deadline} You may also edit paper contacts, allowing others to view reviews and make changes.",
+  "final_open": false,
+  "final_soft": "",
+  "format": [],
+  "home_message": "",
+  "mailbody_requestreview": "",
+  "named_search": [],
+  "pc_warn_bulk_download": false,
+  "preference_editable": true,
+  "preference_fuzz": 0,
+  "preference_instructions": "<p>A review preference is a small integer that indicates how much you want to review a submission. Positive numbers mean you want to review, negative numbers mean you don’t, and −100 means you think you have a conflict. −20 to 20 is a typical range for real preferences; multiple submissions can have the same preference. The automatic assignment algorithm attempts to assign reviews in descending preference order. Different users’ preference values are not compared and need not use the same scale.</p>\n\n<p>Select a column heading to sort by that column. Enter preferences in the text boxes or on the paper pages. You may also upload preferences from a text file; see the “Download” and “Upload” links below the paper list.</p>",
+  "preference_max": 1000000,
+  "preference_min": -1000000,
+  "preference_shuffle": false,
+  "response": [
+    {
+      "id": 1,
+      "name": "",
+      "open": "",
+      "done": "",
+      "grace": 0,
+      "condition": "all",
+      "wordlimit": 500,
+      "hard_wordlimit": 0,
+      "instructions": "The authors’ response should address reviewer concerns and correct misunderstandings. Make it short and to the point; the conference deadline has passed. Try to stay within {wordlimit} words."
+    }
+  ],
+  "response_active": false,
+  "review": [
+    {
+      "id": 1,
+      "name": "",
+      "soft": "",
+      "done": "",
+      "external_soft": "",
+      "external_done": ""
+    }
+  ],
+  "review_blind": "blind",
+  "review_default_external_round": "",
+  "review_default_round": "unnamed",
+  "review_identity_visibility_external": "after_review",
+  "review_identity_visibility_meta": "default",
+  "review_identity_visibility_pc": "always",
+  "review_open": false,
+  "review_proposal": "approval_required_potential_conflict",
+  "review_proposal_editable": "no",
+  "review_rating": "pc",
+  "review_rating_visibility": "limited",
+  "review_self_assign": true,
+  "review_terms": "",
+  "review_visibility_author": "no",
+  "review_visibility_author_condition": "",
+  "review_visibility_external": "after_review",
+  "review_visibility_lead": true,
+  "review_visibility_pc": "after_review",
+  "rf": [
+    {
+      "id": "s01",
+      "name": "Overall merit",
+      "order": 1,
+      "type": "radio",
+      "description": "",
+      "required": true,
+      "visibility": "au",
+      "condition": "all",
+      "values": [
+        {
+          "id": 1,
+          "symbol": 1,
+          "name": "Reject",
+          "order": 1
+        },
+        {
+          "id": 2,
+          "symbol": 2,
+          "name": "Weak reject",
+          "order": 2
+        },
+        {
+          "id": 3,
+          "symbol": 3,
+          "name": "Weak accept",
+          "order": 3
+        },
+        {
+          "id": 4,
+          "symbol": 4,
+          "name": "Accept",
+          "order": 4
+        },
+        {
+          "id": 5,
+          "symbol": 5,
+          "name": "Strong accept",
+          "order": 5
+        }
+      ],
+      "scheme": "sv"
+    },
+    {
+      "id": "s02",
+      "name": "Reviewer expertise",
+      "order": 2,
+      "type": "radio",
+      "description": "",
+      "required": true,
+      "visibility": "au",
+      "condition": "all",
+      "values": [
+        {
+          "id": 1,
+          "symbol": 1,
+          "name": "No familiarity",
+          "order": 1
+        },
+        {
+          "id": 2,
+          "symbol": 2,
+          "name": "Some familiarity",
+          "order": 2
+        },
+        {
+          "id": 3,
+          "symbol": 3,
+          "name": "Knowledgeable",
+          "order": 3
+        },
+        {
+          "id": 4,
+          "symbol": 4,
+          "name": "Expert",
+          "order": 4
+        }
+      ],
+      "scheme": "sv"
+    },
+    {
+      "id": "t01",
+      "name": "Paper summary",
+      "order": 3,
+      "type": "text",
+      "description": "",
+      "required": false,
+      "visibility": "au",
+      "condition": "all"
+    },
+    {
+      "id": "t02",
+      "name": "Comments for authors",
+      "order": 4,
+      "type": "text",
+      "description": "",
+      "required": false,
+      "visibility": "au",
+      "condition": "all"
+    },
+    {
+      "id": "t03",
+      "name": "Comments for PC",
+      "order": 5,
+      "type": "text",
+      "description": "",
+      "required": false,
+      "visibility": "re",
+      "condition": "all"
+    }
+  ],
+  "sf": [
+    {
+      "id": "title",
+      "name": "Title",
+      "description": "",
+      "edit_condition": true
+    },
+    {
+      "id": "submission",
+      "order": 2,
+      "name": "Submission",
+      "description": "",
+      "condition": true,
+      "edit_condition": true,
+      "required": "submit"
+    },
+    {
+      "id": "final",
+      "order": 3,
+      "name": "Final version",
+      "description": "",
+      "condition": "phase:final",
+      "edit_condition": true,
+      "required": "submit"
+    },
+    {
+      "id": "abstract",
+      "order": 4,
+      "name": "Abstract",
+      "description": "",
+      "condition": true,
+      "edit_condition": true,
+      "required": "register"
+    },
+    {
+      "id": "authors",
+      "order": 5,
+      "name": "Authors",
+      "description": "List the authors, including email addresses and affiliations. Submission is anonymous, so reviewers will not see author information.",
+      "edit_condition": true,
+      "max": 0
+    },
+    {
+      "id": "topics",
+      "order": 6,
+      "name": "Topics",
+      "description": "Select any topics that apply to your submission.",
+      "condition": true,
+      "edit_condition": true,
+      "required": "no",
+      "min": 0,
+      "max": 0
+    },
+    {
+      "id": "pc_conflicts",
+      "order": 7,
+      "name": "PC conflicts"
+    },
+    {
+      "id": "collaborators",
+      "order": 8,
+      "name": "Other conflicts",
+      "description": "<p>List other people and institutions that have conflicts of interest with the authors. We use this information when assigning external reviewers. You don’t need to repeat the authors’ affiliations or collaborators declared on authors’ HotCRP profiles.</p><p><strong>Enter one conflict per line.</strong> Use parentheses for affiliations and institutions. Examples: “Jelena Markovic (EPFL)”, “All (University of Southern California)”.</p>"
+    }
+  ],
+  "sf_author_orcid": "no",
+  "sf_collaborators": false,
+  "sf_pc_conflicts": true,
+  "sf_pc_conflict_types": false,
+  "shepherd_visibility": true,
+  "site_contact_email": "artifact27@petsymposium.org",
+  "site_contact_name": "PoPETs Artifact Chairs",
+  "submission": [],
+  "submission_done": "",
+  "submission_edit_message": "",
+  "submission_freeze": false,
+  "submission_open": false,
+  "submission_registration": "",
+  "submission_resubmission": "",
+  "submission_terms": "",
+  "submission_visibility_conflict": "yes",
+  "tag_admin_open": "",
+  "tag_hidden": "",
+  "tag_pc_open": "",
+  "tag_rank": "",
+  "tag_readonly": "accept pcpaper reject",
+  "tag_style": [
+    {
+      "style": "red",
+      "tags": ""
+    },
+    {
+      "style": "orange",
+      "tags": ""
+    },
+    {
+      "style": "yellow",
+      "tags": ""
+    },
+    {
+      "style": "green",
+      "tags": ""
+    },
+    {
+      "style": "blue",
+      "tags": ""
+    },
+    {
+      "style": "purple",
+      "tags": ""
+    },
+    {
+      "style": "gray",
+      "tags": ""
+    },
+    {
+      "style": "white",
+      "tags": ""
+    },
+    {
+      "style": "bold",
+      "tags": ""
+    },
+    {
+      "style": "italic",
+      "tags": ""
+    },
+    {
+      "style": "underline",
+      "tags": ""
+    },
+    {
+      "style": "strikethrough",
+      "tags": ""
+    },
+    {
+      "style": "big",
+      "tags": ""
+    },
+    {
+      "style": "small",
+      "tags": ""
+    },
+    {
+      "style": "dim",
+      "tags": ""
+    }
+  ],
+  "tag_visibility_conflict": false,
+  "tag_vote_allotment": "",
+  "tag_vote_approval": "",
+  "topic": [],
+  "track": [
+    {
+      "tag": "any",
+      "perm": {
+        "view": "all",
+        "viewpdf": "all",
+        "viewrev": "all",
+        "viewrevid": "all",
+        "assrev": "all",
+        "unassrev": "all",
+        "admin": "none",
+        "hiddentag": "none",
+        "viewallrev": "all",
+        "comment": "all",
+        "viewtracker": "all"
+      }
+    }
+  ]
+}
