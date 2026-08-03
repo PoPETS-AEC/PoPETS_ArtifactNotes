@@ -30,10 +30,10 @@ PETS PC chairs are not rotating every other year anymore: each year, someone new
 2. [x] Create artifactYY@petsymposium.org alias and share pub ssh key for git access to PETS website repos (ask PETS infra chair)
 3. [x] Meet to discuss with co-chair first steps
 	- [x] Share access to GG drive, AE slack, GH organization
-	- [ ] Get access to self-nomination form answers
+	- [x] Get access to self-nomination form answers
 	- [ ] Invite new reviewers
 	- [x] Edit/Improve call for artifact, artifact template, FAQ, resources, etc.
-	- [ ] Configure submission server
+	- [x] Configure submission server
 	- [x] Fix deadlines for new edition
 	- [ ] Adapt communication templates for new edition
 	- [x] Reflections on lessons learned from prior edition
@@ -58,6 +58,25 @@ For each paper issue:
 - from there, we, artifact chairs, are pretty independent: we manage our own submission server, with our set of artifact reviewers, share badges and link updates on the website and proceedings, etc. 
 - in rare occasions, we get a camera-ready or submission-related question that we redirect to PC/publication chairs, and vice versa for artifact-questions initially sent to PC chairs.
 - once the artifact evaluation issue is done, artifact chairs usually share for reference some stats with PC chairs.
+
+## New submission server system
+
+- Reviewers should create an account through https://auth-artifact.petsymposium.org/ (keycloak) to access submission server (for PETS 2027.1 it is: https://submit-27-1.artifact.petsymposium.org/)
+- Authors too, but we don't have to do other steps: authors can then directly submit their artifact
+- Once reviewers have created their account, artifact chairs need to add them to the right group to give them the right permissions on the submission server
+- This is done through https://auth-artifact.petsymposium.org/admin/pets/console/
+
+To invite reviewers, we could do the following (in order to reduce amount of back and forth emails):
+1. create their account manually in keycloak on their behalf, assign them to right group
+	- actions: verify email + update password
+	- groups: artifact-pc + users
+2. send message to their email asking them to (if they accept the invitation to become an artifact reviewer):
+   1. set their password: https://auth-artifact.petsymposium.org/realms/pets/login-actions/reset-credentials by using the same email this message is sent to them
+   2. check profile info at https://auth-artifact.petsymposium.org/realms/pets/account/
+   3. connect on https://submit-27-1.artifact.petsymposium.org/ with their new account
+   4. complete their hotcrp profile (affiliation, conflicts, topics)
+   5. let us know if they were able to log in successfully or no.
+
 
 ## For conference
 - Pick artifact awards and runner ups, as well as distinguished artifact reviewers
