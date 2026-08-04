@@ -3,7 +3,7 @@ Dear PoPETs 2027 artifact reviewer!
 The call for artifacts for issue 2027.1 was sent out and the first submissions are coming in.
 
 **Login** To log into the submission site you can use the following link:
-  > https://artifact.petsymposium.org/artifact2027.1/
+  > https://submit-27-1.artifact.petsymposium.org/
 
 **Schedule**: The schedule is planned as follows:
 
@@ -21,8 +21,8 @@ To help you track of PETS Artifact 2027 Program Committee tasks and key mileston
  > https://petsymposium.org/files/PoPETS-Artifacts-2027.ics
 
 Integrity checksums:
-SHA-256: **<TODO-CHANGE-HASH>**
-SHA-1: **<TODO-CHANGE-HASH>**
+SHA-256: `e0e765cfb89c82a6f56cec5667699a2aebbe9a7499234ede47389de579cf326a`
+SHA-1: `1dadbafed6a56783b03ed5e903cd43c039bbbadf`
 
 
 If you have any question, feel free to email us at artifact27@petsymposium.org or ping us in a reviewer/administrator-only visible comment on your assigned artifact(s) (once assignments are done).

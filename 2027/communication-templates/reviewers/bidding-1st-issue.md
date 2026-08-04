@@ -33,7 +33,7 @@ Instructions for bids:
 
 - Please try to enter a +2/+3 bid for at least 2 artifacts for which you think you are well qualified. Note that during the evaluation you do not need to do a detailed review of any source code, we are mostly checking to make sure the artifacts compile, run, and have easy to follow setup instructions. See our review guidelines for more information: https://petsymposium.org/artifacts.php
 
-- New this year: the topics used to sort artifacts by relevance were modified to allow reviews to indicate resource availability. We hope this will facilitate bidding and help us identify missing resources earlier.
+- Note: you can sort artifacts by topics relevance, which should align with the resources and hardware availability you mention on your own profile. We hope this facilitates bidding and help us identify earlier when required resources or hardware are missing.
 
 This bidding process worked well last year, but we cannot guarantee you your preferences. However, we hope this continues to benefit reviewers and authors. Please do not feel you need to spend time selecting your artifacts. But if something particularly interests you or if you think something is too far outside your expertise, this is your chance to
 indicate it.

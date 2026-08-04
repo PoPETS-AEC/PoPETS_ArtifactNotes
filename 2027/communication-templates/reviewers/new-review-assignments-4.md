@@ -16,9 +16,9 @@ The deadlines for PETS issue 2027.4 are:
 - Eval&Discussion Continue (Reviewers+Authors) July 9
 - Finalized Deadline (Reviewers+Chairs) July 9
 
-* Your reviews: https://artifact.petsymposium.org/artifact2027.4/search.php?q=re:me
+* Your reviews: https://submit-27-4.artifact.petsymposium.org/search.php?q=re:me
 * New assignments: {{NEWASSIGNMENTS}}
-* Site: https://artifact.petsymposium.org/artifact2027.4/
+* Site: https://submit-27-4.artifact.petsymposium.org/
 
 Thank you for your help -- we appreciate that reviewing is hard work.
 

@@ -16,7 +16,7 @@ The deadline for artifact submissions for PETS 2027 issue 1 is:
 
 To submit your artifact, create an account on our artifact submission site for 2027.1:
 
-> https://artifact.petsymposium.org/artifact2027.1/
+> https://submit-27-1.artifact.petsymposium.org/
 
 The next deadlines are:
 

@@ -8,13 +8,13 @@ Please follow the instructions attached below to indicate preferences on which a
 IMPORTANTLY: Please set a negative preference of -5 for any submission you cannot review due to missing resources. Note that we provide VMs with GPUs (contact artifact chairs for access to these VMs).
 
 Use the link below to sign in to the site.
-  > https://artifact.petsymposium.org/artifact2027.4
+  > https://submit-27-4.artifact.petsymposium.org/
 
 
 Specific instructions for bids:
 -------------------------------
 
-- Go to the "Review Preferences" page (note that you can sort by topics score):   https://artifact.petsymposium.org/artifact2027.4/reviewprefs.php
+- Go to the "Review Preferences" page (note that you can sort by topics score):   https://submit-27-4.artifact.petsymposium.org/reviewprefs.php
 
 - Enter one of the following values as a bid (it’s useful for the chairs when bids have clear semantics):
    3     I want to review this artifact
@@ -27,7 +27,7 @@ Specific instructions for bids:
 
 - Please try to enter a +2/+3 bid for at least 5 artifacts for which you think you are well qualified. Note that during the evaluation you do not need to do a detailed review of any source code, we are mostly checking to make sure the artifacts compile, run, and have easy to follow setup instructions. See our review guidelines for more information: https://petsymposium.org/artifacts.php
 
-- New this year: the topics used to sort artifacts by relevance have been modified to be more fine-grained. We hope this will facilitate bidding and help us identify earlier on potential missing resources by reviewers.
+- Note: you can sort artifacts by topics relevance, which should align with the resources and hardware availability you mention on your own profile. We hope this facilitates bidding and help us identify earlier when required resources or hardware are missing.
 
 This bidding process worked well so far, but we cannot guarantee you your preferences. However, we hope this continues to benefit reviewers and authors. Please do not feel you need to spend time selecting your artifacts. But if something particularly interests you or if you think something is too far outside your expertise, this is your chance to indicate it.
 

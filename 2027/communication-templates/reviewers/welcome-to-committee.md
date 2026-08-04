@@ -3,7 +3,7 @@ Subject: Welcome to the PoPETs 2027 Artifact Evaluation Committee!
 The call for artifacts for the PETS issue 2027.1 was sent out and the first submissions are already registered.
 
 **Login** To log into the submission site you can use the following link:
- > https://artifact.petsymposium.org/artifact2027.1/
+ > https://submit-27-1.artifact.petsymposium.org/
 
 With this email we want to inform you about four things:
 
@@ -32,7 +32,8 @@ SHA-256: `e0e765cfb89c82a6f56cec5667699a2aebbe9a7499234ede47389de579cf326a`
 SHA-1: `1dadbafed6a56783b03ed5e903cd43c039bbbadf`
 
 4. **Changes**: You can find the updated information on the artifact evaluation process here: https://petsymposium.org/artifacts.php
-The most important changes are the clarification of the requirements for each of the three badges (Available, Functional, and Reproduced), the release of examples and other resources for artifact packaging, and the introduction of preliminary review, updates, and finalized deadlines to emphasize on the interactivity of the artifact evaluation process.
+For 2027, the process and guidelines are overall very similar to 2026: we just further clarified requirements for some of the badges, rephrased some explanations in the artifact appendix file, and completed the FAQ.
+Note that for convenience, we provide checklists for each of the three badges, an FAQ with common issues, as well as Docker examples and other guides for artifact packaging. Feel free to point authors to these resources.
 
 If you have any question, feel free to email us at artifact27@petsymposium.org or ping us in a reviewer/administrator-only visible comment on your assigned artifact(s) (once assignments are done).
 

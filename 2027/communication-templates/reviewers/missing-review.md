@@ -7,7 +7,7 @@ We need to know if you will be able to complete your review soon or no. Otherwis
 Please response on where you are at with your artifact evaluation.
 
 * Title: {{TITLE}}
-* Site: https://artifact.petsymposium.org/artifact2027.1/paper.php/{{PID}}
+* Site: https://submit-27-1.artifact.petsymposium.org/paper.php/{{PID}}
 
 Guidelines and practical tips for reviewers are on the call for artifacts page: https://petsymposium.org/artifacts.php#what-makes-a-good-review
 

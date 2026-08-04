@@ -12,11 +12,11 @@ Decisions have been completed for all artifacts submitted in the 2027.2 issue fo
 
 First, let us thank you all for your great work and responsiveness with authors!
 
-Second, we will delete shortly all VMs and data that were created through the website (https://artifact.petsymposium.org/artifact2027.2/) for evaluation. You can help us with this cleanup by stopping and deleting yourself the machines you may have created.
+Second, we will delete shortly all VMs and data that were created through the website (https://submit-27-2.artifact.petsymposium.org/) for evaluation. You can help us with this cleanup by stopping and deleting yourself the machines you may have created.
 
 Third, if you cannot participate in issue 2027.3 for artifacts (assignment on March 17, preliminary review expected by March 31, finalized deadline on April 30) and have not yet let us know, please do that now, so that we can plan ahead and invite more reviewers.
 
-Fourth, if you could circulate the self-nomination form (https://cryptpad.fr/form/#/2/form/view/n9SuDiQ4zkSFj+clQ3KeyKfZJK-wYSt9DUS9usJtkkw/)to colleagues you know that are serious, motivated, and would be willing to serve on the PETS Artifact Evaluation Committee. This would be extremely helpful to all of us, as we predict an increase in submissions for the last 2 artifact cycles of 2027.
+Fourth, if you could circulate the self-nomination form (https://cryptpad.fr/form/#/2/form/view/-8Gu2pcbMeoE2-mxUOZqBQ3DDz5uz5X3Mi2IldQiMhs/)to colleagues you know that are serious, motivated, and would be willing to serve on the PETS Artifact Evaluation Committee. This would be extremely helpful to all of us, as we predict an increase in submissions for the last 2 artifact cycles of 2027.
 
 Finally, you now all have a small PETS artifact review break. The next artifact submission deadline is March 10. We will remind Artifact Evaluation Committee members shortly before then about the overall process for bidding, assignment, and reviewing expectations. You can also use the PETS artifact review calendar (https://petsymposium.org/files/PoPETS-Artifacts-2027.ics) to keep track of upcoming tasks and deadlines.
 

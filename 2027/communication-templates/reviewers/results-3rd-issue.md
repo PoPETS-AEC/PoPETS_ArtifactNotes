@@ -12,7 +12,7 @@ Decisions have been completed for all artifacts submitted in the 2027.3 issue fo
 
 First, let us thank you all for your great work and responsiveness with authors!
 
-Second, we will delete shortly all VMs and data that were created through the website (https://artifact.petsymposium.org/artifact2027.3/) for evaluation. You can help us with this cleanup by stopping and deleting yourself the machines you may have created.
+Second, we will delete shortly all VMs and data that were created through the website (https://submit-27-3.artifact.petsymposium.org/) for evaluation. You can help us with this cleanup by stopping and deleting yourself the machines you may have created.
 
 Third, if you cannot participate in issue 2027.4 for artifacts (assignment on June 9, preliminary review expected by June 18, finalized deadline on July 9) and have not yet let us know, please do that now, so that we can plan ahead and invite more reviewers.
 

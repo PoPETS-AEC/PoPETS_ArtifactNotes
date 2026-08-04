@@ -17,7 +17,7 @@ The next deadlines are:
 - Artifact Finalized Deadline (firm): Friday, October 30, 2026
 
 * Title: {{TITLE}}
-* Site: https://artifact.petsymposium.org/artifact2027.1/paper.php/{{PID}}
+* Site: https://submit-27-1.artifact.petsymposium.org/paper.php/{{PID}}
 
 Thanks,
 --
