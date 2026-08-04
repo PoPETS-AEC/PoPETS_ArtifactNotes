@@ -1,13 +1,13 @@
-Subject: Instructions and bidding by Sep 15, 2025 for PETS artifacts 2026.1
+Subject: Instructions and bidding by Sep 14, 2026 for PETS artifacts 2027.1
 
 Dear {{NAME}},
 
-Welcome to the PoPETs 2026 artifact evaluation committee!
+Welcome to the PoPETs 2027 artifact evaluation committee!
 We have received {{NUMSUBMITTED}} submissions. With over 70 committee members, we expect each member will be assigned at most 1 review this issue. If you have not already indicated your conflicts, please do so.
 
-Please verify that your affiliation information is correct in HotCRP ({{LINK}}/users.php/pc) and on the PETS webpage (https://petsymposium.org/cfp26.php). Let us know if there are any errors.
+Please verify that your affiliation information is correct in HotCRP ({{LINK}}/users.php/pc) and on the PETS webpage (https://petsymposium.org/cfp27.php). Let us know if there are any errors.
 
-We have opened up bidding for committee members to indicate preferences on which artifacts they would like to review. The deadline for preferences is **Monday, Sep 15, 2025 AoE**. We will be assigning reviews after this time.
+We have opened up bidding for committee members to indicate preferences on which artifacts they would like to review. The deadline for preferences is **Monday, Sep 14, 2026 AoE**. We will be assigning reviews after this time.
 
 IMPORTANTLY: Please set a negative preference of -5 for any submission you cannot review due to missing resources. Note that we provide VMs with GPUs. Email artifact chairs for access to these VMs.
 
@@ -41,6 +41,6 @@ indicate it.
 Please don't hesitate to contact us with any questions or concerns at any stage of this process!
 
 --
-Miti Mazmudar and Yohan Beugin
-PoPETs 2026 Artifact Evaluation Chairs
-artifact26@petsymposium.org
+Yohan Beugin and Jan Drescher
+PoPETs 2027 Artifact Evaluation Chairs
+artifact27@petsymposium.org

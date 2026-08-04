@@ -1,12 +1,12 @@
-Subject: Finalizing discussions + decisions by Friday, July 10
+Subject: Finalizing discussions + decisions by Friday, October 30
 
 ---
 
 Hello reviewers,
 
-Thank you all for your service to the PoPETs 2026 Artifact Evaluation Committee. The finalized deadline for badges decision for 2026.4 artifacts is less than a week away (Friday, July 10), and we need your help to make it!
+Thank you all for your service to the PoPETs 2027 Artifact Evaluation Committee. The finalized deadline for badges decision for 2027.1 artifacts is less than a week away (Friday, October 30), and we need your help to make it!
 
-In the past days, we (artifact chairs Miti and Yohan) have been posting comments tagging authors and reviewers on still undecided artifacts to help the evaluation, discussion, and updates move along.
+In the past days, we (artifact chairs Yohan and Jan) have been posting comments tagging authors and reviewers on still undecided artifacts to help the evaluation, discussion, and updates move along.
 
 As reviewer on one of these artifacts, we need you in the coming days to:
 - keep engaging and following up with authors,
@@ -18,6 +18,6 @@ In case you are waiting on authors to make some updates, please send a kind mess
 
 Thanks in advance for your help in this final stage!
 
-Miti Mazmudar and Yohan Beugin
-PoPETs 2026 Artifact Evaluation Chairs
-artifact26@petsymposium.org
+Yohan Beugin and Jan Drescher
+PoPETs 2027 Artifact Evaluation Chairs
+artifact27@petsymposium.org
