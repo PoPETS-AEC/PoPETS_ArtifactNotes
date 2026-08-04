@@ -8,6 +8,6 @@ Thanks in advance for helping us stay on track with this artifact evaluation.
 
 Best regards,
 --
-Miti Mazmudar and Yohan Beugin
-PoPETs 2026 Artifact Evaluation Chairs
-artifact26@petsymposium.org
+Yohan Beugin and Jan Drescher
+PoPETs 2027 Artifact Evaluation Chairs
+artifact27@petsymposium.org
