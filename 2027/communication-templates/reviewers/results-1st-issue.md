@@ -14,11 +14,12 @@ Fourth, you now all have a small PETS artifact review break. The next artifact s
 
 Finally, below are the results for artifacts from 2027.1:
 
-- Total artifacts submitted: **<TODO-CHANGE-NUMBER>**
-- Total artifacts that obtained a badge: **<TODO-CHANGE-NUMBER>**
-- Available: **<TODO-CHANGE-NUMBER>**
-- Available, Functional: **<TODO-CHANGE-NUMBER>**
-- Available, Functional, Reproduced: **<TODO-CHANGE-NUMBER>**
+- Total artifacts submitted: 21
+- Total artifacts that obtained a badge: 21
+- Available: 6
+- Available, Functional: 5
+- Functional, Reproduced (without Available due to potential disclosure harms): 1
+- Available, Functional, Reproduced: 9
 
 Thanks again for your hard work! We really appreciate your service and your contribution to open-science for our community!
 
