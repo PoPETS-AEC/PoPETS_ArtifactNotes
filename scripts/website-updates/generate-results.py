@@ -38,7 +38,7 @@ if __name__ == "__main__":
             item = {}
             item["paper_url"] = ""
             item["title"] = row["Title"]
-            item["artifact_url"] = row["Final link"]
+            item["artifact_url"] = row["Final link to use for badges on website (this field will be edited by artifact chairs once evaluation is finalized)"]
             item["badges"] = str.lower(row["Status"])
             artifacts.append(item)
 
